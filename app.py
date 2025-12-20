@@ -980,7 +980,7 @@ def get_defaults():
 @app.route('/api/health', methods=['GET'])
 def health():
     """健康检查"""
-    return jsonify({"status": "ok"})
+    return jsonify({"status": "ok", "message": "Service is running"})
 
 @app.route('/')
 def index():
