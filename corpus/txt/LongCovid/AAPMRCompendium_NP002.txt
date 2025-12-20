@@ -1,0 +1,565 @@
+Multi-disciplinary collaborative guidance on the assessment and treatment of patients with Long COVID: A compendium statement
+
+Abstract
+Background
+In 2021, the American Academy of Physical Medicine and Rehabilitation (AAPM&R) established the Multi-Disciplinary Post-Acute Sequelae of SARS-CoV-2 infection Collaborative (“the Collaborative”) to provide guidance from established Long COVID clinics for the evaluation and management of Long COVID. The Collaborative previously published eight Long COVID consensus guidance statements using a primarily symptom-based approach. However, Long COVID symptoms most often do not occur in isolation.
+
+Aims
+This compendium aims to equip clinicians with an efficient, up-to-date, clinical resource for evaluating and managing adults experiencing Long COVID symptoms. The primary intended audience includes physiatrists, primary care physicians, and other clinicians who provide first-line assessment and management of Long COVID symptoms, especially in settings where subspecialty care is not readily available. This compendium provides a holistic framework for assessment and management, symptom-specific considerations, and updates on prevalence, health equity, disability considerations, pathophysiology, and emerging evidence regarding treatments under investigation. Because Long COVID closely resembles other infection-associated chronic conditions (IACCs) such as myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS), the guidance in this compendium may also be helpful for clinicians managing these related conditions.
+
+Methods
+Guidance in this compendium was developed by the Collaborative’s established modified Delphi approach. The Collaborative is a multi-disciplinary group whose members include physiatrists, primary care physicians, pulmonologists, cardiologists, psychiatrists, neuropsychologists, neurologists, occupational therapists, physical therapists, speech and language pathologists, patients, and government representatives. Over forty Long COVID centers are represented in the Collaborative.
+
+Results
+Long COVID is defined by the National Academies of Sciences, Engineering, and Medicine as “an IACC that occurs after SARS-CoV-2 infection and is present for at least three months as a continuous, relapsing and remitting, or progressive disease state that affects one or more organ systems.” The current global prevalence of Long COVID is estimated to be 6%. Higher prevalence has been associated with female sex, transgender identity, bisexual orientation, minoritized racial and ethnic group status, the presence of a disability, low socioeconomic status, high body mass index, tobacco use, and unvaccinated status. Long COVID can present as a wide variety of symptom clusters. The most common symptoms include exaggerated fatigue and diminished energy windows, post-exertional malaise (PEM) / post-exertional symptom exacerbation (PESE), cognitive impairment (brain fog), dysautonomia, pain/myalgias, and smell and taste alterations. Suspected mechanisms for the underlying pathophysiology of Long COVID and its various clinical phenotypes include persistent reservoirs of SARS-CoV-2 in tissues; immune dysregulation with or without reactivation of underlying pathogens; effects of SARS-CoV-2 on the microbiome; autoimmunity; microvascular blood clotting with endothelial dysfunction; and dysfunctional signaling in the brainstem. Holistic assessment should include a traditional history, physical examination, and additional diagnostic testing, as indicated. A basic laboratory assessment is recommended for all patients with possible Long COVID, and consideration for additional labs and diagnostic procedures is guided by the patient’s specific symptoms.
+
+Current management strategies focus on symptom-based supportive care. Critical considerations include energy conservation strategies and addressing comorbidities and modifiable risk factors. Additionally, 1) it is essential to validate the patient’s experience and provide reassurance that their symptoms are being taken seriously because many patients have had their symptoms dismissed by loved ones and clinicians; 2) physical activity recommendations must be carefully tailored to the patient’s current activity tolerance because overly intense activity can trigger PEM/PESE and worsened muscle damage; and 3) treatment recommendations should be delivered with humility because there are many persistent unknowns related to Long COVID. To date, there is limited data to guide medication management specifically in the context of Long COVID. As such, medication utilization generally follows standard practice regarding indications and dosing, with extra attention to prioritize: 1) patient preference via shared decision-making, and 2) cautious use of medications that may improve some symptoms (e.g., cognitive/attention impairment) but may worsen other symptoms (e.g., PEM/PESE). Numerous clinical trials are investigating additional treatments.
+
+The return-to-work process for individuals with Long COVID can be challenging because symptoms can fluctuate, vary in nature, impact multiple functional areas (e.g., physical and cognitive), and often manifest as an 'invisible disability' that may not be readily acknowledged by employers or coworkers. Clinicians can help patients return to work by identifying suitable workplace accommodations and resources, providing necessary documentation, and recommending occupational or vocational therapy when needed. If these efforts are unsuccessful and work significantly worsens Long COVID symptoms or impedes recovery, applying for disability may be warranted. Long COVID is recognized as a potential disability under the Americans with Disabilities Act.
+
+Conclusion
+To contribute to the overall health and well-being for all patients but especially for marginalized populations, Long COVID care should be delivered in a holistic, trauma-informed approach. For more detailed information on assessment and management of specific Long COVID symptoms, readers can reference the Collaborative’s symptom-specific consensus guidance statements.
+
+Keywords: Long COVID, SARS-CoV-2, post-acute sequelae of SARS-CoV-2 infection (PASC), consensus guidance
+
+Introduction
+Long-COVID is an “infection-associated chronic condition (IACC) that occurs after SARS-CoV-2 infection and is present for at least 3 months as a continuous, relapsing and remitting, or progressive disease state that affects one or more organ systems.” In 2021, the American Academy of Physical Medicine and Rehabilitation (AAPM&R) established the Multi-Disciplinary Post-Acute Sequelae of SARS-CoV-2 infection (PASC) Collaborative (“the Collaborative”), in part, to generate guidance from established Long COVID clinics on the evaluation and management of Long COVID. Using a primarily symptom-based approach, the Collaborative published a series of eight Long COVID consensus guidance statements. However, Long COVID symptoms most often do not occur in isolation.
+
+This compendium aims to be an efficient, up-to-date clinical resource that assists clinicians in the evaluation and treatment of adults presenting with new or ongoing Long COVID symptoms. The primary intended audience includes physiatrists, primary care physicians, and other clinicians who are positioned to provide first-line assessment and management of Long COVID, potentially without immediate or nearby access to Long COVID subspecialty care. The compendium provides a holistic framework for assessment and management, as well as tailored considerations based on individual symptoms and potential resultant disability. It focuses on management strategies that the intended audience would be most comfortable with, rather than presenting an exhaustive list of all possibly effective treatments for Long COVID. Updates from recent evidence are incorporated throughout this statement. For more detailed information, readers are encouraged to consult the original symptom-specific consensus guidance statements. The compendium also includes sections on health equity, disability considerations, and emerging evidence.
+
+Given the limited scientific evidence on effective Long COVID assessment and management, fully evidence-based clinical guidelines are yet to be developed. This guidance statement reflects current practice based on the expertise of healthcare professionals who frequently treat Long COVID patients, in addition to emerging evidence when available. Recommendations should guide but not dictate clinical decisions and need to be adjusted based on each patient's specific situation, taking into account their preferences, comorbidities, and other relevant factors.
+
+Methodology
+The guidance in this statement was developed by the Collaborative using a previously described modified Delphi approach. The Collaborative is a multi-disciplinary group whose members include physiatrists, primary care physicians, pulmonologists, cardiologists, psychiatrists, neuropsychologists, neurologists, occupational therapists, physical therapists, speech and language pathologists, patients, and government representatives. Over forty Long COVID centers are represented in the Collaborative.
+
+This compendium statement uses the patient-created term, “Long COVID,” whereas the Collaborative’s prior statements used the term created by the scientific community, “PASC.” While this condition has been known by many names, the change in nomenclature to “Long COVID” has been made to reflect the widespread shift to using the patient-created term to honor and reflect the patient experience and the crucial role that patients have had in understanding and studying this condition.
+
+Long COVID and infection-associated chronic conditions (IACCs)
+The National Academies of Science, Engineering, and Medicine (NASEM) has defined Long COVID as an infection-associated chronic condition (IACC). Long COVID has significant clinical similarities with other IACCs such as myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS). These conditions have diverse clinical presentations yet share core symptom profiles, including post-exertional malaise (PEM) (also called post-exertional symptom exacerbation (PESE)), significant activity intolerance due to disproportionate fatigue, and neurocognitive symptoms. Additionally, patients often endure these debilitating, chronic, complex illnesses despite normal routine test results, and there is a notable female predominance among persons with both these conditions.
+
+The development of Long COVID guidance statements has been a collaborative effort significantly informed by the invaluable work of clinicians and researchers who specialize in ME/CFS and other IACCs. This collaboration has enriched the understanding and management strategies for Long COVID by leveraging extensive research and clinical insights into IACCs and the lived experience of IACC communities. Given the parallels between Long COVID and other IACCs, the Long COVID guidance statements may also be useful for the clinical management of other IACCs.
+
+Prevalence
+Prevalence estimates of Long COVID vary based on the study methodology and the definition used for Long COVID. In one of the largest studies to date, a meta-analysis of 54 studies that included 1.2 million people across the globe found that as of 2022, 6.2% of patients who had a symptomatic COVID-19 infection continued to experience Long COVID symptoms at least three months after acute infection. Similar prevalence rates have been found in more recent surveys of American, Scottish, and French populations. The incidence of new Long COVID cases seems to have decreased over time with newer variants, and people who are vaccinated likely have a lower risk of developing Long COVID than those who are not vaccinated. Nevertheless, even the most conservative prevalence estimates suggest a tremendous global health and economic burden due to Long COVID.
+
+Pathophysiology
+There are several possible mechanisms for the underlying pathophysiology of Long COVID, and different mechanisms likely account for the various phenotypes clinically observed. Suspected mechanisms include: persistent reservoirs of SARS-CoV-2 in tissues; immune dysregulation with or without reactivation of underlying pathogens (e.g., herpesviruses such as Epstein–Barr virus (EBV) and human herpesvirus 6 (HHV-6), among others); effects of SARS-CoV-2 on the microbiome; autoimmunity; microvascular blood clotting with endothelial dysfunction; and dysfunctional signaling in the brainstem. Specifically, fatigue and PEM/PESE are associated with exercise-induced myopathy, reduction in skeletal muscle mitochondrial enzyme activity, and increased accumulation of amyloid-containing deposits in skeletal muscle. Similarly, disruption of the blood-brain barrier has been particularly implicated as a possible contributor to cognitive impairment, and serotonin deficiency is suspected to contribute to neurocognitive symptoms. Serotonin may be reduced in the setting of Long COVID due to three mechanisms: diminished intestinal absorption of the serotonin precursor tryptophan, platelet hyperactivation and thrombocytopenia, and enhanced monoamine oxidase (MAO)-mediated serotonin turnover. Subsequent reduction in peripheral serotonin may impede the vagus nerve and impair hippocampal-dependent memory.
+
+Health Equity
+Higher prevalence of Long COVID has been associated with female sex, transgender identity, bisexual orientation, minoritized racial and ethnic group status, the presence of a disability, low socioeconomic status, high body mass index, tobacco use, and unvaccinated status. Unfortunately, Long COVID has primarily been studied in people from high and upper-middle income countries, and individuals with low income, as well as vulnerable groups with comorbid conditions, have not been equitably included in research efforts. Assumptions that equate infection-associated chronic conditions primarily with affluent White women can hinder the identification of Long COVID in marginalized populations.
+
+To contribute to the overall health and well-being for all patients but especially for marginalized populations, care should be delivered in a holistic, trauma-informed approach, and diagnostic and therapeutic methods should be tailored to meet the specific needs of vulnerable groups (e.g., pregnant persons, older adults, and those across the spectrum of sexual orientation and gender identity). When possible, equitable access to Long COVID care may also be facilitated by dedicating sufficient protected clinical time for patients to fully explain their symptoms without feeling pressured by system-imposed time pressures. Other equity-related treatment and referral recommendations include but are not limited to the following:
+
+- Foster a patient-centered and inclusive environment with active listening, validation, and use of gender-affirming language (e.g., respect names and pronouns).
+- Offer telehealth options to overcome geographical and accessibility barriers.
+- Intentionally direct patients to available medical and social/peer support services.
+- Provide access to rehabilitation care with patient-centered goals that are customized to the patient’s symptoms, comorbidities, and priorities.
+- Recognize Long COVID as a disability, with civil rights and legal protections.
+- Provide prescriptions for assistive devices and adaptive equipment, as indicated.
+- Sign documentation to support appropriate workplace and school accommodations, as indicated.
+- Complete disability forms with a thorough understanding of the full impact of Long COVID on the patient.
+- Recommend social welfare programs for patients who require direct assistance to support their well-being.
+- Partner with community health centers to provide outreach and education on Long COVID.
+
+Holistic Assessment
+Long COVID can present as a wide variety of symptoms, either in isolation or more often in clusters. When one or more of these symptoms occur, a holistic assessment should involve a traditional history, physical examination, and additional diagnostic testing, as indicated. The key assessment elements are important to diagnose and/or guide management of Long COVID. A basic laboratory assessment is recommended for all patients with possible Long COVID, and consideration for additional labs and diagnostic procedures is guided by patients’ specific symptoms.
+
+When a patient is assessed to likely be presenting with sequelae of Long COVID, the ICD-10 diagnosis code of “U09.9 Post COVID-19 Condition, unspecified” should be documented as a secondary code, and the primary ICD-10 code(s) should reflect the patient’s specific presenting symptom(s) and condition(s) (e.g., fatigue). Systematic inclusion of the U09.9 code facilitates population-level monitoring of Long COVID sequelae for public health, policy, and research efforts. Of note, the U09.9 diagnosis code is not appropriate to use in cases of acute COVID-19 infection.
+
+Holistic Management
+Current strategies for managing Long COVID focus primarily on symptom-based supportive care, emphasizing a few critical considerations pertinent to Long COVID scenarios. First, it is essential to validate the patient’s experience and provide reassurance that their symptoms are being taken seriously because many patients have had their symptoms dismissed by loved ones and clinicians. Second, physical activity recommendations must be carefully tailored to the patient’s current activity tolerance because overly intense activity can trigger post-exertional malaise and worsened muscle damage. Third, treatment recommendations should be delivered with humility because there are many persistent unknowns related to Long COVID, and the evidence base continues to evolve.
+
+Pharmacologic Management
+To date, there is limited data to guide medication management specifically in the context of Long COVID. As such, medication utilization in Long COVID generally follows standard practice regarding indications and dosing, with extra attention to prioritize: 1) patient preference via shared decision-making, and 2) cautious use of medications that may improve some Long COVID symptoms (e.g., cognitive/attention impairment) but may worsen other Long COVID symptoms (e.g., post-exertional malaise). Numerous ongoing and upcoming clinical trials are investigating additional pharmacologic treatments.
+
+Disability Considerations
+Approximately one quarter of people with Long COVID report significant activity limitations, and these limitations can interfere with a person’s ability to work. Returning to work with Long COVID can be especially challenging because symptoms can fluctuate in severity, are diverse in nature, can affect multiple functional domains (e.g., physical and cognitive), and can manifest as an “invisible disability” without obvious physical manifestations such that employers and colleagues may be skeptical about its presence or impact.
+
+Clinicians can assist patients in returning to work by first identifying patient-specific accommodations and resources that address their return-to-work challenges, and second, by providing supporting documentation. Lists of suggested accommodations are available, but accommodations need to be tailored to the patient’s impairments, work duties, and feasible workplace options (e.g. alternating workdays and progressive increase in working hours). Referral to an occupational therapist and/or vocational therapist may be especially helpful to assist patients with accommodations or retraining opportunities that allow continued employment. Given the fluctuating nature of symptoms and the fact that increasing activity may exacerbate symptoms, it is critical to follow up and modify accommodations as necessary.
+
+If, despite the above strategies, the patient is not able to work without exacerbating Long COVID symptoms or interfering with recovery, it may be appropriate for the patient to apply for disability. Long COVID is classified as a potential disability under the Americans with Disability Act, Sections 504 and 1557. Either short-term or long-term disability benefits may be considered depending on the patient’s enrollment status in a short-term disability insurance plan or on the anticipated duration of recovery (which may necessitate long-term disability). To qualify for Social Security Disability Insurance (SSDI) (which will only pay benefits for long-term disability), the individual must: 1) have worked in a job(s) covered by Social Security; and 2) have a medical condition that meets the SSDI definition of disability. Specifically, the disabling condition must have lasted, or is expected to last, at least one year or result in death. Contrary to common misconceptions, it is possible for a patient to work a small amount while receiving SSDI benefits, incentives exist for patients to work while receiving SSDI, and SSDI programs can actually facilitate a person’s eventual return to work (e.g. Trial Work Period and Ticket to Work programs).
+
+The clinician has a limited, yet crucial, role in a patient’s disability application process. Specifically, the clinician’s responsibility is to document: 1) the patient’s reported symptoms, 2) objective signs and any abnormal test results that support the severity of symptoms/impairment (e.g., pulmonary function test results for dyspnea or fatigue), and 3) impairments that are related to Long COVID and substantially limit work duties and major life activities. Routine use of validated patient-reported symptom measures can be helpful to document the persistence of symptoms over time. To the extent possible, documenting the expected timeline of recovery, or lack thereof, is also critical.
+
+Physical Fatigue
+Fatigue is perhaps the most common symptom among people presenting for assessment and management of Long COVID, and it frequently coexists with other Long COVID related cardiopulmonary, neurocognitive, and/or pain symptoms. In the evaluation of a patient with fatigue, it is especially important to determine whether post-exertional malaise (PEM, also described as post-exertional symptom exacerbation (PESE)) is present. PEM/PESE is “the worsening of symptoms following even minor physical or mental exertion, with symptoms typically worsening 12 to 48 hours after activity and lasting for days or even weeks,” and it is a common type of fatigue in Long COVID. When PEM/PESE is present, well-intentioned recommendations to exercise and push through fatigue can backfire and trigger exercise-induced muscle damage, so it is of utmost importance to emphasize energy conservation strategies and a slow, titrated return to activity at a submaximal level of exertion. Some patients with PEM/PESE also meet criteria for ME/CFS, which is based on positive signs and not a diagnosis of exclusion. In patients who describe their fatigue as lower activity tolerance due to difficulty during activity (either instead of or in addition to PEM/PESE), other treatable contributors to fatigue should be investigated. In addition to differential diagnoses, other causes to consider include cardiac, respiratory, endocrine, nutritional, adult-onset metabolic, and chronic infectious disorders.
+
+Breathing and Respiratory Sequelae
+The treatment of pulmonary disease in Long COVID is largely aligned with approaches used for interstitial lung disease, although the COVID-19 pandemic resulted in an opportunity to shift pulmonary rehabilitation more to the home-based setting. This shift has been reflected in healthcare policy updates. Pulmonary rehabilitation is now covered by Medicare and Medicaid (in some states), and pulmonary home therapy now receives better reimbursement than cardiac therapy through Medicare and some private insurers. Since publication of the respiratory guidance statement, the other evolution in management is the heightened awareness of how neurological, cardiovascular, and neuromuscular impairment may impact respiratory symptoms and lung function. such as expiratory muscle strengthening are particularly beneficial for patients with neurologic conditions like stroke or inflammatory demyelinating polyneuropathy. Furthermore, activity programs in pulmonary rehabilitation have evolved to better accommodate common coexisting Long COVID symptoms such as fatigue and cognitive impairment, and the treatment of breathing discomfort has evolved to more frequently address the interplay between respiratory symptoms and the common coexisting psychological symptoms of stress and anxiety.
+
+Cardiovascular Complications
+Since publication of the cardiovascular guidance statement, additional robust evidence has demonstrated that even after the acute phase of a COVID-19 infection, there is a persistently elevated risk for cardiovascular complications including ischemic heart disease, heart failure, dysrhythmias, inflammatory heart disease, and thromboembolic pulmonary and cerebrovascular disorders. This increased risk varies in effect size but remains true regardless of a person’s age, severity of acute COVID-19 infection, or presence (or absence) of preexisting cardiovascular risk factors. Long COVID patients with cardiac symptoms should generally be evaluated using the same clinical decision making that would be used outside the context of Long COVID. Most Long COVID patients with cardiac symptoms have minimal or no evidence of significant underlying cardiac or pulmonary impairment on work-up, although many demonstrate significantly impaired activity tolerance with low peak VkO2 on exercise stress testing, potentially related to autonomic, endothelial, mitochondrial, and/or muscular pathology. Although relatively rare, the possibility of myocarditis in a patient with persistent chest discomfort (even if previously healthy) deserves special attention in the setting of Long COVID because devastating consequences can occur if the diagnosis is missed. Revised guidance from 2022 from the American College of Cardiology states that patients with myocarditis should not return to exercise for three to six months after diagnosis, but athletes and other patients who do not have cardiopulmonary symptoms after COVID-19 infection can gradually return to play/activity without the need for cardiac testing first.
+
+Autonomic Dysfunction
+Autonomic dysfunction can manifest as postural orthostatic tachycardia syndrome (POTS), orthostatic hypotension (OH), inappropriate sinus tachycardia (IST), and neurocardiogenic syncope (NCS, also called vasovagal syncope). Since the publication of the autonomic dysfunction guidance statement, there has been some evolution in pharmacologic management. First-line medications still include beta blockers, midodrine, fludrocortisone, and pyridostigmine. Guanfacine has now been added to the list of second-line medications, which also includes clonidine, ivabradine, methylphenidate, modafinil, droxidopa, selective serotonin reuptake inhibitors (SSRIs), serotonin and norepinephrine reuptake inhibitors (SNRIs), and bupropion. Intravenous (IV) fluids can be used sparingly during a symptom flare. Immunotherapy (e.g., IV immunoglobulin (IVIG)) and oral or IV corticosteroids are sometimes being prescribed for severe, treatment-refractory symptoms, although there is currently a lack of quality evidence to support their effectiveness. Given the cost, prescribing burden, and potential adverse effects with these medications, it is recommended that their use is considered in the context of subspecialty care, when available.
+
+Cognitive Impairment
+Since publication of the cognitive symptoms guidance statement, new evidence has demonstrated that more severe global cognitive impairment has been associated with having had fewer than two COVID-19 vaccinations prior to acute COVID-19 infection. This finding may be helpful to encourage patients to stay up to date on recommended COVID-19 vaccinations and boosters. Assessment and management of cognitive symptoms in Long COVID are otherwise largely symptom-based and mirror approaches used outside the Long COVID setting. In the setting of Long COVID, it is also especially important to caution patients who are taking psychostimulants (e.g., to manage Long COVID related cognitive impairment or for a pre-existing condition such as attention-deficit hyperactivity disorder) that although these medications can be helpful to reduce cognitive symptoms, they can also predispose patients to more readily experience PEM/PESE if they are not mindful with how they budget their energy during the medication’s duration of action.
+
+Mental Health Symptoms
+There have been no significant changes in mental health-related evidence since the mental health guidance statement was published, so clinical practices remain the same. When using screening measures such as the Patient Health Questionnaire (PHQ-9) to evaluate mental health symptoms in the setting of Long COVID, it is particularly important to carefully consider high scores. Patients’ responses on the screening measure should be reviewed to determine whether the high score is related to anhedonia (suggesting true depressive symptoms) versus fatigue (which may be attributable to physical aspects of Long COVID). Two key aspects of addressing mental health symptoms in the setting of Long COVID are to: 1) validate that the patient’s symptoms are real, and 2) be aware that some mental health related medications can impact other Long COVID symptoms. Otherwise, mental health assessment and management is largely symptom-based and mirrors approaches used outside the Long COVID setting. Notably, clinicians should have a suicide plan in place as part of emergency clinic protocols.
+
+Neurologic Sequelae
+There have been no significant management-changing evidence updates related to neurological manifestations of Long COVID since the neurology guidance statement was published. Patients with Long COVID may have abnormal neurological examinations even if they had a mild acute course of COVID-19 infection. With regards to potential new treatment targets, elevated levels of circulating fibroblast growth factor 21 (FGF21) during acute COVID-19 infection has recently been associated with subsequent development of the neurologically-predominant and multidomain clusters of Long COVID. Additional research regarding immunomodulatory function may hold promise for future interventions for neurologic symptoms.
+
+Emerging Evidence
+Rigorous research regarding effective treatments for Long COVID is in the early stages, and numerous interventions are still being investigated due to hypothesized benefit based on theorized mechanisms and/or preliminary evidence. Pharmacologic therapies with theorized or perceived benefit, some of which are under active investigation, include metformin for fatigue, fluvoxamine for brain fog, and fisetin. Non-pharmacologic therapies under investigation with varying levels of supporting evidence thus far include enhanced external counterpulsation (EECP) especially for fatigue, cardiovascular impairment, and cognitive impairment; stellate ganglion block especially for smell/taste and autonomic symptoms; non-invasive vagus nerve stimulation especially for POTS (currently FDA-approved for chronic migraine and cluster headache); hyperbaric oxygen especially for fatigue, cognitive impairment, and neurologic symptoms; transcranial direct current stimulation (tDCS) for neuropsychiatric symptoms; web-based cognitive retraining for cognitive function; and resonant frequency breathing especially for mood. The safety and cost profiles for these therapies vary, and some are not currently widely available.
+
+Table 1: Common Long COVID symptoms and differential diagnoses to consider during assessment
+
+Row 1 of "Table 1: Common Long COVID symptoms and differential diagnoses to consider during assessment" below:
+Symptom Category: Physical fatigue
+Common Symptoms (Physical fatigue): • Severe exhaustion after minimal physical, cognitive, or emotional exertion • The sense of being weighed down all day • Post-exertional malaise (PEM) / Post-exertional symptom exacerbation (PESE): "Crashing" after having a "good day" of increased activity level, requiring several days of recovery. (51) • Persistent tiredness or exhaustion after sleep/ upon waking
+Differential Diagnoses to Consider (Physical fatigue): • MCAS (52) • Autoimmune/inflammatory disorders • Cardiopulmonary disorders • Sleep disorders/deprivation • Psychiatric disorders • Medication side effects • Malignancies
+
+Row 2 of "Table 1: Common Long COVID symptoms and differential diagnoses to consider during assessment" below:
+Symptom Category: Breathing, respiratory
+Common Symptoms (Breathing, respiratory): • Dyspnea at rest or disproportionate dyspnea with activity • Chest discomfort: pain, tightness, constriction, and/or pressure • Inability to take a full deep breath • New or progressive cough or chest congestion
+Differential Diagnoses to Consider (Breathing, respiratory): • Non-pulmonary contributions (e.g., neurologic, cardiovascular, neuromuscular) • Other pulmonary and airway conditions (e.g., asthma)
+
+Row 3 of "Table 1: Common Long COVID symptoms and differential diagnoses to consider during assessment" below:
+Symptom Category: Cardiovascular
+Common Symptoms (Cardiovascular): • Chest pain, palpitations, or racing heart • Dyspnea, exercise intolerance, fatigue, dizziness • Autonomic dysfunction • Leg swelling, orthopnea
+Differential Diagnoses to Consider (Cardiovascular): • Complex arrhythmias • Structural heart disease and/or ventricular dysfunction • Coronary heart disease • Myocarditis / pericarditis
+
+Row 4 of "Table 1: Common Long COVID symptoms and differential diagnoses to consider during assessment" below:
+Symptom Category: Autonomic
+Common Symptoms (Autonomic): • Dizziness or lightheadedness with postural changes • Pre-syncopal or syncopal episodes • Any other autonomic symptoms (e.g., racing heart, temperature intolerance, changes to digestion, perspiration)
+Differential Diagnoses to Consider (Autonomic): • Vertigo or other vestibular pathology • Sleep disorders/deprivation • MCAS • Cardiac abnormalities • Small fiber neuropathy • Hypermobility spectrum disorders
+
+Row 5 of "Table 1: Common Long COVID symptoms and differential diagnoses to consider during assessment" below:
+Symptom Category: Cognitive impairment
+Common Symptoms (Cognitive impairment): • Executive function, processing speed, memory, attention, word-finding difficulty (a.k.a., brain fog) • Mental fatigue: Decrease in cognitive ability when participating in tasks requiring sustained attention and executive function • Cognitive symptoms independent of deficits from primary sleep dysfunction (e.g., daytime sleepiness) or lack of motivation
+Differential Diagnoses to Consider (Cognitive impairment): • B12 deficiency • Hypothyroidism • Mood disorders • Sleep disorders/deprivation • ADHD • Underlying infectious etiology (e.g., latent syphilis)
+
+Row 6 of "Table 1: Common Long COVID symptoms and differential diagnoses to consider during assessment" below:
+Symptom Category: Mental health
+Common Symptoms (Mental health): • Depression, especially anhedonia • Anxiety, including panic • PTSD, which can manifest as grief, survivor's remorse, or suicidal ideation • Psychosis (far less common)
+Differential Diagnoses to Consider (Mental health): • Cardiorespiratory disorders • Cognitive or sleep disorders • Primary fatigue or dysautonomia • Primary or other secondary causes of mental health symptoms
+
+Row 7 of "Table 1: Common Long COVID symptoms and differential diagnoses to consider during assessment" below:
+Symptom Category: Neurologic
+Common Symptoms (Neurologic): • Neuropathic pain or other sensation (e.g., internal feeling of vibration, change in pain/temperature sensation) • Muscle or joint pain • Headaches • Sleep dysfunction • Focal or diffuse weakness, tremors, or gait changes • Changes in hearing, vision, taste, smell, swallowing (i.e., cranial nerve abnormalities)
+Differential Diagnoses to Consider (Neurologic): • Small fiber neuropathy • Central nervous system lesions (e.g., vasculitis, stroke, demyelinating or neurodegenerative conditions) • Peripheral nervous system lesions (e.g., CTS, GBS) • Vitamin deficiency (e.g., B1, B6, B12) • Paraneoplastic conditions (e.g., NMDA receptor encephalitis) • Sleep disorders/deprivation
+
+Footnotes for Table 1: Common Long COVID symptoms and differential diagnoses to consider during assessment
+
+Other symptoms not in this table can also be associated with Long COVID, including vision changes and eye redness; tinnitus; smell and taste changes; abdominal pain, bowel habit changes, and heartburn; rashes and hair loss; symptoms of mast cell dysfunction such as with MCAS (e.g., episodic itching, flushing, hives, rhinitis, tachycardia, dyspnea, abdominal pain, diarrhea, and/or headache); (52) and changes in menstrual cycles and fertility. (53)
+
+Abbreviations: PEM (post-exertional malaise), PESE (post-exertional symptom exacerbation), MCAS (mast cell activation syndrome), ADHD (attention-deficit/hyperactivity disorder), PTSD (post-traumatic stress disorder), OCD (obsessive-compulsive disorder), AIDP (acute inflammatory demyelinating polyneuropathy), GBS (Guillain-Barré Syndrome), NMDA (N-methyl-D-aspartate).
+
+Table 2: Holistic assessment of persons presenting with symptoms suggestive of Long COVID
+
+Row 1 of "Table 2: Holistic assessment of persons presenting with symptoms suggestive of Long COVID" below:
+Assessment Element: Symptom identification
+Assessment Details (Symptom identification): • Common symptoms: ○ Exaggerated fatigue and diminished energy windows ○ Cognitive impairment (e.g., brain fog) ○ Symptom flare 12-48 hours after minimal activity (e.g., PEM/PESE) ○ Dyspnea, racing heart, dizziness upon standing ○ Pain/myalgias ○ Smell and taste alterations • See Table 1 for other possible symptoms
+
+Row 2 of "Table 2: Holistic assessment of persons presenting with symptoms suggestive of Long COVID" below:
+Assessment Element: Timeline of symptoms
+Assessment Details (Timeline of symptoms): • Lasting at least 3 months (continuously or relapsing-remitting) (1) • New or worsened after suspected SARS-CoV-2 infection (supportive but not diagnostic)
+
+Row 3 of "Table 2: Holistic assessment of persons presenting with symptoms suggestive of Long COVID" below:
+Assessment Element: Symptom modifiers and triggers
+Assessment Details (Symptom modifiers and triggers): • Physical and cognitive activities • Social and emotional stressors • Recurrent SARS-CoV-2 infections, vaccines, boosters
+
+Row 4 of "Table 2: Holistic assessment of persons presenting with symptoms suggestive of Long COVID" below:
+Assessment Element: Impact on daily functioning and activity levels
+Assessment Details (Impact on daily functioning and activity levels): • ADLs, IADLs • Work/school, family, social • Physical and cognitive activity tolerance • Exercise capacity
+
+Row 5 of "Table 2: Holistic assessment of persons presenting with symptoms suggestive of Long COVID" below:
+Assessment Element: Potential competing/coexisting diagnoses
+Assessment Details (Potential competing/coexisting diagnoses): • Pre-existing conditions, symptoms • Other new conditions, relevant hospitalizations • Medication/supplement side effects • Interim life changes
+
+Row 6 of "Table 2: Holistic assessment of persons presenting with symptoms suggestive of Long COVID" below:
+Assessment Element: Physical exam
+Assessment Details (Physical exam): • Symptom-specific focused exam • 10-minute stand test: ○ Record HR and BP after supine for 5 minutes and then after standing for 3, 5, 7, and 10 minutes ○ Note signs and symptoms (e.g., acrocyanosis, flushing, sweating)
+
+Footnotes for Table 2: Holistic assessment of persons presenting with symptoms suggestive of Long COVID
+
+Table 1 of the autonomic dysfunction consensus guidance statement outlines diagnostic criteria for POTS, NCS, OH, and IST that incorporate results of the 10-minute stand test. (6)
+
+Abbreviations: PEM (post-exertional malaise), PESE (post-exertional symptom exacerbation), ADLs (activities of daily living), IADLs (instrumental activities of daily living), HR (heart rate), BP (blood pressure), POTS (postural orthostatic tachycardia syndrome), NCS (neurocardiogenic syncope), OH (orthostatic hypotension), IST (inappropriate sinus tachycardia).
+
+Table 3: Common labs and procedures relevant for assessment of persons with possible Long COVID
+
+Row 1 of "Table 3: Common labs and procedures relevant for assessment of persons with possible Long COVID" below:
+Symptom Category: Holistic assessment (Recommended for all patients)
+Labs and Procedures (Holistic assessment): • To rule out other (potentially treatable) conditions† ○ CBC with diff; CMP; TSH ○ Also consider: ESR, CRP, CK; vitamins D, B1, and B12
+
+Row 2 of "Table 3: Common labs and procedures relevant for assessment of persons with possible Long COVID" below:
+Symptom Category: Physical fatigue
+Labs and Procedures (Physical fatigue): • To identify treatable contributors, consider: ○ Ferritin, iron profile ○ Testosterone, estradiol (54)
+
+Row 3 of "Table 3: Common labs and procedures relevant for assessment of persons with possible Long COVID" below:
+Symptom Category: Breathing and respiratory sequelae
+Labs and Procedures (Breathing and respiratory sequelae): • If not already performed, consider: ○ Chest XR • If breathing discomfort not improving ≥ 8 weeks after acute COVID-19 infection, or if new/worsened breathing discomfort later in Long COVID course, consider: ○ PFTs (FEV1/VC and DLCO) ○ EKG, echocardiogram • If pulmonary exam, chest XR, or PFT abnormalities, consider: ○ Non-contrast chest CT
+
+Row 4 of "Table 3: Common labs and procedures relevant for assessment of persons with possible Long COVID" below:
+Symptom Category: Cardiovascular complications
+Labs and Procedures (Cardiovascular complications): • If chronic chest pain present and concern for myocarditis, consider: ○ Troponin (preferably high-sensitivity) • If concern for decompensated heart failure, consider: ○ BNP (preferably NT-proBNP) • If concern for PE, consider: ○ D-dimer • If not already performed, consider: ○ EKG, chest XR ○ Cardiac MRI (for myocarditis, if chronic chest pain and positive troponin) ○ Echocardiogram (for heart failure/valve abnormalities) ○ CT PE protocol (for PE) • If concern for arrhythmia, consider: ○ Holter monitor for symptoms nearly daily ○ 14-day monitor for symptoms every few days ○ Implantable event monitor for infrequent symptoms • If initial work-up is unrevealing and/or to guide activity plan, consider: ○ Cardiopulmonary stress test
+
+Row 5 of "Table 3: Common labs and procedures relevant for assessment of persons with possible Long COVID" below:
+Symptom Category: Autonomic dysfunction
+Labs and Procedures (Autonomic dysfunction): • If concerned for PE, consider D-dimer • To identify treatable contributors, consider if relevant:† ○ Autoimmune: ANA, RF, Sjogren's Syndrome panel, antiphospholipid antibodies ○ Iron deficiency: Ferritin, iron profile • If recurrent palpitations, tachycardia, or syncope, consider basic cardiac work-up (See Table 9 [Cardiac table]) • If negative 10-minute stand test, consider tilt table test ○ Tilt table test is not required to diagnose or treat autonomic dysfunction and can cause a symptom flare
+
+Row 6 of "Table 3: Common labs and procedures relevant for assessment of persons with possible Long COVID" below:
+Symptom Category: Cognitive impairment
+Labs and Procedures (Cognitive impairment): • To rule out other conditions, consider: ○ Thiamine, folate, homocysteine, magnesium, RPR, HIV • Neuroimaging based on history, exam, and lab findings
+
+Row 7 of "Table 3: Common labs and procedures relevant for assessment of persons with possible Long COVID" below:
+Symptom Category: Mental health
+Labs and Procedures (Mental health): (No additional labs or procedures)
+
+Row 8 of "Table 3: Common labs and procedures relevant for assessment of persons with possible Long COVID" below:
+Symptom Category: Neurologic sequelae
+Labs and Procedures (Neurologic sequelae): • To rule out other conditions, consider: ○ HgbA1c, vitamin B6, magnesium, RPR, HIV • Consider neuroimaging based on history, exam, and lab findings ○ Consider consultation with a neurologist to guide imaging and further testing
+
+
+Footnotes for Table 3: Common labs and procedures relevant for assessment of persons with possible Long COVID
+
+At this time, no single laboratory finding is definitively diagnostic for confirming or ruling out the diagnosis of Long COVID. However, in some research studies, Long COVID has been associated with low morning cortisol and serotonin levels, EBV reactivation, and high IL-6, TNF-α, and D-dimer levels. Some of these labs are predominantly used in research settings and are not readily available for clinical use. Additionally, sensitivity and specificity values have not been determined, and treatments based on these laboratory findings have not been studied.
+
+Laboratory assessment for MCAS is not necessary prior to an empiric trial of H1 and H2 antihistamines and can be normal even when mast cell dysfunction is present. When laboratory workup is felt to be indicated, it includes: 1) serum tryptase (baseline level several days between any episodes and another level within 4 hours after the start of an episode), and 2) 24-hour urine N-methylhistamine, 11β-Prostaglandin F2α, and/or Leukotriene E4 (collection beginning immediately after the start of an episode).(See https://www.aaaai.org/conditions-treatments/related-conditions/mcas).
+
+Elevated hs-CRP is associated with chronic inflammation and potentially increased risk of cardiovascular complications in Long COVID. (55,56) Checking hs-CRP can be considered in patients who have a history of severe acute COVID-19 infection, other cardiovascular risk factors, and/or persistent cardiovascular symptoms. However, a patient's hs-CRP level, by itself, would not necessarily change cardiovascular management.
+
+Abbreviations: CBC with diff (complete blood count with differential), CMP (complete metabolic panel), TSH (thyroid stimulating hormone), ESR (erythrocyte sedimentation rate), CRP (C-reactive protein), CK (creatine kinase), XR (radiograph), PFTs (pulmonary function tests), FEV1 (forced expiratory volume in one second), VC (vital capacity), DLCO (diffusion capacity of the lungs for carbon monoxide), EKG (electrocardiogram), CT (computed tomography), BNP (B-type natriuretic peptide), NT-proBNP (N-terminal pro-BNP), MRI (magnetic resonance image), PE (pulmonary embolism), ANA (antinuclear antibody), RF (rheumatoid factor), RPR (rapid plasma reagin), HIV (human immunodeficiency virus), HgbA1c (hemoglobin A1c), AM (morning), EBV Ab (Epstein-Barr Virus antibody), TNF (tumor necrosis factor), MCAS (mast cell activation syndrome), hs-CRP (high-sensitivity C-reactive Protein).
+
+Table 4: Holistic management of persons with suspected Long COVID
+
+Row 1 of "Table 4: Holistic management of persons with suspected Long COVID" below:
+Management Element: Validate symptoms. Counsel on prognosis
+Management Details (Validate symptoms. Counsel on prognosis): • "Long COVID is a real condition and fits with your symptoms. Many people experience it – you are not alone." • "Every person is different. Many patients, though not all, improve or fully recover over several months or even years." • "Although we don't have a cure right now, many patients can manage their symptoms and improve their quality of life with the treatment strategies we do have." • "Researchers are learning more about Long COVID every day, and we can work together to make sure you have access to any new treatments that are discovered and are right for you."
+
+Row 2 of "Table 4: Holistic management of persons with suspected Long COVID" below:
+Management Element: Manage symptom triggers
+Management Details (Manage symptom triggers): • Pacing: When returning to physical and cognitive activities that provoke symptoms, "start low and go slow" (57) (See Figure 1 for return to activity guidance) • Avoid pushing activities to the point of symptom exacerbation ○ "Respect your symptoms." ○ "Listen to your body." • Identify appropriate workplace and school accommodations (See Disability section)
+
+Row 3 of "Table 4: Holistic management of persons with suspected Long COVID" below:
+Management Element: Address modifiable risk factors
+Management Details (Address modifiable risk factors): • Support a healthy lifestyle with education, counseling, and referrals to community and social support resources (58) ○ Whole-food plant-predominant nutrition (2, 5, 59) ○ Stress management (e.g., consider mindfulness, meditation) ○ Sleep optimization (8) • Address obstructive sleep apnea (OSA) or other sleep disorders, if present • Sleep hygiene • CBT-I, if available† • Over-the-counter sleep aids • Limited or short course of prescription medication ○ Avoidance of risky alcohol/substance use ○ Positive social connections • Including in-person or online Long COVID peer support ○ Regular physical activity as tolerated, without triggering PEM/PESE (See Figure 1 for return to activity guidance) • Use caution if considering a restrictive diet† ○ If patient is interested, pursue under nutritionist/dietician guidance • Stay up-to-date on vaccines§ • Treat coexisting conditions
+
+Row 4 of "Table 4: Holistic management of persons with suspected Long COVID" below:
+Management Element: Optimize medications
+Management Details (Optimize medications): • Reduce polypharmacy ○ Previously tolerated medications may flare symptoms • Consider medication trials based on the patient's full symptom constellation (Table 5)
+
+Row 5 of "Table 4: Holistic management of persons with suspected Long COVID" below:
+Management Element: Follow-up
+Management Details (Follow-up): • If symptoms are significantly impacting daily life, to ensure response to treatment • If titrating medication
+
+Row 6 of "Table 4: Holistic management of persons with suspected Long COVID" below:
+Management Element: Consider referral and/or collaborative treatment
+Management Details (Consider referral and/or collaborative treatment): • To allied health services (e.g., PT, OT, SLP, social work, psychology), if symptoms are significantly impacting daily function or activity levels ○ Preferable for care team members to have experience treating Long COVID • To specialty medical care if: ○ Diagnosis is uncertain ○ Symptoms are severe or new/persistent/worsening despite first-line treatment ○ Symptoms are out of scope of the treating clinician
+
+Footnotes for Table 4: Holistic management of persons with suspected Long COVID
+
+The Veterans Affairs Insomnia Coach (https://mobile.va.gov/app/insomnia-coach) is freely available from commercial app stores.
+
+Some patients with gastrointestinal and mast cell related symptoms have reported benefit from low-histamine, gluten-free, dairy-free, and low Fermentable Oligosaccharides, Disaccharides, Monosaccharides and Polyols (FODMAP) diets. However, there is a lack of strong evidence of benefit from restrictive diets, and these can cause harm in some cases (e.g., vitamin or nutrient deficiencies).
+
+COVID-19 vaccination is not contraindicated except in cases of preexisting allergy or previous serious adverse reaction.
+
+Abbreviations: CBT-I (cognitive behavioral therapy for insomnia), PEM (post-exertional malaise), PESE (post-exertional symptom exacerbation), PT (physical therapy), OT (occupational therapy), SLP (speech-language pathology).
+
+Table 5: Commonly used medications for Long COVID
+
+Row 1 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: Propranolol
+Dose (Propranolol): 5-10 mg BID to QID
+Indications (Propranolol): IST, POTS, OH, NCS, episodic hypertension
+Side Effects and Other Considerations (Propranolol): Bradycardia, hypotension, fatigue, depression, asthma exacerbation
+
+Row 2 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: Midodrine
+Dose (Midodrine): 2.5-10 mg TID to QID
+Indications (Midodrine): POTS, OH, NCS, hypotension
+Side Effects and Other Considerations (Midodrine): Supine hypertension, scalp paresthesias, piloerection
+
+Row 3 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: Fludrocortisone
+Dose (Fludrocortisone): Start 0.05 mg QD for 1 week, then increase by 0.05 mg QD every week to a max dose of 0.2 mg QD
+Indications (Fludrocortisone): POTS, OH, NCS, hypotension
+Side Effects and Other Considerations (Fludrocortisone): Hypokalemia, edema, headache
+
+Row 4 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: Pyridostigmine
+Dose (Pyridostigmine): 30-60 mg BID to TID
+Indications (Pyridostigmine): POTS, OH, AN, GI dysmotility with constipation
+Side Effects and Other Considerations (Pyridostigmine): Diarrhea, muscle twitching
+
+Row 5 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: H1 and H2 antihistamines in combination (e.g., cetirizine and famotidine)
+Dose (H1 and H2 antihistamines in combination): Sample regimen: Cetirizine 10 mg daily or Levocetirizine 5mg daily; Famotidine 20 mg daily or bid
+Indications (H1 and H2 antihistamines in combination): MCAS (e.g., itching, flushing, hives, rhinitis, episodic tachycardia, abdominal pain, diarrhea, headache, dyspnea)
+Side Effects and Other Considerations (H1 and H2 antihistamines in combination): Cetirizine: Fatigue, headache, abdominal pain, drowsiness, dizziness, dry mucous membranes. Famotidine: Headache, dizziness, constipation, diarrhea.
+
+Row 6 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: Low-dose naltrexone (60-62)
+Dose (Low-dose naltrexone): Sample regimen: Start 1 mg QD for 4 weeks, then increase by 1 mg QD every 4 weeks to a max dose of 4.5 mg QD being studied
+Indications (Low-dose naltrexone): Fatigue, PEM/PESE, headache
+Side Effects and Other Considerations (Low-dose naltrexone): Often requires compounding. Diarrhea & nausea
+
+Row 7 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: Methylphenidate
+Dose (Methylphenidate): 5-10 mg BID to TID
+Indications (Methylphenidate): POTS, OH, NCS, brain fog, fatigue
+Side Effects and Other Considerations (Methylphenidate): Headache, tachycardia, insomnia, PEM/PESE exacerbation if over-exerts during drug's duration of action
+
+Row 8 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: Amantadine
+Dose (Amantadine): 100 mg QD to BID
+Indications (Amantadine): Fatigue, brain fog
+Side Effects and Other Considerations (Amantadine): Contraindicated for ESRD. Abrupt discontinuation can cause withdrawal symptoms. Dry mouth, OH, neuropsychiatric symptoms, livedo reticularis, nausea, abdominal pain
+
+Row 9 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: Duloxetine
+Dose (Duloxetine): 20-60 mg QD
+Indications (Duloxetine): Depression (especially if coexisting neuropathic pain), OH, NCS
+Side Effects and Other Considerations (Duloxetine): Hypertension, nausea, increased perspiration
+
+Row 10 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: Fluoxetine
+Dose (Fluoxetine): 10-40 mg QD
+Indications (Fluoxetine): Anxiety (especially if predominant symptom), depression, NCS
+Side Effects and Other Considerations (Fluoxetine): Anxiety, insomnia, nausea
+
+Row 11 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: Bupropion
+Dose (Bupropion): 75-150 mg QD to BID
+Indications (Bupropion): Depression (especially if neurovegetative symptoms), fatigue, hypersomnolence, POTS, NCS
+Side Effects and Other Considerations (Bupropion): Anxiety, insomnia, nausea, decreased seizure threshold
+
+Row 12 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: Gabapentin
+Dose (Gabapentin): 100-300 mg QHS to TID, then increase 100-300 mg every week
+Indications (Gabapentin): Neuropathic pain, poor sleep quality
+Side Effects and Other Considerations (Gabapentin): Needs renal dosing. Brain fog, sleepiness, dizziness, nausea
+
+Row 13 of "Table 5: Commonly used medications for Long COVID" below:
+Medication: COVID-19 vaccine (63-67)
+Dose (COVID-19 vaccine): Annual booster
+Indications (COVID-19 vaccine): Lower risk of subsequent COVID infection sequelae and reduce the severity and duration of PASC
+Side Effects and Other Considerations (COVID-19 vaccine): Vaccine reaction or worsening of symptoms
+
+Footnotes for Table 5: Commonly used medications for Long COVID
+
+Supplements including branched-chain amino acids, omega-3 fatty acids, vitamin B12, vitamin B2 (riboflavin), vitamin C, vitamin D, magnesium, L-Carnitine, Coenzyme Q10, ginseng, Echinacea, and many others have been suggested to alleviate chronic fatigue and pain due to other causes such as multiple sclerosis, fibromyalgia, and myalgic encephalomyelitis / chronic fatigue syndrome (ME/CFS). (68-70)
+
+Given the current state of evidence, medication utilization in Long COVID generally follows standard practice regarding indications and dosing, with extra attention to: 1) starting doses low and ramping up slowly, 2) prioritizing patient preference, 3) using caution with medications that may worsen some Long COVID symptoms while improving others, and 4) tapering off if no noticeable benefit.
+
+The National Institutes of Health (NIH) Researching COVID to Enhance Recovery (RECOVER) initiative is investigating the effectiveness of the following medications for Long COVID: nirmatrelvir-ritonavir (Paxlovid) at 300 mg nirmatrelvir (two 150 mg tabs) + 100 mg ritonavir (one 100 mg tab) BID for 15-25 days; ivabradine and gamunek-C intravenous immunoglobulin (IVIG) for POTS; modafinil and solriamfetol for hypersomnia; and melatonin for complex sleep disturbances.
+
+Abbreviations: PEM (post-exertional malaise), PESE (post-exertional symptom exacerbation), IST (inappropriate sinus tachycardia), POTS (postural orthostatic tachycardia syndrome), OH (orthostatic hypotension), NCS (neurocardiogenic syncope), AN (autonomic neuropathy), QD (once daily), BID (twice daily), TID (three times daily), QID (four times daily), QHS (nightly).
+
+Table 6: The clinician's role in facilitating return to work for a person with Long COVID
+
+Row 1 of "Table 6: The clinician's role in facilitating return to work for a person with Long COVID" below:
+Task: Evaluation
+Task Details (Evaluation): • Ask about work requirements ○ Evaluate function
+
+Row 2 of "Table 6: The clinician's role in facilitating return to work for a person with Long COVID" below:
+Task: Assessment
+Task Details (Assessment): • Identify work limitations • Identify appropriate accommodations, which may include: ○ Remote work ○ Reduced hours ○ Flexible work schedule (e.g., alternating workdays) ○ Frequent/periodic rest breaks ○ Permission for self-pacing ○ Gradual return to work (e.g., progressively increased hours) ○ Limiting lifting, standing, and/or walking ○ Limiting tasks that divide attention ○ Limiting overstimulating environments ○ Quiet work environment ○ Seated or reclining workstation ○ Ability to have fluids at the workstation ○ Accessible parking
+
+Row 3 of "Table 6: The clinician's role in facilitating return to work for a person with Long COVID" below:
+Task: Action
+Task Details (Action): • Establish expectations with the patient • Complete relevant paperwork and document: ○ Diagnosis/disability (Use ICD-10 code U09.9) ○ Major life activities affected ○ Work activities affected ○ Recommended accommodations ○ Follow-up plan • Re-evaluate and modify accordingly
+
+Table 7: Symptom-specific assessment and management considerations for physical fatigue in Long COVID
+
+Row 1 of "Table 7: Symptom-specific assessment and management considerations for physical fatigue in Long COVID" below:
+Assessment Element: History
+Assessment Details (History): • Differentiate between: ○ Fatigue ○ PEM/PESE† (i.e., exaggerated worsening of symptoms after exertion) ○ Exercise intolerance† (i.e., difficulty beginning or continuing physical activity) • If PEM/PESE present, inquire about other ME/CFS symptoms† (15,51) • If suspicious for MCAS, inquire about other symptoms of mastocytosis (73) • Use a validated tool to assess and trend severity (e.g., Fatigue Severity Scale) (74) • Assess for sleep, mood, diet, and/or medication considerations as modifiable contributors to fatigue
+
+Row 2 of "Table 7: Symptom-specific assessment and management considerations for physical fatigue in Long COVID" below:
+Assessment Element: Physical exam
+Assessment Details (Physical exam): • Is the patient: ○ Seated and conversing? Lying down? ○ Participating in the interview independently or with assistance? ○ Tolerating the interview/encounter? • If concern for autonomic dysfunction, see Table 10 [Autonomic Table]
+
+Row 3 of "Table 7: Symptom-specific assessment and management considerations for physical fatigue in Long COVID" below:
+Treatment Element: Non-pharmacologic management
+Treatment Details (Non-pharmacologic management): • Discuss energy conservation strategies: ○ "The 4 P's" for essential tasks: Pacing, Planning, Prioritizing, Positioning ○ "The 3 D's" for non-essential tasks: Delete, Defer, Delegate • Treat coexisting orthostatic intolerance, if present (See Table 10 [Autonomic Table]) ○ Orthostatic stress can worsen fatigue • Begin an individualized and structured, titrated return to activity program (See Figure 1) • Consider cognitive behavioral therapy (to address cognitive and behavioral factors that can perpetuate fatigue) (75)
+
+Row 4 of "Table 7: Symptom-specific assessment and management considerations for physical fatigue in Long COVID" below:
+Treatment Element: Pharmacologic management
+Treatment Details (Pharmacologic management): • Consider weaning/de-prescribing sedating and anticholinergic medications • See Table 5 for commonly used medications for Long COVID
+
+Row 5 of "Table 7: Symptom-specific assessment and management considerations for physical fatigue in Long COVID" below:
+Treatment Element: Referral, as needed
+Treatment Details (Referral, as needed): • To immunology, if concern for MCAS and history is suggestive of anaphylaxis
+
+Footnotes for Table 7: Symptom-specific assessment and management considerations for physical fatigue in Long COVID
+
+Post-exertional malaise (PEM) / post-exertional symptom exacerbation (PESE) is "the worsening of symptoms following even minor physical or mental exertion, with symptoms typically worsening 12 to 48 hours after activity and lasting for days or even weeks." (51) It is a diagnostic criterion for ME/CFS. (15)
+
+Exercise intolerance can be caused by cardiovascular, pulmonary, myopathic, motor neuron, and other conditions.
+
+ME/CFS is characterized by the reduced ability to "engage in pre-illness levels of activity," PEM/PESE, unrefreshing sleep, and cognitive impairment and/or orthostatic intolerance. Other symptoms may be present, as well. (15, 51, 76)
+
+Fatigue can be present even if a patient appears to tolerate the encounter without difficulty, for instance due to relapsing/remitting symptoms or onset of PEM/PESE after the encounter.
+
+Abbreviations: PEM (post-exertional malaise), PESE (post-exertional symptom exacerbation), ME/CFS (myalgic encephalomyelitis / chronic fatigue syndrome), MCAS (mast cell activation syndrome).
+
+Table 8: Symptom-specific assessment and management considerations for breathing discomfort and respiratory sequelae in patients with Long COVID
+
+Row 1 of "Table 8: Symptom-specific assessment and management considerations for breathing discomfort and respiratory sequelae in patients with Long COVID" below:
+Assessment Element: History
+Assessment Details (History): • Pulmonary history of acute COVID-19 course: ○ Desaturation? Supplemental O₂? ICU? Mechanical ventilation? • Document character and severity of breathing discomfort ○ At rest or with exertion? Relieved with rest? Chest tightness or air hunger? • Assess for non-pulmonary contributors that could also limit activity (e.g., fatigue, PEM/PESE, autonomic, neurologic, cardiovascular, neuromuscular)
+
+Row 2 of "Table 8: Symptom-specific assessment and management considerations for breathing discomfort and respiratory sequelae in patients with Long COVID" below:
+Assessment Element: Physical exam
+Assessment Details (Physical exam): • Vital signs: ○ HR, RR, BP, POx (on room air, at rest, and while walking at a pace/duration tolerated by the patient) • Cardiopulmonary exam: ○ Assess for crackles, use of accessory breathing muscles, peripheral edema, acrocyanosis ○ Assess for JVD, split P2, peripheral edema ○ Peripheral vascular perfusion and skin integrity
+
+Row 3 of "Table 8: Symptom-specific assessment and management considerations for breathing discomfort and respiratory sequelae in patients with Long COVID" below:
+Treatment Element: Non-pharmacologic management
+Treatment Details (Non-pharmacologic management): • Pulmonary rehabilitation (PR) (80-82) ○ Covered by Medicare and many other insurance plans for COVID-19 related pulmonary disorders ○ At-home PR programs are covered by some insurance plans ○ Use caution if coexisting PEM/PESE, and modify program accordingly • If symptoms are improving or supervised rehabilitation is not available: ○ Breathing techniques and self-monitored paced physical activity (See Figure 1) ○ Consider self-directed educational resources or online programs ○ For patients with phone-based or wearable activity trackers, use data to track progress of therapy • If chronic productive cough, difficulty clearing airway secretions, or bronchiectasis: ○ Airway clearance techniques, and consider prescribing an airway clearing device (83) • If requires home oxygen (to maximize mobility, quality of life, and participation in rehabilitation): ○ Portable oxygen device, when possible • Consider a home peak flow meter to track progress and quantify the impact of respiratory infection or another setback
+
+Row 4 of "Table 8: Symptom-specific assessment and management considerations for breathing discomfort and respiratory sequelae in patients with Long COVID" below:
+Treatment Element: Pharmacologic management
+Treatment Details (Pharmacologic management): • If evidence of impaired pulmonary function, consider oral corticosteroids, inhaled bronchodilators, and inhaled corticosteroids ○ Not for isolated breathing discomfort
+
+Row 5 of "Table 8: Symptom-specific assessment and management considerations for breathing discomfort and respiratory sequelae in patients with Long COVID" below:
+Treatment Element: Referral, as needed
+Treatment Details (Referral, as needed): • To pulmonary medicine, if: ○ Breathing discomfort is progressing or limiting activity ○ Productive cough and/or difficulty clearing airway, persistent and unexplained pulmonary exam abnormalities, new or worsened O₂ desaturation with activity, or new or worsened PFT or imaging abnormalities • To pulmonary rehabilitation (PR), if: ○ Recent diagnosis of a qualifying condition (i.e., history of Long COVID with abnormal PFTs or exercise test, interstitial disease on imaging, functional limitations and associated dyspnea from oxygen desaturation with exertion or at rest) ○ If pulmonary rehabilitation is unavailable, consider PT with supplemental oxygen for conditioning and OT for ADL training • For patients with mild limitations such that insurance may not cover PR, PT, or OT, consider a gentle return-to-activity program in a gym with a certified athletic trainer (See Figure 1 for return to activity guidance) • To otolaryngology, if abnormal upper airway, breath sounds or voice changes (e.g., stridor, hoarseness, unexplained episodic breathing difficulty, especially if history of endotracheal intubation is recent or tracheostomy)
+
+Footnotes for Table 8: Symptom-specific assessment and management considerations for breathing discomfort and respiratory sequelae in patients with Long COVID
+
+Abbreviations: O₂ (oxygen), ICU (intensive care unit), PEM (post-exertional malaise), PESE (post-exertional symptom exacerbation), HR (heart rate), RR (respiratory rate), BP (blood pressure), POx (pulse oximetry), JVD (jugular venous distension), PR (pulmonary rehabilitation), PFT (pulmonary function test), PT (physical therapy), OT (occupational therapy), ADL (activities of daily living).
+
+Table 9: Symptom-specific assessment and management considerations for cardiovascular symptoms in Long COVID
+
+Row 1 of "Table 9: Symptom-specific assessment and management considerations for cardiovascular symptoms in Long COVID" below:
+Assessment Element: History
+Assessment Details (History): • Cardiac details of acute COVID-19 course: ○ Cardiac event (e.g., arrhythmia)? ○ Ventilator, ECMO, etc.?
+
+Row 2 of "Table 9: Symptom-specific assessment and management considerations for cardiovascular symptoms in Long COVID" below:
+Assessment Element: Physical exam
+Assessment Details (Physical exam): • Vital signs: ○ HR, RR, BP, POx • Cardiopulmonary exam: ○ Heart/lung auscultation ○ Check peripheral pulses for bruits ○ Assess for volume overload • Chest wall palpation to rule out musculoskeletal cause of chest pain
+
+Row 3 of "Table 9: Symptom-specific assessment and management considerations for cardiovascular symptoms in Long COVID" below:
+Treatment Element: Non-pharmacologic management
+Treatment Details (Non-pharmacologic management): • Follow existing guidelines for return-to-activity and participation in cardiac rehabilitation (See Figure 1) (88,89)
+
+Row 4 of "Table 9: Symptom-specific assessment and management considerations for cardiovascular symptoms in Long COVID" below:
+Treatment Element: Pharmacologic management
+Treatment Details (Pharmacologic management): • Review cardioactive medications ○ If felt to be contributing to any Long COVID symptoms, discuss with cardiologist for consideration of effective dose or medication alternatives ○ High-dose beta blockers can worsen fatigue and dizziness • See Table 5 for commonly used medications for Long COVID
+
+Row 5 of "Table 9: Symptom-specific assessment and management considerations for cardiovascular symptoms in Long COVID" below:
+Treatment Element: Referral, as needed
+Treatment Details (Referral, as needed): • To cardiac rehabilitation, if recent diagnosis of a qualifying condition: ○ Stable angina, MI, systolic heart failure with LVEF ≤ 35% ○ Percutaneous coronary intervention (angioplasty or stent) ○ Cardiac surgery (coronary artery bypass, cardiac valve repair/replacement, heart transplant) • To cardiology, if new or worsened cardiovascular disease; complex arrhythmia; structural heart disease; or myocardial, pericardial, and/or ventricular dysfunction
+
+Footnotes for Table 9: Symptom-specific assessment and management considerations for cardiovascular symptoms in Long COVID
+
+Abbreviations: ECMO (extracorporeal membrane oxygenation), HR (heart rate), RR (respiratory rate), BP (blood pressure), POx (pulse oximetry), MI (myocardial infarction), LVEF (left ventricular ejection fraction).
+
+Table 10: Symptom-specific assessment and management considerations for autonomic dysfunction in patients with Long COVID
+
+Row 1 of "Table 10: Symptom-specific assessment and management considerations for autonomic dysfunction in patients with Long COVID" below:
+Assessment Element: History
+Assessment Details (History): • Current diet, fluid, and salt intake • Medication use that may impact symptoms, HR, or BP (e.g., antihypertensives, anticholinergics, stimulants) • Previous/current substance use • History of multifocal joint pain, subluxations, and/or dislocations (suggestive of joint hypermobility syndrome)
+
+Row 2 of "Table 10: Symptom-specific assessment and management considerations for autonomic dysfunction in patients with Long COVID" below:
+Assessment Element: Physical exam
+Assessment Details (Physical exam): • Sensory exam (especially pinprick and temperature), to evaluate for small fiber neuropathy • Beighton Hypermobility Scale
+
+Row 3 of "Table 10: Symptom-specific assessment and management considerations for autonomic dysfunction in patients with Long COVID" below:
+Treatment Element: Non-pharmacologic management
+Treatment Details (Non-pharmacologic management): • Increase oral intake to 2.5-3.5L of fluid and 2.8-4g of sodium (i.e., 7-10g of salt) daily • Compression garments (waist-high stockings and/or abdominal binder) • Physical counterpressure maneuvers to mitigate orthostatic intolerance (e.g., stand with legs crossed, sit in knee-chest position) (91) • Personalized autonomic rehabilitation program ○ May start with supine core strengthening or recumbent activities (e.g., recumbent biking, swimming) ○ Dysautonomia International: Exercises for Dysautonomia Patients: https://dysautonomiainternational.org/page.php?ID=43
+
+Row 4 of "Table 10: Symptom-specific assessment and management considerations for autonomic dysfunction in patients with Long COVID" below:
+Treatment Element: Pharmacologic management
+Treatment Details (Pharmacologic management): • Consider weaning/de-prescribing medications or substances that can worsen orthostatic intolerance, tachycardia, and hypotension • See Table 5 for commonly used medications for Long COVID ○ See the autonomic dysfunction consensus guidance statement for additional medication options • Medication management should be strongly and promptly considered if symptoms are severe or persistent after a trial of non-pharmacologic measures • Consider IV fluids during symptom flare, sparingly and as needed
+
+Row 5 of "Table 10: Symptom-specific assessment and management considerations for autonomic dysfunction in patients with Long COVID" below:
+Treatment Element: Referral, as needed
+Treatment Details (Referral, as needed): • To autonomic specialist, if: ○ Non-pharmacologic and first-line pharmacologic management does not ameliorate symptoms ○ Frequent syncope ○ Additional autonomic function assessment is warranted (e.g., Valsalva maneuver, deep breathing test, QSART, skin biopsy for evaluation of small fiber neuropathy) • Directories of autonomic specialists: ○ https://americanautonomicsociety.org/physician-directory/ ○ http://dysautonomiainternational.org/page.php?ID=14 • To general cardiologist, if autonomic specialist is unavailable and management is outside the scope of the treating clinician
+
+Footnotes for Table 10: Symptom-specific assessment and management considerations for autonomic dysfunction in patients with Long COVID
+
+Abbreviations: HR (heart rate), BP (blood pressure), IV (intravenous), QSART (quantitative sudomotor axon reflex test).
+
+Table 11: Symptom-specific assessment and management considerations for cognitive impairment in Long COVID
+
+Row 1 of "Table 11: Symptom-specific assessment and management considerations for cognitive impairment in Long COVID" below:
+Assessment Element: History
+Assessment Details (History): • Pre-existing conditions with cognitive symptoms (e.g., ADHD, learning disabilities, mild cognitive impairment) • Obtain collateral history from loved ones and care providers, as needed
+
+Row 2 of "Table 11: Symptom-specific assessment and management considerations for cognitive impairment in Long COVID" below:
+Assessment Element: Physical exam
+Assessment Details (Physical exam): • Document objective severity of cognitive deficits: ○ Brief tools: MoCA (92), MMSE ○ Resource permitting: Neuro-QOL™, NIH Toolbox Cognition Battery • Rule out signs of general medical abnormalities or focal neurological deficits
+
+Row 3 of "Table 11: Symptom-specific assessment and management considerations for cognitive impairment in Long COVID" below:
+Treatment Element: Non-pharmacologic management
+Treatment Details (Non-pharmacologic management): • Optimize restorative sleep (See Table 4) • For patients who achieve a return to ADLs, see Figure 1 for return to activity guidance
+
+Row 4 of "Table 11: Symptom-specific assessment and management considerations for cognitive impairment in Long COVID" below:
+Treatment Element: Pharmacologic management
+Treatment Details (Pharmacologic management): • Consider weaning/de-prescribing medications that may lead to sedation, confusion, and possible cognitive decline (e.g., anticholinergic, antidepressant, antipsychotic, benzodiazepine, non-benzodiazepine sedative hypnotic, benzodiazepine receptor agonist hypnotic, and skeletal muscle relaxant medications) • See Table 5 for commonly used medications for Long COVID
+
+Row 5 of "Table 11: Symptom-specific assessment and management considerations for cognitive impairment in Long COVID" below:
+Treatment Element: Referral, as needed
+Treatment Details (Referral, as needed): • To OT or SLP, if cognitive symptoms are affecting daily function • To neuropsychology, if need to assess capacity for return to cognitively demanding work and/or to assess eligibility for vocational rehabilitation
+
+Footnotes for Table 11: Symptom-specific assessment and management considerations for cognitive impairment in Long COVID
+
+This list of screening tools is revised compared to the original cognitive symptoms consensus guidance statement. The tools in this list reflect those which are most sensitive to detect patterns of cognitive impairment that are typically seen in Long COVID.
+
+Abbreviations: ADHD (attention-deficit/hyperactivity disorder), MoCA (Montreal Cognitive Assessment), MMSE (mini mental state examination), Neuro-QOL™ (Quality of Life in Neurological Disorders), NIH (National Institutes of Health), OT (occupational therapy), SLP (speech and language pathology).
+
+Table 12: Symptom-specific assessment and management considerations for mental health symptoms in patients with Long COVID
+
+Row 1 of "Table 12: Symptom-specific assessment and management considerations for mental health symptoms in patients with Long COVID" below:
+Assessment Element: History
+Assessment Details (History): • Differentiate whether symptoms are related to a DSM-V disorder versus other underlying cause ○ E.g., is lack of interest due to fatigue versus anhedonia (i.e., low mood and reduced pleasure in previously enjoyable things)? ○ E.g., are palpitations due to dysautonomia versus panic disorder? • If symptoms are impacting function or quality of life, assess severity using validated instruments such as:† ○ PHQ-9† or PHQ-2 (Depression) ○ GAD-7 (Anxiety) ○ PCL-5 (PTSD) • If mental health symptoms present, perform suicide risk screening ○ E.g., C-SSRS • Medications that may impact mental health signs or symptoms (e.g., anti-arrhythmic, diuretic, or autonomic medications) • Other potential symptom triggers: ○ Pain, sleep dysfunction, physical/cognitive symptoms ○ Menstrual cycle, alcohol or drug use • Therapeutic response and possible adverse effects to prior treatments (med (patient-directed and prescribed) • Existing social, emotional, and logistical support ○ Symptom-specific focused exam to evaluate for physical sequelae of Long COVID which could be masquerading as, or exacerbating, mental health symptoms
+
+Row 2 of "Table 12: Symptom-specific assessment and management considerations for mental health symptoms in patients with Long COVID" below:
+Assessment Element: Physical exam
+Assessment Details (Physical exam): (No content provided)
+
+Row 3 of "Table 12: Symptom-specific assessment and management considerations for mental health symptoms in patients with Long COVID" below:
+Treatment Element: Non-pharmacologic management
+Treatment Details (Non-pharmacologic management): • Largely mirrors mental health treatment in the absence of Long COVID ○ Validate experience, create a therapeutic alliance ○ Psychotherapy (e.g., supportive, cognitive behavioral, group, or exposure therapy) ▪ If dysautonomia is present, use caution with exposure therapy (for PTSD) ○ Free apps available by the VA (https://www.veteranshealthlibrary.va.gov/HealthyLiving/Stress/) • Treat coexisting pain, sleep disorders (including poor sleep hygiene and insomnia), and neurologic symptoms, if present • Mental health symptoms can be worsened by (and can worsen) other Long COVID symptoms
+
+Row 4 of "Table 12: Symptom-specific assessment and management considerations for mental health symptoms in patients with Long COVID" below:
+Treatment Element: Pharmacologic management
+Treatment Details (Pharmacologic management): • Consider weaning/de-prescribing anti-hypertensive and sedating medications (e.g., benzodiazepines, sleep-promoting medications) • See Table 5 for commonly used medications for Long COVID
+
+Row 5 of "Table 12: Symptom-specific assessment and management considerations for mental health symptoms in patients with Long COVID" below:
+Treatment Element: Referral, as needed
+Treatment Details (Referral, as needed): • To emergency department, if expresses thoughts of harm to self or others, with a plan, means, and intent • To mental health specialist, if symptoms of psychosis, significant PTSD, passive suicidal ideation, or active substance addiction ○ E.g., social worker, therapist, counselor, neuropsychologist, clinical psychologist, and/or psychiatrist
+
+Footnotes for Table 12: Symptom-specific assessment and management considerations for mental health symptoms in patients with Long COVID
+
+These instruments have not been validated specifically in the Long COVID population.
+
+For patients with a high PHQ-9 score, clinicians should obtain additional history to identify whether the high score is attributable to anhedonia (which would suggest true depressive symptoms) versus fatigue or other physical sequelae of Long COVID (in which case, a diagnosis of depression should not be given).
+
+Abbreviations: DSM-V (Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition), PHQ (Patient Health Questionnaire), GAD (generalized anxiety disorder), PCL-5 (PTSD Checklist for DSM-V), PTSD (post-traumatic stress disorder), C-SSRS (Columbia-Suicide Severity Rating Scale), VA (United States Department of Veterans Affairs).
+
+Table 13: Symptom-specific assessment and management considerations for neurologic sequelae of Long COVID
+
+Row 1 of "Table 13: Symptom-specific assessment and management considerations for neurologic sequelae of Long COVID" below:
+Assessment Element: History
+Assessment Details (History): • Time course of neurologic symptoms ○ Acute versus chronic ○ Static versus progressive • Medication/supplement use that may impact signs, symptoms, or assessment parameters (e.g., anticholinergic medications)
+
+Row 2 of "Table 13: Symptom-specific assessment and management considerations for neurologic sequelae of Long COVID" below:
+Assessment Element: Physical exam
+Assessment Details (Physical exam): • Thorough neurological examination to identify focal neurological deficits ○ Cognition, attention/concentration, expressive and receptive speech ○ Cranial nerves, strength, sensation, reflexes, coordination, gait • If concern for cognitive impairment, see Table 11 [Cognitive Table]
+
+Row 3 of "Table 13: Symptom-specific assessment and management considerations for neurologic sequelae of Long COVID" below:
+Treatment Element: Non-pharmacologic management
+Treatment Details (Non-pharmacologic management): • For patients who achieve a return to ADLs, see Figure 1 for return to activity guidance • For patients with headaches, consider ergonomic optimization, gentle stretching, deep breathing exercises, and acupuncture
+
+Row 4 of "Table 13: Symptom-specific assessment and management considerations for neurologic sequelae of Long COVID" below:
+Treatment Element: Pharmacologic management
+Treatment Details (Pharmacologic management): • Consider weaning/de-prescribing antihistamine, anticholinergic, antidepressant/anxiolytic, and muscle relaxant medications • For rebound headaches due to regular overuse of abortive headache medications (including acetaminophen and NSAIDs), reduce use of these medications to < 3 times weekly • See Table 5 for commonly used medications for Long COVID
+
+Row 5 of "Table 13: Symptom-specific assessment and management considerations for neurologic sequelae of Long COVID" below:
+Treatment Element: Referral, as needed
+Treatment Details (Referral, as needed): • To emergency department, if new or worsening focal neurologic deficits • To physiatry or neurology, if chronic focal neurologic sequelae affecting gait, mobility, cognitive status, and/or activities of daily living
+
+Footnotes for Table 13: Symptom-specific assessment and management considerations for neurologic sequelae of Long COVID
+
+This list of screening tools is revised compared to the original cognitive symptoms consensus guidance statement. The tools in this list reflect those which are most sensitive to detect patterns of cognitive impairment that are typically seen in Long COVID.
+
+Abbreviations: ADHD (attention-deficit/hyperactivity disorder), MoCA (Montreal Cognitive Assessment), MMSE (mini mental state examination), Neuro-QOL™ (Quality of Life in Neurological Disorders), NIH (National Institutes of Health), OT (occupational therapy), SLP (speech and language pathology).
+

@@ -1,0 +1,391 @@
+Abstract
+Despite myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) affecting millions of people worldwide, many clinicians lack the knowledge to appropriately diagnose or manage ME/CFS. Unfortunately, clinical guidance has been scarce, obsolete, or potentially harmful. Consequently, up to 91% of patients in the United States remain undiagnosed, and those diagnosed often receive inappropriate treatment. These problems are of increasing importance because after acute COVID-19, a significant percentage of people remain ill for many months with an illness similar to ME/CFS. In 2015, the US National Academy of Medicine published new evidence-based clinical diagnostic criteria that have been adopted by the US Centers for Disease Control and Prevention. Furthermore, the United States and other governments as well as major health care organizations have recently withdrawn graded exercise and cognitive-behavioral therapy as the treatment of choice for patients with ME/CFS. Recently, 21 clinicians specializing in ME/CFS convened to discuss best clinical practices for adults affected by ME/CFS. This article summarizes their top recommendations for generalist and specialist health care providers based on recent scientific progress and decades of clinical experience. There are many steps that clinicians can take to improve the health, function, and quality of life of those with ME/CFS, including those in whom ME/CFS develops after COVID-19. Patients with a lingering illness that follows acute COVID-19 who do not fully meet criteria for ME/CFS may also benefit from these approaches.
+
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a chronic, multi-system disease affecting millions of people worldwide. Despite its high prevalence and disabling nature, medical education programs rarely cover ME/CFS and guidance for practicing clinicians is often outdated and inappropriate. Standard tests typically return normal results, and some clinicians are wholly unaware of or question the legitimacy of ME/CFS. Consequently, up to 91% of affected people are undiagnosed or misdiagnosed with other conditions, such as depression. To obtain a diagnosis, patients frequently have had to see multiple clinicians over a number of years. Even after diagnosis, patients struggle to obtain appropriate care and have often been prescribed treatments, such as cognitive-behavioral therapy (CBT) and graded exercise therapy (GET), that could worsen their condition.
+
+In 2015, the US National Academy of Medicine (NAM, previously the Institute of Medicine) created new ME/CFS clinical diagnostic criteria that required the hallmark symptom of post-exertional malaise (PEM). The US Centers for Disease Control and Prevention have adopted these new criteria, have removed recommendations for CBT and GET, and have begun to incorporate the best clinical practices of ME/CFS experts. These steps will help improve the speed and accuracy of diagnosis and the quality of clinical care.
+
+Lingering symptoms including fatigue follow various types of infectious illnesses. These “postinfectious” fatigue syndromes resemble ME/CFS. Moreover, ME/CFS itself often follows an infectious-like illness. On occasion, the infectious illness preceding ME/CFS, such as infectious mononucleosis, Coxiella burnetii infection, giardiasis, or severe acute respiratory syndrome (caused by a coronavirus similar to the etiologic agent of COVID-19), has been well documented, but often, no attempt has been made to diagnose the infectious agent. Following acute COVID-19, whether hospitalized or not, many patients continue to experience debility and symptoms for many months. Some of these “long haulers” may have symptoms reflecting organ damage, such as to the lungs or heart, from the acute disease. Other long haulers are symptomatic despite having no clear evidence of such organ damage. A study of patients ill 6 months after mild or moderate acute COVID-19 found that about half met criteria for ME/CFS. One review suggested that the number of cases of ME/CFS could double as a result of the pandemic. Like ME/CFS patients, those with post-COVID conditions have recounted being dismissed by health care professionals.
+
+This article provides essential information about how to diagnose and care for adults with ME/CFS and echoes other recent ME/CFS guidance. Accurately and expeditiously diagnosing ME/CFS is important. There are many steps a clinician can take to improve the health, function, and quality of life of these patients. Even if they do not go on to develop ME/CFS, some patients with post-COVID conditions may also benefit from approaches such as pacing.
+
+EPIDEMIOLOGY
+Myalgic encephalomyelitis/chronic fatigue syndrome affects between 836,000 and 2.5 million Americans of all ages, ethnicities, genders, and socioeconomic backgrounds. Some groups are disproportionately affected: Women are affected at a rate 3 times that of men. Onset often occurs between the ages of 10 to 19 years and 30 to 39 years. The average age at onset is 33 years, but ME/CFS can develop in people as old as 77 years and as young as 2 years. Blacks and Latinxs may be affected at a higher rate and with greater severity than other groups. An infectious episode near the onset of ME/CFS is recounted by 80% or more of patients. In prospective studies, 5% to 13% of people infected with certain pathogens developed ME/CFS in later months. Cases have occurred both sporadically and in clusters.
+
+Historically, premorbid mood disorders, personality issues, and childhood adversity have been linked to the development of ME/CFS. However, study limitations, such as use of overly broad criteria that included people with depression but not ME/CFS, could confound those findings. Mental health after the onset of ME/CFS is similar to that in other medical conditions and better than that seen in depression. The prevalence of depression and anxiety in ME/CFS is similar to that in other disabling, chronic illnesses.
+
+IMPACT AND PROGNOSIS OF ME/CFS
+Myalgic encephalomyelitis/chronic fatigue syndrome substantially impairs occupational, educational, social, and personal activities. The degree of impairment can exceed that of rheumatoid arthritis, multiple sclerosis, depression, heart disease, cancer, and lung disease. There is a wide spectrum of severity ranging from mild to very severe: Mild: mobile and self-caring; may continue working but will have reduced other activities Moderate: reduced mobility, restricted in instrumental activities of daily living, needs frequent periods of rest; usually not working Severe: mostly housebound; limited to minimal activities of daily living (eg, face washing, showering); severe cognitive difficulties; may be wheelchair dependent Very severe: mostly bedridden; unable to independently carry out most activities of daily living; often experience extreme sensitivity to light, sound, and other sensory input Up to 75% are unable to work, and an estimated 25% are consistently housebound or bedbound. The level of severity can fluctuate, with 61% reporting being bedbound on their worst days.
+
+Although it is known that patients can be ill for years or even decades, no definitive study of prognosis exists. Studies are limited by small sample sizes, high dropout rates, short follow-up times, inclusion of patients with other conditions, and inappropriate definitions of recovery. A systematic review concluded that the chance of full recovery is only 5%. One ME/CFS-focused clinical practice estimated that 50% of its patients were still ill after 2 decades whereas a second estimated 93%. Temporary remission is reported, but relapses often occur. Patients most commonly report a fluctuating illness pattern in which symptoms wax and wane but are always present. Specialty clinics for ME/CFS reported that 84% of 960 patients observed long term developed at least 1 comorbid condition. Additional comorbidities were associated with worsened health.
+
+NEW DIAGNOSTIC CRITERIA
+In 2015, the NAM published updated criteria. The new criteria require substantial impairment in function accompanied by fatigue, PEM, unrefreshing sleep, and either cognitive impairment or orthostatic intolerance. Symptoms should be of at least moderate intensity and present at least 50% of the time during a 6-month period. Other important factors include perionset infection, widespread pain, and impaired natural killer cell activity. Additional symptoms include influenza-like symptoms (eg, sore throat, tender lymph nodes); hypersensitivity to external stimuli (eg, food, smells, light, sound, touch, chemicals); susceptibility to infections; visual disturbances; gastrointestinal or genitourinary symptoms; respiratory issues, such as air hunger; and thermoregulatory issues.
+
+Diagnosis requires that the patient have the following three symptoms
+
+A substantial reduction or impairment in the ability to engage in pre-illness levels of occupational, educational, social, or personal activities, that persists for more than 6 months and is accompanied by fatigue, which is often profound, is of new or definite onset (not lifelong), is not the result of ongoing excessive exertion, and is not substantially alleviated by rest, and
+Post-exertional malaise,* and
+Unrefreshing sleep*
+
+At least one of the two following manifestations is also required:
+
+Cognitive impairment* or
+Orthostatic intolerance
+
+* Frequency and severity of symptoms should be assessed. The diagnosis of ME/CFS (SEID)ᵃ should be questioned if patients do not have these symptoms at least half of the time with moderate, substantial, or severe intensity
+ᵃ The recommendation for the term systemic exertion intolerance disease (SEID) was not adopted.
+Reproduced with permission of the National Academy of Sciences. ¹
+
+This appears to be diagnostic criteria for ME/CFS (Myalgic Encephalomyelitis/Chronic Fatigue Syndrome).
+
+The NAM criteria enable a proactive diagnosis based on these core symptoms. In addition, disease experts often use the 2003 Canadian Consensus Criteria or the 2011 ME International Consensus Criteria to confirm a diagnosis of ME/CFS.
+
+The hallmark symptom of PEM is an exacerbation of some or all of a patient’s symptoms and a further reduction in functioning after physical, cognitive, orthostatic, emotional, or sensory challenges that were previously tolerated. PEM is characterized by the following: Immediate or delayed onset. Onset may be immediate or delayed by hours to days after the challenge. Prolonged duration. Days, weeks, or months may pass before patients return to their previous baseline. Disproportionate intensity. The intensity and duration of PEM are unexpectedly disproportionate to the magnitude of the PEM trigger. For the mildly ill, working a few hours or a day can trigger PEM, whereas for the most severely ill, even basic activities of daily living will be sufficient.
+
+Notably, although postexercise fatigue and musculoskeletal pain are common in healthy people and other medical conditions (eg, osteoarthritis), the postexertional worsening of function and the constellation of symptoms (such as sleep, memory, concentration, influenza-like feelings [eg, sore throat], and mood) seen in ME/CFS are distinctive.
+
+Before the NAM criteria, the 1994 Fukuda criteria were commonly used to diagnose ME/CFS. The Fukuda definition was a diagnosis of exclusion and required only medically unexplained, chronic fatigue but not PEM or other important symptoms of ME/CFS. Clinicians believed that they had to eliminate every possible cause of fatigue, leading to delays in or avoidance of diagnosing ME/CFS. As noted by the NAM, not all patients diagnosed by the Fukuda criteria will meet ME/CFS criteria and will need to be reevaluated.
+
+ETIOLOGY AND PATHOPHYSIOLOGY
+While the exact etiology of ME/CFS is uncertain, studies show neurologic, immunologic, autonomic, and energy metabolism impairments. Key findings are highlighted here and described more fully elsewhere.
+
+Post-exertional Malaise and Energy Metabolism Impairment
+In both healthy and sick people, physical exercise improves fatigue, sleep, pain, cognition, and mood. In contrast, patients with ME/CFS experience PEM, a distinctive exacerbation of the patient’s set of symptoms and a further reduction in functioning after previously tolerated physical, cognitive, orthostatic, emotional, or sensory stressors. Multiple studies using both patient-reported and physiologic outcome measures have confirmed these accounts.
+
+In the past, some physicians and scientists speculated that these exertional limitations were due to physical deconditioning or an irrational fear of activity. While chronically inactive people are likely to be deconditioned, deconditioning does not explain the symptoms of ME/CFS. Instead, evidence suggests that problems generating and using the main energy molecule, adenosine triphosphate (ATP), may be a fundamental driver of ME/CFS.
+
+For example, when sedentary but healthy people or people affected by a number of other chronic illnesses are asked to exercise to their maximal ability on 2 consecutive days, energy test results do not change significantly from one day to the next. They may not use oxygen as efficiently as healthy, physically fit people, but their energy efficiency remains the same on repeated testing. In contrast, in ME/CFS, the ability to generate energy deteriorates on a repeated test the second day. For instance, the work rate at ventilatory threshold can drop significantly, with 1 study reporting a drop of up to 55%.
+
+Other studies have reported high levels of lactate or increased acidosis in the blood, cerebrospinal fluid, and muscles. This could be due to increased production or decreased elimination. If aerobic metabolism is impaired, cells switch to anaerobic metabolic pathways instead, which produce more lactic acid but 18 times less ATP per glucose molecule. Repeated exercise improves lactic acid disposal in healthy people and other conditions but not in ME/CFS. Moreover, compared with patients moderately affected with ME/CFS, severely affected patients exhibited impairment in the glycolytic system as well. These changes may explain why patients have difficulty with tasks they tolerated before illness and with sustaining activities. Damage to more than 1 energy generation system may account for why severely affected patients are often so limited. Tomas and Newton and Rutherford et al have provided comprehensive reviews of these metabolic issues.
+
+Exertion is also associated with changes in brain function and the immune system. Using functional magnetic resonance imaging, Cook et al found that altered brain activity accompanied post-exertional symptom exacerbation and impaired cognitive function. Maes et al found that PEM is associated with increased levels of interleukin-1, and Nijs et al revealed increased complement split products, oxidative stress, and gene expression of interleukin-10. Increased levels of immune system molecules in the brain, such as interleukin-1 and interleukin-10, can cause symptoms such as fatigue, pain, influenza-like feelings, and cognitive impairment. These objective changes correspond with and may contribute to the patient experiences of PEM.
+
+Unrefreshing Sleep
+Patients experience various sleep disturbances, such as problems in falling or staying asleep. However, even when these problems are treated, most patients remain tired or sick on awakening. Reduced heart rate variability, controlled by the autonomic nervous system, is linked to unrefreshing sleep in ME/CFS and other conditions. Furthermore, studies have reported that nocturnal parasympathetic activity is decreased relative to sympathetic activity in ME/CFS, the inverse of what should be occurring during rest.
+
+Cognitive Impairment and Neurologic Abnormalities
+Decreased information processing speed is the most commonly found cognitive deficit in ME/CFS. Other abnormalities include decreased reaction time, working memory, and attention. These deficits are not due to poor effort, insomnia, or mood disorders. Defects become particularly prominent when patients face deadlines, unrelenting demands, and multiple simultaneous tasks. Motor speed, verbal abilities, and global reasoning remain intact.
+
+Brain studies have found brain inflammation and reductions in white matter and possibly in gray matter. Neuroinflammation is correlated with cognitive impairment and impaired connectivity across various regions of the brain.
+
+Orthostatic Intolerance and Autonomic Impairment
+In up to 95% of those with ME/CFS, an immobile, upright position (eg, prolonged standing or sitting) will cause or worsen symptoms such as lightheadedness, nausea, fatigue, palpitations, and cognitive impairment. Assumption of a sitting or supine position can alleviate symptoms. This phenomenon is called orthostatic intolerance and includes orthostatic hypotension, postural orthostatic tachycardia syndrome, and neurally mediated hypotension.
+
+Objective physiologic abnormalities include the following: Abnormal heart rate and blood pressure changes after passive standing and tilt table tests A 25% drop in cerebral blood flow on standing or sitting up Decreases in stroke volume index and cardiac index that are not correlated with activity levels, contradicting theories that deconditioning explains ME/CFS Orthostatic hypocapnia and a decrease in blood volume, which can further aggravate symptoms caused by abnormalities in the autonomic nervous system Gastrointestinal, urinary, thermoregulatory, and visual issues have also been reported but have not been extensively studied.
+
+Impaired Immune Function
+On average, the natural killer cell activity of patients is lower than that of healthy controls. It is unknown whether this finding is a cause, consequence, or epiphenomenon of ME/CFS. Although patients with ME/CFS do not present with symptomatic, opportunistic infections (eg, cryptosporidiosis, tuberculosis), some do experience recurrent herpes infections. Some are susceptible to colds and may take longer to recover from infections, whereas others experience less frequent common infections. A quarter may have decreased immunoglobulins or have difficulty in controlling Epstein-Barr virus infections. Studies have also reported abnormal changes in T cells and cytokines.
+
+Infection
+Myalgic encephalomyelitis/chronic fatigue syndrome often follows an infectious illness, but the specific microorganism is often not identified because the illness initially appeared to be self-limited. Other times, ME/CFS follows a well-documented infectious illness, such as Epstein-Barr virus infectious mononucleosis or Giardia-caused diarrhea. In many patients with ME/CFS, reactivation of various latent infections (such as Epstein-Barr virus infection) has also been observed, but it is unclear whether they cause symptoms or just reflect a suppressed or “distracted” immune system. Alternatively, the chronicity of ME/CFS could be the result of an infection-triggered autoimmune response.
+
+DIAGNOSTIC APPROACH
+The purpose of initial evaluations is to determine whether alternative conditions may account for all of the patient’s symptoms, to confirm ME/CFS through recognition of characteristic symptoms and signs, and to identify comorbid conditions. Because there are no definitive diagnostic tests, diagnosis relies on medical history and physical examination and may require multiple visits. Tests and referrals to specialists are used primarily to identify alternative diagnoses and comorbidities.
+
+Typical Presentation: Important Elements of the History
+Patients typically experience a proven or nonspecific infection but fail to recover as expected and continue to be ill weeks to months later. Some patients may identify a noninfectious trigger (eg, surgery, pregnancy, vaccination) or no precipitant at all. Chronologic patterns can vary. In some patients, all of the ME/CFS symptoms develop within hours or days of the instigating event, whereas others report symptoms appearing more gradually over weeks and months. Patients often describe a waxing and waning pattern or sometimes remission to normal health followed by relapse.
+
+Patients may initially complain of persistent influenza-like symptoms, sleep disturbances, problems in thinking, profound fatigue, problems in being upright, and difficulty in keeping up with normal activities. They may struggle with school, work, family responsibilities, exercise, socializing, or personal care. They may complain of pain and hypersensitivities to light, sound, fragrances, food, and medications. Patients may be susceptible to mold or other environmental toxins. They may experience other symptoms but not link them to their illness or have difficulty describing them. Consequently, it is important for clinicians to ask explicitly about the symptoms composing the criteria for ME/CFS. Examples of questions to ask are listed in Table 1. Family members may need to respond for the most severely ill.
+
+Table 1 "Important Elements of the Clinical History"
+Adapted from the National Academy of Medicine Report Guide for Clinicians,97 with permission of the National Academy of Sciences.
+
+Row 1 of Table 1 "Important Elements of the Clinical History"
+
+Symptoms: Impairment in function with profound fatigue
+
+Sample descriptions by patients (Impairment in function with profound fatigue):
+• "Flu-like fatigue/exhaustion"
+• "I feel like a battery that is never able to be recharged fully despite resting a lot and limiting my activities to only the bare essentials needed to get by."
+• "Thinking takes a lot more work than it used to."
+• "My arms, legs, body feel heavy and harder to move."
+• Severe limitations in personal and household management
+• Loss of job, medical insurance, and career
+• Being predominantly housebound
+• Decreased social interaction and increased isolation
+
+Questions to ask (Impairment in function with profound fatigue):
+• How fatigued are you?
+• What helps your fatigue the most (resting, lying down, quiet situations, not exercising or avoiding exercise)? What makes the fatigue worse?
+• What are you able to do now?
+• How does it compare with what you were able to do before?
+• Think back to what you were able to do before you became sick. How much has this illness affected: (a) your ability to work? (b) your ability to take care of yourself/your family and to do chores?
+• What happens when you try to push through the fatigue?
+
+Row 2 of Table 1 "Important Elements of the Clinical History"
+
+Symptoms: Post-exertional malaise
+
+Sample descriptions by patients (Post-exertional malaise):
+• "Crash," "relapse," "collapse"
+• Mentally tired after the slightest effort
+• Physically drained or sick after mild activity
+• The more demanding, prolonged, or repeated the activity, the more severe and prolonged the payback
+
+Questions to ask (Post-exertional malaise):
+• What happens to you as you engage in normal physical or mental exertion? or after?
+• How much activity does it take you to feel ill?
+• What symptoms develop from standing or exertion?
+• How long does it take to recover from physical or mental effort?
+• If you go beyond your limits, what are the consequences?
+• What types of activities do you avoid because of what will happen if you do them?
+
+Row 3 of Table 1 "Important Elements of the Clinical History"
+
+Symptoms: Unrefreshing sleep
+
+Sample descriptions by patients (Unrefreshing sleep):
+• "Feeling like I never slept"
+• "Cannot fall asleep or stay asleep"
+• "After long or normal hours of sleep, I still don't feel good in the morning."
+
+Questions to ask (Unrefreshing sleep):
+• Do you have any problems getting to sleep or staying asleep?
+• Do you feel rested in the morning or after you have slept?
+• Tell me about the quality of your sleep.
+• Do you need too much sleep?
+• Do you need to take more naps than other people? (There may be other sleep disruptors as well.)
+
+Row 4 of Table 1 "Important Elements of the Clinical History"
+
+Symptoms: Cognitive impairments
+
+Sample descriptions by patients (Cognitive impairments):
+• "Brain fog"
+• "Confusion"
+• "Disorientation"
+• "Hard to concentrate, can't focus"
+• "Inability to process information"
+• "Can't find the right words"
+• "Inability to multitask"
+• "Problems with decision-making"
+• "Absent-minded/forgetful"
+
+Questions to ask (Cognitive impairments):
+• Do you have problems doing the following activities: driving, watching a movie, reading a book/magazine, completing complex tasks under time constraints, following/participating in conversation, doing more than 1 thing at a time?
+• Compared with before your illness, how is your performance at work or school now?
+
+Row 5 of Table 1 "Important Elements of the Clinical History"
+
+Symptoms: Orthostatic intolerance
+
+Sample descriptions by patients (Orthostatic intolerance):
+• Lightheadedness
+• Dizziness
+• Spatial disorientation or imbalance
+• Fainting
+• Feeling unwell, dizzy, or lightheaded when sitting up or standing still for extended periods (note "extended" can mean a few minutes for the severely affected)
+
+Questions to ask (Orthostatic intolerance):
+• How do you feel when you have been standing still for more than a few minutes?
+• What happens to you after you get up rapidly after lying down or sitting for a long time?
+• How long can you stand before feeling ill? For example, can you do the dishes? Can you stand in line for a bus or movie? Are you able to grocery shop or go to a mall?
+• How does hot weather affect you?
+• Do you study or work lying down, in bed or a recliner? Why?
+• Do you prefer to sit with knees to your chest or legs under you?
+
+a
+All questions should explore frequency and severity. To fulfill 2015 National Academy of Medicine diagnostic criteria, symptoms must be of at least moderate severity and present at least 50% of the time.
+b
+Clinicians should ask additional questions to understand the nature of fatigue; for instance, “What do you mean by fatigued?” and “On a scale of 0 (no energy) to 10 (full energy), how fatigued are you?”.
+
+The key symptom of PEM is often not mentioned spontaneously as patients may not be familiar with the concept. The nature and severity of PEM symptoms, the degree of reduction in function, and PEM’s time course can vary from episode to episode and with the type of activity. If the patient is unable to clearly answer the PEM questions suggested in Table 1, ask the patient to keep a journal for 1 or 2 weeks detailing activities and symptoms (type, intensity, frequency, duration). The patient may be in a constant state of PEM, making it difficult to recognize the impact of overexertion. During the next visit, clinicians should review this journal with the patient to identify the distinctive features of PEM: odd symptoms that would not normally follow exertion (eg, sore throat, problems in thinking), intensity or duration of symptoms out of proportion to preceding activities (eg, having to lie down for an hour after a few hours of sedentary work), a further reduction of function after activity, and typically delayed onset of symptoms (eg, a few hours or a day later).
+
+Unrefreshing sleep can be manifested as feeling unrested and unwell on awakening, regardless of how long the patient slept uninterrupted. Some patients need an hour or more on awakening to start feeling better, with late evenings being their best time of day. Patients may also experience trouble in falling asleep, staying asleep, waking up early, or staying awake during the day. They may experience a shifted sleep cycle.
+
+Orthostatic intolerance commonly is manifested as lightheadedness, palpitations, or syncope. However, patients with ME/CFS often experience subtler symptoms, such as feeling sick, nauseous, tired, or confused during periods of sitting or standing still. Inquiring about symptoms during aggravating (eg, long lines, hot weather) and alleviating situations (eg, lying, sitting down) is helpful. Patients may have been diagnosed with anxiety as some symptoms (eg, lightheadedness, a “racing heart”) are shared by both conditions. Accurate identification of orthostatic intolerance avoids misdiagnosis with a psychiatric disorder and ensures its appropriate management, which is different from that of anxiety.
+
+Some patients are so affected by cognitive dysfunction that they cannot converse, read a book, follow directions, or remember what was just said. Other patients function reasonably well for brief periods but suffer from cognitive fatigue or reduced or slowed abilities under time or other pressures. Many patients stop or restrict driving because of these issues.
+
+The most severely ill patients are bed-bound and unlikely to be seen in the clinician’s office but may be seen in emergency departments and hospitals during a crisis. Whether in the hospital or at home, the very severely ill require individualized care that accounts for their severe energy limitations and sensory sensitivities. The recent expansion of telemedicine may facilitate the provision of care for all ME/CFS patients. Management of the severely ill is further described by Kingdon et al and Speight.
+
+Myalgic encephalomyelitis/chronic fatigue syndrome is also seen in pediatric patients and appears to have a better prognosis than in adults. The epidemiology, diagnosis, and management of ME/CFS in children and adolescents is further elaborated by Rowe et al.
+
+Physical Examination
+Abnormal physical findings may be absent, particularly if the patient has rested extensively before the office visit. Some nonspecific abnormal physical examination findings may exist and may worsen during the course of an office visit. Whereas the absence of these signs does not exclude ME/CFS, their presence may support an ME/CFS diagnosis.
+
+The physical examination may help identify alternative diagnoses and comorbidities. The neurologic examination, in particular, may eliminate neurologic disorders. Abnormal physical findings beyond those associated with ME/CFS should be followed up as potential indications of other conditions.
+
+Diagnostic Testing
+There is no validated diagnostic test. Basic tests recommended for all patients or tests for a particular presentation may be used to identify alternative conditions and comorbidities.
+
+Table 2
+Routine Diagnostic Tests Recommended for All Patients
+Adapted from Testing Recommendations for Suspected ME/CFS,104 with permission of the US ME/CFS Clinician Coalition.
+
+Basic tests:
+Complete blood count with differential	
+Rheumatoid factor
+Comprehensive metabolic panel (Chem20 panel)a	
+Four-point salivary cortisol (eg, wakening, at noon, 4:00 pm, and bedtime), am cortisol
+Antinuclear antibody	
+Thyroid-stimulating hormone, free thyroxine
+C-reactive protein	
+Vitamin B12
+Erythrocyte sedimentation rate	
+Vitamin D, 25-dihydroxy
+Ferritin	
+Urinalysis
+
+a
+The Chem20 panel is a set of common laboratory tests ordered by health care professionals in the United States. It consists of 20 tests that provide information on the patient’s chemical balance and metabolism. For more information, see https://www.ucsfhealth.org/medical-tests/003468
+
+
+Some tests can be used to characterize aspects of ME/CFS. The passive standing or tilt table tests can objectively confirm orthostatic intolerance. A 4-point salivary cortisol test can help identify the abnormal diurnal cortisol patterns seen in ME/CFS.
+
+Testing can also guide treatment decisions and objectively document disability. For instance, ME/CFS experts may use microbial panels and natural killer cell activity, a measure of immune functioning, to help guide treatment decisions. Neuropsychological testing can demonstrate cognitive impairment and repeated cardiopulmonary exercise testing an inability to repeat or to sustain physical activities. However, these tests involve a challenge that may induce severe or long-lasting PEM. This risk may be warranted for disability evaluations, but they are not recommended as a diagnostic aid in all patients.
+
+Alternative Diagnoses
+Symptoms of ME/CFS can overlap with those of a number of medical and psychiatric conditions. At the same time, patients can have both ME/CFS and other diseases. History, physical examination, screening instruments, and diagnostic tests can help distinguish other conditions from ME/CFS. For example, fatigue and a reduction in activities can be seen in both ME/CFS and depression or anxiety; but PEM and orthostatic intolerance are not characteristic of mood disorders, whereas feelings of worthlessness are typically absent in ME/CFS. In general, PEM is a distinctive feature that can help differentiate ME/CFS from other diseases. Therapeutic trials may also help; if treatment for the alternative diagnosis completely eliminates a patient’s symptoms, ME/CFS is not the correct diagnosis.
+
+Table 3
+Medical Conditions That Present Similarly to Myalgic Encephalomyelitis/Chronic Fatigue Syndrome
+
+-Endocrine/metabolic disorders	
+-Rheumatologic disorders	
+-Neurologic disorders
+-Primary adrenal insufficiency, hypercortisolism, hyperthyroidism or hypothyroidism, diabetes, hypercalcemia	
+-Systemic lupus erythematosus, rheumatoid arthritis, polymyositis, polymyalgia rheumatica	
+-Multiple sclerosis, Parkinson disease, myasthenia gravis, vitamin B12 deficiency, cerebrospinal fluid leak, Chiari malformation, traumatic brain injury, spinal stenosis, craniocervical instability, seizures
+-Infectious diseases	
+-Sleep disorders	
+-Primary psychiatric disorders
+-Human immunodeficiency virus infection, Lyme and other tick-borne diseases, hepatitis B/C, tuberculosis, giardiasis, West Nile virus, Q fever, coccidioidomycosis, syphilis, Epstein-Barr virus infection,a parvovirus B19
+-Sleep apnea,a narcolepsy, periodic limb movement disorder	
+-Anxiety,a depression, bipolar affective disorder
+-Gastrointestinal disorders	
+-Cardiovascular disorders	
+-Hematologic disorders
+-Celiac disease, food allergy/intolerance, inflammatory bowel diseases, small intestinal bacterial overgrowtha	
+-Cardiomyopathy, coronary artery disease, pulmonary hypertension, valvular heart disease, arrhythmias	
+-Anemia (iron deficiency, other treatable forms), iron overload
+-Illnesses related to toxic substance exposures	
+-Oncologic disorders	
+-Miscellaneous
+-Substance abuse disorder, heavy metals (eg, lead, mercury), mold/mycotoxins, adverse medication effects, Gulf War illness	Primary and secondary cancers	
+-Severe obesity (body mass index >40 kg/m2), overwork, athletic overtraining syndrome, asthma, chronic obstructive pulmonary disease
+
+a
+These conditions can also commonly coexist with myalgic encephalomyelitis/chronic fatigue syndrome.
+
+The NAM criteria require that symptoms exist for 6 months because acute medical conditions or lifestyle issues should resolve within that time. During these 6 months, the provider should observe patients closely to detect other causes for their symptoms while also beginning treatment as discussed later.
+
+Diagnosis of Comorbidities
+Myalgic encephalomyelitis/chronic fatigue syndrome is often associated with various comorbidities that can contribute substantially to the patient’s symptom burden. For example, fibromyalgia is common and may increase the muscle pain of ME/CFS. As with alternative conditions, history, physical examination, tests, and therapeutic trials can help diagnose these comorbidities. Treating these conditions will not cure ME/CFS but can reduce symptom burden and improve quality of life. Documenting these conditions may also promote appropriate reimbursement by insurance groups and may support a disability claim and access to other needed resources.
+
+OUTDATED STANDARD OF CARE
+In the past, CBT and GET were studied and recommended for ME/CFS on the basis of the disease theory that “the symptoms and disability of CFS/ME are perpetuated predominantly by unhelpful illness beliefs (fears) and coping behaviors (avoidance [of activity]),” leading to considerable deconditioning. However, GET and CBT studies have been widely criticized for their methodology, inadequate tracking of harms, and a disease theory that conflicts with the evidence of multisystem biologic impairment.
+
+The largest of these studies is the 2011 PACE (Pacing, graded Activity, and Cognitive behavior therapy; a randomised Evaluation) trial. PACE reported that these therapies were safe and resulted in recovery for 22% of participants and improvement for 60% to 61%. However, outcome measures were modified midtrial without a clear rationale. When the data were reanalyzed with the original protocol, improvement decreased by a factor of 3 and recovery rates decreased to 7% for CBT and 4% for GET, not significantly different from controls. The US Agency for Healthcare Research and Quality reported that many of these studies used definitions that could have included participants with other conditions and found little or no evidence of efficacy once these studies were excluded from the analysis. Finally, contradicting safety claims, 54% to 74% of patients have reported experiencing harms after GET.
+
+Because of these concerns, the US Centers for Disease Control and Prevention and health agencies in some countries have since removed recommendations for CBT and GET. Other nations are in the process of updating their guidance, with one stating that GET should not be offered as a treatment.
+
+MANAGEMENT APPROACH
+Despite the lack of ME/CFS-specific US Food and Drug Administration–approved treatments, health care professionals can greatly reduce a patient’s burden of disease and improve their quality of life. Basic principles of care are outlined below.
+
+Validate the Patient’s Experience
+Validate the patient’s illness experience and educate patients, family members, and others (eg, employers, schools). Frequently, patients’ concerns have been dismissed, downplayed, misdiagnosed as depression or anxiety, or labeled as hypochondriasis. Almost all patients consider obtaining an ME/CFS diagnosis to be a turning point in their illness, allowing them to better understand, explain, cope with, and find support for their situation.
+
+Assess Needs and Provide Support
+Patients often need help acquiring handicap placards, work or school accommodations, housing, adequate nutrition, disability benefits, and other necessary resources. Conduct a careful assessment of the patient’s needs and provide information, documentation, referrals, equipment, and accommodations to address these needs. Documenting how symptoms affect function during every appointment can save time in documenting disability later. Patients should assist by documenting such information before the visit. Referrals to specialists or allied health professionals, such as occupational therapists and physical therapists, may be helpful in securing the needed documentation and support. Addressing these issues can help maximize patients’ function and quality of life.
+
+Resources for work accommodations, educational accommodations, and disability programs are available. Patient websites and community support groups may have information about local programs.
+
+Teach Pacing
+Pacing is an individualized approach to energy conservation and management used to minimize the frequency, duration, and severity of PEM. Because PEM is associated with poor energy production and can be instigated by a variety of stimuli (eg, physical/cognitive exertion; emotional, orthostatic, and sensory stressors), patients must carefully plan where and how to spend their limited energy. Typically, patients must decrease the total amount of their activities and restrict their exposures to PEM-inducing stimuli as much as possible. Reducing PEM can help alleviate fatigue, cognitive defects, sleep disturbances, pain, and other symptoms while helping to avoid repeated post-exertional relapses that can have a long-term impact.
+
+Referrals to physical therapists and occupational therapists familiar with ME/CFS, education about pacing, and use of energy-saving/monitoring devices (eg, shower chairs, motorized scooters, pedometers, heart rate monitors) are often beneficial, as are diaries to help patients identify when they are exceeding their limits. Even with such aids, pacing is challenging and some setbacks are inevitable, especially because tolerance for activity can vary from day to day.
+
+Once patients are effectively pacing without triggering PEM, some patients may be able to engage in very short periods of activity to increase their stamina. This must be individualized for the patient’s level of severity and specific triggers of PEM and must be done in such a way that it does not provoke PEM. Even for those patients who can tolerate such activity, the expected level of improvement may be small and is not seen in all patients.
+
+Treat the Symptoms of ME/CFS
+Although there are no approved treatments specific to ME/CFS, clinicians can reduce the severity of symptoms with standard pharmacologic and nonpharmacologic treatments. Nonpharmacological approaches for orthostatic intolerance include salt and fluid loading and compression stockings, whereas memory aids (notebooks, calendars) may help with cognitive issues. Patients may also be helped by ear plugs, eye masks, and sunglasses to minimize light and noise intrusion; sleep hygiene measures (tailored as needed for patients who are bed-bound or have orthostatic intolerance); and avoidance of certain foods to decrease gastrointestinal disturbances.
+
+Table 4
+Summary of Treatment and Management Approachesa
+Adapted from ME/CFS Treatment Recommendations,123 with permission of the US ME/CFS Clinician Coalition.
+
+Postexertional malaise
+Nonpharmacologic approaches to conserve energy and to minimize postexertional malaise
+• Pacing of physical and cognitive activity
+• Assistive devices, such as motorized scooters, handicap parking stickers, shower chairs to conserve energy
+• Home health aides for those who are more severely ill
+• Ear plugs, eye masks, perfume-free environments to decrease sensory stimulation; may need to maintain low sensory environment for the most severely ill
+• School or work accommodations, such as flexible hours, shortened days
+Pharmacologic approaches to postexertional malaise
+• No specific recommendations
+
+Orthostatic intolerance
+Nonpharmacologic approaches
+• Salt and fluid loading, electrolyte drinks
+• Compression stockings
+• Positional changes; avoid prolonged sitting or standing
+• Consistent, tailored exercise as long as the patient can perform them without triggering postexertional malaise; may need to exercise lying down, seated, or in water
+• Treat comorbidities that may contribute to orthostatic intolerance
+Pharmacologic approaches
+• Fludrocortisone, low-dose beta blockers, alpha-adrenergic agonists, pyridostigmine, desmopressin, ivabradine
+• Intravenous saline
+
+Sleep issues
+Nonpharmacologic approaches
+• Sleep hygiene practices are a part of treatment but may be marginally effective in most patients; need to be tailored for severely ill and those with orthostatic intolerance
+• Meditation and relaxation exercises
+• Ear plugs and eye masks
+• Light therapy
+• Blue light filters
+Pharmacologic therapies
+• Trazadone, low-dose tricyclic antidepressants (eg, amitriptyline, doxepin), mirtazapine, antiepileptics (eg, gabapentin, pregabalin), clonazepam, cyclobenzaprine, zolpidem, eszopiclone, tizanidine, suvorexant, topiramate, hydroxyzine, alpha blockers (eg, clonidine, guanfacine, prazosin), diphenhydramine
+
+Cognitive dysfunction and fatigue
+Nonpharmacologic approaches
+• Cognitive pacing (eg, focus on only 1 task at a time, limit reading time)
+• Simple memory aids (eg, calendar reminder systems, notes)
+• Positional changes: perform cognitive functions lying down and stay hydrated if orthostatic intolerance is a problem
+Pharmacologic approaches
+• Methylphenidate, modafinil, armodafinil, amantadine
+• Caffeine if well tolerated
+
+Immune dysfunction
+Nonpharmacologic approaches
+• No specific recommendations
+Pharmacologic approaches
+• Intravenous immunoglobulin, subcutaneous gamma globulin, inosine pranobex, hydroxychloroquine
+
+Pain
+Nonpharmacologic approaches
+• Pacing to avoid flare-up of pain
+• Hot or cold packs as needed to relieve the specific source of pain
+• Physical therapy, massage, myofascial release, acupuncture, dry needling of trigger points
+• Chiropractic treatments
+• Meditation and relaxation
+• Neurofeedback techniques may be helpful
+
+Pharmacologic approaches
+• Low-dose naltrexone, serotonin-norepinephrine reuptake inhibitor (eg, duloxetine, milnacipran), antiepileptics (gabapentin, pregabalin), muscle relaxants (eg, cyclobenzaprine, tizanidine, baclofen), medical marijuana, nonsteroidal anti-inflammatory drugs (eg, celecoxib, meloxicam), acetaminophen, amitriptyline, tramadol
+
+Gastrointestinal issues
+Nonpharmacologic approaches
+• Healthy, varied diet low in processed food. Some patients may be able to minimize gastrointestinal symptoms by eliminating certain foods (eg, 1 or more of caffeine, alcohol, spicy foods, aspartame, sugar, possibly dairy or gluten).
+Pharmacologic approaches
+• If small intestinal bacterial overgrowth—rifaximin, oral vancomycin, metronidazole
+
+a
+These are general recommendations. The treating physician should use these after careful consideration of the needs of the individual patient along with up-to-date drug product information. For more information on dosing and use of the pharmacologic therapies, see the referenced document.
+
+Experts in ME/CFS have had success with a range of pharmacologic therapies. Sleep may be improved with medications, such as trazodone, clonazepam, tricyclic antidepressants, and suvorexant. Methylphenidate, modafinil, or dextroamphetamine can occasionally help with cognitive issues, but there is a risk of addiction with methylphenidate and dextroamphetamine. Patients with ME/CFS and clinicians report improvement from therapies such as fludrocortisone and fluid expansion. On occasion, patients may require intravenous administration of fluids for severe orthostatic intolerance episodes. Medications such as gabapentin, pregabalin, low-dose naltrexone, and duloxetine may be used to treat pain.
+
+Medications should be initiated at lower dosages and slowly titrated up to avoid triggering drug sensitivities common in ME/CFS. To reduce polypharmacy, medications that treat more than 1 symptom should be favored. Clinicians should also be aware of sensitivities to anesthesia and medication ingredients considered to be inactive (eg, fillers, vehicles, preservatives).
+
+Some disease experts have selectively used antivirals and immune modulators off-label in some patients and have observed favorable responses. A specialty consultation may be helpful in developing a treatment plan and in managing those aspects of the disease with which the referring physician is unfamiliar.
+
+Treat Comorbidities
+Treatment of comorbidities can positively affect a patient’s quality of life and severity of symptoms. Common comorbidities include fibromyalgia, mast cell activation syndrome, postural orthostatic tachycardia syndrome, Ehlers-Danlos syndrome, sleep apnea, irritable bowel syndrome, and secondary depression/anxiety. Ensure that treatments for comorbidities are also appropriate for ME/CFS. For example, whereas exercise may help patients with fibromyalgia, it can make patients with ME/CFS worse.
+
+Schedule Regular Follow-up Visits
+Ask patients to report any new or worsening symptoms and confirm that these are not caused by another condition. Instruct patients to report any new drugs, supplements, or complementary approaches and review for potential adverse effects and treatment interactions. This is especially important in older patients because of the higher risk of medication-related adverse effects.
+
+Address Questions on Prognosis
+Patients will have questions about their long-term prognosis. Be honest but also reassure patients that there are steps that can be taken to help manage their symptoms, maximize their functioning, and improve their quality of life to the greatest extent possible.
+
+For many decades, care of patients affected by ME/CFS has been negatively impacted by lack of accurate, up-to-date knowledge among health care providers. Even when health care professionals are sympathetic, they are often uncertain about how to assess patients and what can be done after diagnosis. This need is more urgent than ever, given the risk for development of ME/CFS in some patients with COVID-19. Hopefully, this article has answered some questions surrounding this enigmatic condition and outlined a clear path forward for clinicians. As with many chronic medical conditions, although there is not yet a cure for ME/CFS, health care providers are in a unique position to have a positive impact on patients’ lives.

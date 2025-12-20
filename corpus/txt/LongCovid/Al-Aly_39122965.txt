@@ -1,0 +1,739 @@
+Abstract
+Long COVID represents the constellation of post-acute and long-term health effects caused by SARS-CoV-2 infection; it is a complex, multisystem disorder that can affect nearly every organ system and can be severely disabling. The cumulative global incidence of long COVID is around 400 million individuals, which is estimated to have an annual economic impact of approximately $1 trillion—equivalent to about 1% of the global economy. Several mechanistic pathways are implicated in long COVID, including viral persistence, immune dysregulation, mitochondrial dysfunction, complement dysregulation, endothelial inflammation and microbiome dysbiosis. Long COVID can have devastating impacts on individual lives and, due to its complexity and prevalence, it also has major ramifications for health systems and economies, even threatening progress toward achieving the Sustainable Development Goals. Addressing the challenge of long COVID requires an ambitious and coordinated—but so far absent—global research and policy response strategy. In this interdisciplinary review, we provide a synthesis of the state of scientific evidence on long COVID, assess the impacts of long COVID on human health, health systems, the economy and global health metrics, and provide a forward-looking research and policy roadmap.
+
+Long COVID is best defined as the constellation of post-acute and long-term health effects caused by SARS-CoV-2 infection. Long COVID was initially reported by patients who coined the term and, through research and advocacy, drove much of the progress in understanding this condition over the past several years.
+
+Long COVID is a complex, multisystem disorder that affects nearly every organ system, including the cardiovascular system, the nervous system, the endocrine system, the immune system, the reproductive system and the gastrointestinal system. It affects people across the age spectrum (from children to older adults), people of different race and ethnicities, sex and gender, and baseline health status. Cardinal manifestations include brain fog (or cognitive dysfunction), fatigue, dysautonomia (which commonly manifests as postural orthostatic tachycardia syndrome (POTS)) and post-exertional malaise. Many of the health effects seen in long COVID are shared across several infection-associated chronic conditions, also called post-acute infection syndromes.
+
+The epidemiology of long COVID is influenced by various factors. The Omicron variant of SARS-CoV-2 is associated with less risk of long COVID than the Delta and pre-Delta variants. Vaccines (before infection) and antivirals (during the acute phase of infection) may reduce the risk of long COVID. Reinfection, on the other hand, is a risk factor for long COVID; even if individuals did not experience long COVID after a first SARS-CoV-2 infection, they remain at risk of developing it with subsequent infections. Reinfection can trigger de novo long COVID or exacerbate the severity of existing long COVID. Cumulatively, two infections yield a higher risk of long COVID than one infection and three infections yield a higher risk than two infections.
+
+A unifying thread of evidence across most studies evaluating the risk of long COVID is the finding that the risk increases as the severity of acute infection increases. People who had severe COVID-19 that necessitated hospitalization exhibit a higher risk of long COVID than those with mild COVID-19. However, because most people around the globe had mild COVID-19, they constitute more than 90% of people with long COVID, despite their lower relative risk compared with that of people with severe COVID-19.
+
+Studies evaluating recovery from long COVID are sparse and inconsistent; this is largely due to use of various definitions, incomplete accounting for all the manifestations of long COVID and misclassification of remission as ‘recovery’. However, studies carefully evaluating individual manifestations show that recovery rates are generally low at 1 year, and several studies show only 7–10% fully recovered at 2 years. Furthermore, some manifestations of long COVID, including heart disease, diabetes, myalgic encephalomyelitis and dysautonomia are chronic conditions that last a lifetime. Adding to this are the concerns about the possible emergence of new latent sequelae—that have not yet been characterized—years after the acute infection.
+
+The impact of long COVID is not limited to the health and well-being of individual patients and their communities. Owing to its prevalence and the breadth of its clinical manifestations, it represents a major public health crisis; it strains health systems and national economies, and threatens progress on global health, including the Sustainable Development Goals.
+
+In this interdisciplinary review, we provide a brief synthesis of the current state of scientific evidence on long COVID, including knowns, unknowns and the key controversies. We provide an assessment of the impacts of long COVID on human health, health systems, the economy and global health metrics and, finally, we provide a forward-looking research and policy roadmap that we hope will stimulate global discussion on how to address the challenge of long COVID.
+
+State of the science on long COVID
+The global burden
+Estimating the global burden of long COVID presents substantial 
+challenges due to the variability in study designs and populations, 
+follow-up times, choice of control groups (for example, whether stud-
+ies evaluated people with negative SARS-CoV-2 tests or no known 
+SARS-CoV-2 infection as controls), assessment of baseline health 
+before the infection (to ascertain emergence of a true new health 
+condition) and definitions of what constitutes ‘long COVID'48,49. Vari-
+ation in risk estimates also reflects the dynamic nature of the pandemic 
+itself, which gave rise to many variants and subvariants, each yielding 
+potentially different rates of long COVID; the effect of COVID-19 vac-
+cines and use of antivirals in the acute phase, which may reduce the 
+risk of long COVID; and the effect of SARS-CoV-2 reinfections, which 
+contribute additional risk28,29.
+Few countries established surveillance systems to estimate the 
+burden of long COVID at the population level. Data from the US Centers 
+for Disease Control and Prevention (CDC)’s National Health Interview 
+Survey show that in 2022, 6.9% of US adults50 and 1.3% of children51 ever 
+had long COVID. Data from the Medical Expenditure Panel Survey—
+a nationally representative survey of US adults—found that 6.9% of 
+adults had ever had long COVID as of early 2023 (ref. 52 ). Estimates 
+from the CDC’s Household Pulse Survey show that prevalence of cur-
+rent long COVID in US adults was around 6.7% in March 2024 (ref. 53). 
+In the United Kingdom, point prevalence estimates from the Office 
+of National Statistics show that 2.9% of the UK population (including 
+children) were experiencing self-reported long COVID in March 2023 
+(ref. 54). Overall, estimates of the burden of long COVID in the general 
+population converge around a point prevalence of 6% to 7% in adults 
+and ~1% in children50–54.
+Also important are estimates of the incidence of long COVID, which 
+can be informed by high-quality meta-analyses of large-scale cohort 
+studies among people infected with SARS-CoV-2. For instance, one 
+analysis pooled results from 54 studies in 22 countries and estimated 
+that approximately 6.2% of symptomatic COVID-19 survivors experi-
+ence at least one of three common symptom clusters at 3 months after 
+acute infection, across all ages and accounting for different severity 
+levels of the initial infection and pre-COVID health status31. This analysis 
+only considers three major symptom clusters in long COVID (fatigue 
+with bodily pain/mood swings, and cognitive and respiratory symptom 
+clusters); however, it sets a conservative benchmark to estimate the 
+global risk of long COVID31.
+We estimated the global incidence of long COVID on the basis of 
+meta-regression studies that pool together all the available evidence31 
+(Fig. 2). Incorporating a number of assumptions, including the Institute 
+for Health Metrics and Evaluation’s annual estimates of SARS-CoV-2 
+infections31,55–59, a proportion symptomatic cases among infections of 
+65% (ref. 31), and a reduction in the risk of long COVID for 2022 and 2023 
+to account for the putative lower severity of the Omicron variant and 
+the effect of vaccination60, we estimated a cumulative global incidence 
+of long COVID by the end of 2023 of approximately 400 million. It is 
+crucial to emphasize that these estimates only represent cases arising 
+from symptomatic infections and are likely to be conservative. The 
+actual incidence of long COVID, including cases from asymptomatic 
+infections61 or those with a broader range of symptoms, is expected to 
+be higher. Furthermore, the estimates do not account for the added bur-
+den of long COVID due to reinfection29 and the possibility of latent risks  
+(that is, risks that are not yet manifest and may emerge years or decades 
+after infection)3,37,41. The emergence of new variants, changes in public 
+health measures and changes in the effectiveness and uptake of vac-
+cination may also substantially influence these estimates in the future.
+While it is challenging to provide estimates of new cases with high 
+precision, the current evidence makes it compellingly clear that long 
+COVID represents a substantial and ongoing challenge to global health.
+Mechanisms of long COVID
+The pathophysiological mechanisms of long COVID are still being elu-
+cidated2,62, and it is unlikely that a single mechanism can explain the 
+broad and heterogeneous set of symptoms and diseases spanning vari-
+ous organ systems. Long COVID likely represents a disease with many 
+subtypes; each may have their own risk factors, biological mechanisms 
+and disease trajectory, and may respond differently to treatments3. 
+Multiple pathological pathways may be engaged depending on various 
+factors, including prior environmental exposures, genetic makeup, age, 
+sex, prior health, microbiome health, viral characteristics (SARS-CoV-2 
+variant, viral load), the immune response (which may be influenced by 
+prior infections, vaccines and use of immunosuppressive agents) and 
+medical treatments (antivirals, steroids). All of these drivers likely shape 
+the human host response during the acute phase of SARS-CoV-2 infec-
+tion and may trigger pathophysiological mechanisms that ultimately 
+produce phenotypes of long COVID.
+Several mechanistic pathways have been proposed for long COVID, 
+including viral persistence, immune dysregulation, mitochondrial 
+dysfunction, complement dysregulation, prothrombotic inflamma-
+tion and microbiome dysbiosis3,7,12,63–69 (Fig. 3). Viral persistence (either 
+replicating virus or viral RNA or protein fragments)—which may be 
+common70—in immune-privileged sites may trigger chronic low-grade 
+inflammation and tissue injury 63,71–73, and may correlate with long 
+COVID symptomatology72.
+Studies have demonstrated persistence of the virus in extrapul-
+monary sites, including the brain and coronary arteries, of individuals 
+with severe COVID-19 (refs. 68,74). Studies in human and mouse brain 
+organoids showed that SARS-CoV-2 infection induces fusion between 
+neurons and between neurons and glial cells, which may progressively 
+lead to formation of multicellular syncytia compromising neuronal 
+activity75. Neuroimaging studies performed in humans 10 months after 
+they ‘recovered’ from mild-to-moderate SARS-CoV-2 infection showed 
+significant alterations (commensurate with 7 ‘years of healthy aging’) of 
+cerebral white matter, including widespread increases of extracellular 
+free water and mean diffusivity (indicative of inflammation) encom -
+passing all brain lobes76. Pre- and post-SARS-CoV-2 infection imaging 
+studies showed structural abnormalities and accelerated aging in the 
+brains of people with mild-to-moderate SARS-CoV-2 infection 74,77,78. 
+Even in the absence of direct infection in the brain, a transient respira-
+tory infection with SARS-CoV-2 induces prolonged neuroinflammatory 
+responses, activation of microglial cells and impaired neurogenesis64,77. 
+In addition to neuroinflammation, people with brain fog due to long 
+COVID were shown to have disrupted blood–brain barriers79.
+Abnormalities in the immune system have been documented 
+in people with long COVID, including increased humoral responses 
+directed against SARS-CoV-2; higher antibody responses against 
+Epstein–Barr virus (EBV)66, varicella zoster virus (VZV) 66 and cyto -
+megalovirus67 (suggesting possible reactivation of herpesviruses80); 
+exhausted T cell responses12,66; and uncoordinated cross-talk between 
+the cellular and humoral adaptive immunity 12, 13. Autoimmune 
+responses triggered by SARS-CoV-2 infection may underlie long COVID 
+symptoms81,82. Passive transfer of IgG antibodies from patients with 
+long COVID to healthy mice recapitulated heightened pain sensation 
+and locomotion deficits82,83.
+In the heart, SARS-CoV-2 infects coronary vessels, preferentially 
+targeting coronary artery plaque macrophages and inducing plaque 
+inflammation68. Vascular disease in long COVID is likely triggered by 
+complement activation, red blood cell lysis, platelet activation and 
+thromboinflammation—leading to altered coagulation and tissue 
+injury67,84. Dysfunctional hypothalamic–pituitary–adrenal response 
+with inappropriately low levels of cortisol may mediate some of the 
+symptomatology observed in long COVID (including fatigue, sleep 
+abnormalities and metabolic derangements) 66, and has been seen 
+in those with persistent respiratory symptoms of long COVID 80. 
+SARS-CoV-2 infection may lead to reduced intestinal absorption of 
+tryptophan (a serotonin precursor) and subsequently reduced lev -
+els of circulating serotonin, which may impair cognition via reduced 
+vagal signaling85. SARS-CoV-2 infection may also lead to mitochondrial 
+dysfunction, systemic metabolic abnormalities and abnormal skeletal 
+muscle response to exercise—including exercise-induced myopathy 
+and tissue infiltration of amyloid-containing deposits and leukocytes65.
+The proposed mechanisms of long COVID share similarities with 
+those of other post-acute infection syndromes, which are beyond the 
+scope of this article and are discussed in detail elsewhere24.
+Prevention, treatment and care models
+Non-pharmaceutical interventions (for example, masking, improved 
+indoor air quality) can reduce the risk of SARS-CoV-2 infection and 
+consequently reduce the risk of long COVID. COVID-19 vaccines may 
+partially reduce the risk of long COVID in adults by 15–70% (mean, 
+~40%)86–89; they may also partially reduce the risk of long COVID in chil-
+dren90,91. In nonhospitalized individuals (mild-to-moderate COVID-19) 
+who have at least one risk factor for the development of severe COVID-
+19, use of the SARS-CoV-2 antivirals (ritonavir-boosted nirmatrelvir 
+and molnupiravir) in the acute phase may reduce the risk of long 
+COVID92–97. However, the effectiveness of these antivirals in reducing 
+risk of long COVID in low-risk groups, including younger individuals 
+with no comorbidities98, has not been evaluated. Simnotrelvir—a new 
+SARS-CoV-2 antiviral available in China99—resulted in earlier reduction 
+in viral load and faster resolution of acute symptoms (than placebo)100, 
+but its effectiveness against long COVID has not yet been evaluated. 
+Exploratory analyses showed that another new SARS-CoV-2 antivi-
+ral, ensitrelvir (currently available in Japan), reduced the risk of long 
+COVID when initiated in the acute phase of COVID-19 (refs. 101,102). 
+Furthermore, metformin (initiated within 7 days of SARS-CoV-2 infec-
+tion) has been shown to reduce the risk of long COVID in a randomized 
+controlled trial103.
+Evidence for long COVID treatments is beginning to emerge, but 
+it is still limited. A randomized, double-blind, placebo-controlled trial 
+showed that treatment with a synbiotic preparation (a gut microbiome 
+modulator) alleviated multiple symptoms of long COVID—highlight-
+ing the need to further explore microbiome modulators as potential 
+therapeutics in this setting 104. Another randomized, controlled trial 
+showed that a 15-day course of ritonavir-boosted nirmatrelvir did not 
+reduce the burden of long COVID symptoms in comparison to ritonavir 
+with placebo105.
+Due to near-total absence of evidence from randomized clinical 
+trials to guide treatment decisions, approaches for the assessment and 
+treatment of respiratory sequelae106, cardiovascular complications107, 
+fatigue108, cognitive symptoms 109, autonomic dysfunction (includ -
+ing POTS)110–114 and neuropsychiatric impairment 115,116 in adults and 
+children117 are based on evidence of treating similar symptomatology 
+from other conditions—including myalgic encephalomyelitis/chronic 
+fatigue syndrome (ME/CFS) and Gulf War illness26,118–120.
+Care for people with long COVID varies widely across settings and 
+practitioners118,119,121–123. It is often challenged by lack of widespread 
+recognition and understanding of long COVID among medical profes-
+sionals, constrained resources and competing demands on healthcare 
+systems still recovering from the shock of the pandemic, lack of stand-
+ardized care pathways, lack of definitive diagnostic and treatment 
+tools, and a general pervasive pandemic fatigue with an urge to ‘move 
+on’124,125. Much of the global burden of long COVID remains undiag -
+nosed, particularly in low-resource settings, and in many instances are 
+erroneously attributed to psychosomatic causes126.
+Overall, care models for long COVID are evolving, with sub -
+stantial variability across health systems 127. While there is still 
+no empirical evidence evaluating comparative effectiveness of  
+long COVID care models 121 , optimal models should be context 
+dependent—based on available resources, expertise and the popu-
+lation being served 121,128.
+Impacts of long COVID
+In addition to its impact on patients’ daily lives and health outcomes, 
+long COVID has a devastating impact on communities and can have 
+wide-reaching ramifications for health systems, national economies 
+and global health metrics.
+Impact on individuals and communities
+Long COVID drastically affects patients’ well-being and sense of self, as 
+well as their ability to work, socialize, care for others, manage chores 
+and engage in community activities—which also affects patients’ fami-
+lies, caregivers and their communities129. Over three quarters of peo-
+ple with long COVID report a moderate or severe impact on general 
+well-being130. The high rates of cognitive and physical symptoms also 
+affect individuals’ identity and sense of self. One in four people with 
+long COVID limit activities outside work in order to continue working131. 
+Many patients with long COVID experience social exclusion, isolation 
+and stigma, often from medical providers43,132–134. These challenges 
+are exacerbated by societal barriers to the inclusion of people with 
+disabilities and chronic illnesses.
+Impact on health systems
+Because of the large burden of long COVID and its multisystemic 
+effects135, it has profound impacts on health systems 136,137. Patients 
+with long COVID frequently require ongoing medical care and mul -
+tiple specialist consultations to manage their complex symptoms. 
+This increased demand exacerbates existing pressures on health sys-
+tems, leading to longer wait times, potential delays in essential care 
+and increased costs. In the United States, people with long COVID 
+are more likely to report unmet healthcare needs in the past year 
+because of costs and difficulties finding a clinician and getting an 
+appointment when needed138. These issues are exacerbated in low- and 
+middle-income countries 126,139. Furthermore, the lack of standard -
+ized diagnostic criteria, treatment protocols and models of care for 
+long COVID adds to the complexity and places additional burdens on 
+healthcare providers137,140,141.
+Perhaps the most enduring challenge to health systems lies in the 
+rise in the burden of non-communicable diseases (NCDs; for example, 
+cardiovascular disease and diabetes) as a consequence of SARS-CoV-2 
+infection4,5,9,10,15,136,142–152. NCDs are chronic conditions that require life-
+long care, impact health system utilization (competing for access and 
+quality of care) and raise healthcare costs137.
+Impact on economies
+Long COVID strains individual financial health153 and has wide and deep 
+ramifications on national economies154–159. In addition to the substan-
+Impact on economies
+Long COVID strains individual financial health153 and has wide and deep 
+ramifications on national economies154–159. In addition to the substan-
+tial direct healthcare costs160, there is also financial strain on support 
+services and disability benefits. In addition, long COVID affects labor 
+participation, employment and productivity of impacted individuals 
+and their caregivers129,156,161–163—resulting in depleted savings, food and 
+housing insecurity131,164 and negative impact on labor supply, thereby 
+fueling labor shortages156. Studies indicate a significant percentage of 
+individuals with long COVID experience a reduced ability to work or 
+may be unable to work at all165. A report by the US Brookings Institute 
+estimated that between 2 and 4 million US adults were out of work 
+because of long COVID in 2022 (ref. 165). A US Federal Reserve Bank 
+report found that people with long COVID had 10% less likelihood of 
+being employed and worked 25% to 50% fewer hours when employed 
+than uninfected individuals166. Survey data from the UK’s Trades Union 
+Congress show that 20% of people with long COVID were not working 
+and that an additional 16% were working reduced hours167. An analysis 
+by the European Commission suggested that long COVID had a negative 
+impact on the European labor supply of 0.2–0.3% in 2021 and 0.3–0.5% 
+in 2022 (ref. 168).
+Quantitative estimates of the total economic impact of long COVID 
+remain preliminary. A study in 2022 estimated the economic cost of 
+three key parameters in the United States, including lost quality of 
+life ($2,195 billion), cost of lost earning ($997 billion) and spending on 
+healthcare ($528 billion), for up to a total cost of $3.7 trillion154,155—this 
+amounts to $11,000 per capita or 17% of the 2019 gross domestic prod-
+uct (GDP). These economic losses are on par with the global 2008 Great 
+Recession. Assumptions included in these estimates are that burden of 
+disability from long COVID is on par with that of ME/CFS and that long 
+COVID lasts on average for 5 years155.
+Among OECD (Organization for Economic Co-operation and 
+Development) countries, a preliminary conservative estimate sug -
+gested that excluding the direct costs of healthcare, long COVID is likely 
+costing OECD countries as much as $864 billion to $1.04 trillion per 
+year due to reductions in quality of life and labor force participation169.  
+A recent analysis by the Economist Impact (a think tank of The Econ-
+omist) suggested that the economic cost of long COVID in 2024 is 
+expected to be around 0.5% to 2.3% of the GDP of several large econo-
+mies170 (Table 1). On the basis of all the available data, a conservative 
+estimate of the annual global economic toll of long COVID could be 
+around $1 trillion amounting to 1% of the 2024 global GDP154,155,169,170.
+Impact on the SDGs
+The profound immediate health, social and economic shocks trig -
+gered by the COVID-19 pandemic have undermined the ability of 
+many countries to achieve the SDGs by 2030 (ref. 171). In addition to 
+the immediate effect of the pandemic, its long tail—in the form of long  
+COVID—presents a more profound and enduring challenge to SDGs 
+than the direct initial disruptions171.
+Long COVID’s multifaceted impact jeopardizes progress across 
+many SDGs, particularly those aimed at promoting health and eco -
+nomic well-being, and reducing inequalities172–179. Long COVID can limit 
+access to and quality of healthcare 136,137, reduce labor participation, 
+worsen poverty and hinder economic productivity169, and exacerbate 
+existing inequalities180–183. Table 2 lists the impacts of long COVID on 
+several of the SDGs and identifies which collaborative, multi-sectoral 
+partnerships and actions are needed to address these impacts.
+The full extent to which long COVID will undermine the SDGs is still 
+evolving and is difficult to fully quantify174,175; a deeper understanding 
+of the full scope and scale of this impact is needed.
+Research and policy roadmaps
+Substantial work lies ahead to address the broad and multifaceted chal-
+lenges posed by long COVID—including preventing further increase in 
+the number of people with long COVID and addressing the care needs 
+of people already impacted184. Responding to these challenges will 
+require coordinated, long-term policy response and visionary research 
+strategies, guided by the principles of health equity and patient centere-
+dness185–187. We developed the following research and policy roadmaps 
+on the basis of our assessment of the evidence and policy gaps, as well 
+as our own clinical, research and policy experience and in partnership 
+with patients.
+Research roadmap
+Biological mechanisms. Leading mechanistic hypotheses (discussed 
+above) should be examined carefully, particularly for their interactions 
+and potential to guide disease management, trials to test existing drugs 
+and the development of new drugs3. Continued investigation (via ani-
+mal models188,189 or other approaches) of neuroinflammation, immune 
+dysregulation, sex differences 190, tissue damage and susceptibility 
+features, including genomic 191, epigenomic192–194 and other '-omics', 
+is warranted. In evaluating the mechanisms of long COVID, detailed 
+assessment of specific manifestations, for example, understanding 
+the pathophysiology of post-exertional malaise, may yield mechanistic 
+insights that guide clinical management65,195,196.
+That SARS-CoV-2 leads to long COVID is unlikely to be a unique 
+property; many other viral agents (including influenza, SARS, Mid -
+dle East respiratory syndrome, EBV, Dengue, Ebola, Polio, Chikun -
+gunya, West Nile virus, Ross River virus, Coxsackie B and VZV) and 
+nonviral agents (Coxiella burnetii, Borrelia, Giardia lamblia) also lead 
+to post-acute and long-term health effects24,197. A deeper understand-
+ing of the similarities and distinctions in the biological mechanisms 
+of long COVID and other infection-associated chronic conditions is 
+needed2,3,24–26,198–214.
+Diagnostics. A research agenda is needed to foster the development, 
+testing and validation of more advanced imaging, new blood tests, 
+molecular probes, '-omics' and novel approaches to tissue investiga-
+tion and analyses—toward better diagnosis of long COVID. Traditional 
+imaging techniques may not reveal abnormalities in long COVID that 
+may be evident in more advanced imaging. For example, new imag -
+ing technologies, including magnetic resonance imaging (MRI) with 
+xenon-129 (129XE-MRI)215 for lungs, diffusion MRI to map glial activity216,
+ing technologies, including magnetic resonance imaging (MRI) with 
+xenon-129 (129XE-MRI)215 for lungs, diffusion MRI to map glial activity216, 
+imaging for glymphatic functioning217 and arterial spin labeling MRI218 
+for cerebral blood flow, have identified abnormalities in long COVID 
+where conventional imaging has not. In a preliminary study, imaging 
+flow cytometry was shown to detect fibrin microclots, which may be 
+more abundant in people with long COVID than controls219. Whole-body 
+positron emission tomography imaging using a highly selective radi-
+otracer ([18F]F-AraG) that allows anatomical quantification of activated 
+T lymphocytes, showed increased radiotracer uptake indicative of T cell 
+activation in various anatomic sites (for example, spinal cord, lungs) 
+that were associated with long COVID220. These imaging modalities—
+along with other approaches—should be further investigated for their 
+potential to establish diagnosis of long COVID, to guide trial designs, 
+and for targeted disease management.
+Biomarkers are helpful, not only as diagnostics, but also to aid 
+in risk stratification (to guide trials and choice of treatment), deter -
+mine potential subtypes of disease, and assess severity, prognosis and 
+response to treatment. Candidate biomarkers include immune cell 
+phenotypes, cytokines/chemokines, immunoglobulins, complement 
+and coagulation proteins, acute phase proteins, endocrine markers and 
+markers of neurologic or vascular injury66,67,73,221,222. Integrated '-omics' 
+analyses223,224, including genomic, epigenomic, transcriptomic225, pro-
+teomic226–228, metabolomic229, lipidomic230, and microbiome231 profil-
+ing, may help identify fingerprints for various types of long COVID. 
+However, because of the complexity of long COVID and its diverse 
+manifestations, which likely represent distinct mechanistic pathways, a 
+single or even a panel of laboratory tests may not achieve high-enough 
+performance. Sequela-specific approaches for biomarker discovery 
+may also be productive221.
+In addition to imaging modalities and biomarkers, harnessing 
+health data from wearable biosensors and other sources may also be 
+useful for diagnosis and to identify triggers and track disease activity.
+Epidemiology and clinical course.  Studies to understand the inci -
+dence, prevalence, severity and trajectory of long COVID over time are 
+critical35,36,232,233. Comprehensive understanding of risk factors, includ-
+ing social determinants of health, genetic, environmental, dietary, 
+health behavior (for example, smoking) and other risks of long COVID, 
+is also important.
+Research to identify the putative subtypes (or clusters of sequelae) 
+of long COVID has yielded variable results thus far234–237; greater clarity 
+is needed on putative subtypes and how might they differ in terms of 
+epidemiological features (for example, risk factors), clinical course 
+and potential response to treatment.
+Real-world evidence using high-quality data and advanced causal 
+inference approaches (for example, target trial emulation) to evaluate 
+effectiveness of therapeutic interventions will complement evidence 
+generated by randomized trials238,239. This is particularly relevant in the 
+evaluation of the long-term effects of therapeutic interventions and 
+risks of rare adverse events; trials may have a relatively short follow-up, 
+limiting assessment of long-term outcomes. Moreover, trials may not 
+be adequately powered to detect rare adverse events.
+Because long COVID is a new entity (it has been in existence for less 
+than 5 years), longitudinal studies to characterize the long-term health 
+trajectories of people with long COVID—up to 10 years, 20 years and 
+30 years—are needed, to understand rates and predictors of recovery 
+and relapse of the various manifestations. These long-term studies 
+will also help identify any latent consequences of the disease (that is, 
+impacts that have not yet been realized) and secondary consequences
+will also help identify any latent consequences of the disease (that is, 
+impacts that have not yet been realized) and secondary consequences 
+(for example, the downstream health effects that emanate from long 
+COVID). For example, understanding whether people with cognitive 
+dysfunction (or brain fog) are at a higher risk of developing neurode-
+generative diseases later in life is critical.
+Comparative analyses to understand the post-acute and long-term 
+health consequences of SARS-CoV-2 infection (and reinfection) versus 
+other infections (for example, seasonal and pandemic influenza, res-
+piratory syncytial virus infections and others) is important to enhance
+our understanding of similarities and differences in their epidemiology 
+and clinical course197,240–242.
+Quantifying the burden of NCDs attributable to long COVID would 
+bring greater clarity to the extent to which billions of SARS-CoV-2 infec-
+tions around the world may have impacted the global epidemiology of 
+NCDs. The effects of long COVID on global health metrics, including 
+SDGs, should also be periodically evaluated.
+Trials to test therapeutics for long COVID. When it comes to clinical 
+trials for long COVID therapeutics, innovation, urgency and scale are 
+all needed243,244. Long COVID is a complex disease with many manifesta-
+tions that are likely driven by several different biological mechanisms, 
+and may need different therapeutic approaches. Approaches that 
+reimagine trial design to incorporate the complexities of the disorder 
+and meaningfully incorporate patient input—from trial inception to 
+completion—are needed244,245. This may include large-scale platform 
+trials with adaptive designs that would test a large battery of potential 
+drug candidates to quickly identify treatments for the various forms 
+of long COVID.
+There is a large array of existing drugs that could be readily repur-
+posed and clinically evaluated to address existing hypotheses from viral 
+persistence to immune system dysfunction to vascular damage. Some 
+of these drugs include SARS-CoV-2 antivirals, neutralizing monoclonal 
+antibodies against SARS-CoV-2, non-SARS-CoV-2 antivirals (targeting 
+reactivated EBV and VZV), immunomodulators (for example, JAK–STAT 
+inhibitors, checkpoint inhibitors), anticoagulants, histamine 1 and 2 
+antagonists, metformin, GLP-1 receptor agonists, SGL T2 inhibitors, 
+microbiome modulators, anti-inflammatory agents, and drugs that 
+improve glymphatic functioning 2,62,246. Research agendas must also 
+include development of new antivirals and other new targeted drugs 
+to prepare for the possibility that repurposed drugs may not be suf -
+ficiently effective 247–249. T esting and evaluation of combinations of 
+treatments should also be undertaken when evidence suggests com-
+plementary or synergistic mechanisms of action.
+Innovation in developing and validating entry criteria and clini -
+cal endpoints for long COVID trials is also needed, along with culti -
+vating support for these parameters from stakeholders, including 
+regulators such as the US Food and Drug Administration and European 
+Medicines Agency 250. Endpoints must include newly developed or 
+improved patient-reported outcomes specific to long COVID and 
+should reflect the often cyclical or relapsing–remitting dynamic of 
+many manifestations of long COVID—with particular focus on tracking 
+post-exertional malaise, a pathophysiological state that impacts all  
+collected data.
+Care delivery and health systems research.  Research—including 
+comparative analyses—to evaluate the cost and effectiveness of vari-
+ous care pathways in improving quality of care and outcomes in people 
+with long COVID is needed 121,127,251. Research to identify and address 
+health inequities and barriers to effective care, especially in low- and 
+middle-income countries, in low-resource settings and in underserved 
+communities, is essential252.
+Economic impacts.  The effect of long COVID on human capital 253, 
+labor participation, productivity losses (workforce absenteeism, pres-
+enteeism and disability) and other economic indicators (including job 
+retention, career advancement and income instability) should be thor-
+oughly evaluated. Research should explore potential disparities in the 
+economic impact of long COVID across various demographic groups, 
+including racial and ethnic minorities, urban and rural communities, 
+socioeconomically marginalized populations, and individuals with 
+preexisting health conditions.
+In addition, studies are needed to quantify the direct healthcare 
+costs associated with long COVID. The costs of disability and support 
+systems required to address the needs of people with long COVID 
+should be quantified. The strain that these costs pose on payors (insur-
+ance providers and governments) should also be evaluated.
+Understanding the economic barriers to healthcare access 
+and affordability for people with long COVID is also important. This 
+includes evaluating out-of-pocket expenses, insurance coverage gaps, 
+and disparities in access to care, rehabilitation services and support 
+services.
+Societal impacts. Long COVID affects individual lives and impacts soci-
+etal well-being. Understanding the effects of long COVID on societies 
+is important, along with understanding the social responses, the per-
+ceptions and the genesis and propagation of stigma. Improved knowl-
+edge of the social consequences of being affected by long COVID—for 
+example, lost friendships, strained marriages and reduced ability to 
+network—along with the interplay between them and health outcomes, 
+will help to inform supportive interventions. It will also be important to 
+evaluate the burden on caregivers, families and social groups.
+Research to develop a deeper understanding of the causes and 
+consequences of misinformation, disinformation and anti-science 
+rhetoric (for example, long COVID denialism) and how to effectively 
+combat them is also needed 254. Identifying ways to improve science 
+communication, scientific literacy and public trust in science and 
+to bridge the science–policy gap would all help to improve public 
+understanding, as well as the scientific and policy responses to long 
+COVID254.
+Medical anthropology should also contextualize the response 
+of the science and medicine profession to long COVID within the 
+broader history of medicine. This should include comparative analy -
+ses to evaluate and juxtapose the response to long COVID against the 
+responses to the aftereffects of the 1889–1892 flu pandemic and the 
+1918 flu pandemic and other health crises, including the AIDS crisis 
+in the 1980s198,199,201,255–257. Careful anthropologic analysis of how the 
+medical profession approached long COVID as a new disease that 
+emerged in the context of the COVID-19 pandemic is important.  
+It will not only provide historic insights and greater context for our 
+collective response, but also offer insights into how we can optimize 
+responsiveness to emergence of new infection-associated diseases 
+in the future.
+Policy roadmap
+Given the wide-ranging impact of long COVID on society and the inad-
+equate response thus far, priorities for policy changes are vast. Policies 
+are necessarily dependent on context, resources and various other 
+considerations. The recommendations outlined below are general 
+guidelines that may be adapted to fit the needs of various locales.
+Prevention of long COVID.  The best way to prevent long COVID is, 
+plainly, to prevent SARS-CoV-2 infection or reinfection in the first 
+place. Masking, especially in high-risk places258 (for example, health-
+care settings), is important—along with isolation guidelines and sick 
+leave policies that permit people with infection to recuperate at home, 
+thereby diminishing the probability of transmission and reducing the 
+risk of long COVID45.
+Although vaccines may reduce the risk of long COVID, vaccine 
+policies in much of the world restrict vaccine availability to high-risk 
+groups. These policies consider risks of death and hospitalization in 
+the acute phase (which are manifest primarily in older adults and those 
+with comorbidities) and ignore the risk of long COVID. Adding to these 
+policy challenges are the low rates of vaccine uptake in 2023–2024
+with comorbidities) and ignore the risk of long COVID. Adding to these 
+policy challenges are the low rates of vaccine uptake in 2023–2024 
+among eligible populations259. Vaccine policies must consider the risk 
+of long COVID, as well as the risk of hospitalization and death during 
+the acute phase of SARS-CoV-2 infection; and strategies to improve 
+vaccine uptake (for example, pairing the COVID-19 vaccine with the 
+annual influenza vaccine and other approaches) should be utilized to 
+achieve wider vaccine coverage and greater protection to populations.
+Because SARS-CoV-2 is likely to remain for decades to come, it is 
+important to develop long-term, sustainable prevention solutions. 
+Airborne transmission risk assessment tools, such as the one developed 
+by the World Health Organization (WHO), help inform risk reduction 
+strategies260. Ventilation and air filtration systems can play a major role 
+in reducing the risk of infection with airborne pathogens261. Calls have 
+been made for mandatory improved air quality standards for public 
+spaces and policies that would support design and equipment of homes 
+to meet these standards261. Investment in infrastructure supporting 
+improved indoor air quality will help reduce the risk of SARS-CoV-2 
+transmission and other airborne pathogens and will ensure greater 
+resilience against future threats from airborne pathogens262. Amelio-
+ration of indoor air quality also has the added benefit of reducing risk 
+of health effects due to indoor air pollutants263–265, thereby improving 
+human health, well-being, productivity and learning 261,262,266. Invest-
+ment in vaccine technologies to develop more durable, variant-proof 
+vaccines that are not rendered ineffective by ongoing mutations of 
+the SARS-CoV-2 virus are important. Vaccine technologies that induce 
+strong mucosal immunity to block SARS-CoV-2 infection and transmis-
+sion are also needed267.
+Supporting people with long COVID.  Because of the considerable 
+impacts of long COVID on people’s ability to work and care for them-
+selves, it is imperative that an adequate response to the long COVID 
+crisis involves ensuring people have the financial, physical and emo-
+tional support132. Streamlining of disability benefit processes, as well 
+as increased access to home and community-based services and food 
+and cash assistance is critical. Workplace policies that support individu-
+als with long COVID could include flexible working hours, increased 
+breaks to allow for pacing, the option for remote work, and sick leave 
+policies. Funding should be provided to support patient groups and 
+community-based organizations, which can provide and connect 
+people to critical supports and services.
+Access, quality and equity of care. Governments must work to build 
+and expand access to long COVID care, in particular for marginal -
+ized communities (for example, rural and indigenous communities). 
+Improving access to care may take various forms in different countries, 
+depending on the structure of the healthcare system and the involve-
+ment of national and local governments in financially supporting 
+healthcare services. Adequate coverage of long COVID treatments and 
+rehabilitation services by insurance providers is requisite. Develop -
+ment of quality-of-care metrics for long COVID and policies to monitor 
+and incentivize quality of care should be pursued121. As diagnostics and 
+treatments are developed, governments must also ensure equitable 
+access. Shining historical examples include the Brazilian National AIDS 
+Program, which was established in 1996 in response to the HIV/AIDS 
+crisis to ensure free and universal provision of antiretroviral drugs268,269, 
+and the Ryan White HIV/AIDS Program (based in the United States), 
+which provides outpatient HIV care, treatment and support services 
+to those without health insurance and fills gaps in coverage and cost 
+for those with insurance limitations270–272.
+Professional education and training.  Currently, very few medical 
+schools and health professional training programs include in their 
+curricula any meaningful training about identification and clinical 
+management of infection-associated chronic conditions, including 
+long COVID. A survey of physicians in the United States showed that 
+78% agree that long COVID is a problem but only about one-quarter 
+feel prepared to address it273. Training of healthcare professionals to
+78% agree that long COVID is a problem but only about one-quarter 
+feel prepared to address it273. Training of healthcare professionals to 
+recognize and manage long COVID effectively must be prioritized. 
+This includes embedding up-to-date information on long COVID and 
+infection-associated chronic conditions into training curricula for 
+health professions, as well as providing regular high-quality continuing 
+education to qualified health providers.
+Public health communication. Existing public health education on 
+long COVID has been minimal. A survey in the United States showed 
+that one-third of American adults still had not heard of long COVID as 
+of August 2023 (ref. 274), and there remains very low awareness of long 
+COVID in low- and middle-income countries. Through public education 
+campaigns, governments must raise awareness about long COVID and 
+the risk of chronic conditions after infection; combat social stigma 
+across adults and children; and use a harm reduction framework to 
+promote awareness of prevention measures (including vaccination, 
+masking and improved indoor air quality)258,260,261.
+Supporting coordinated interdisciplinary research.  T o achieve 
+the research priorities listed above, governments must substan -
+tially increase the amount of funding toward research. In the 
+United States, existing calls for the establishment of a center for 
+infection-associated chronic conditions at the US National Institutes 
+of Health—with a funding request of at least $1 billion per year toward 
+long COVID research and with additional substantial funding for other 
+infection-associated chronic conditions—should be vigorously sup -
+ported275. This proposal would create a coordinating entity to lead a 
+long-term, large-scale interdisciplinary research portfolio to address 
+long COVID research priorities. Other governments should also explore  
+similar proposals.
+Policies supporting research should explicitly mandate meaning-
+ful patient engagement in research from inception to implementation, 
+and should leverage existing expertise (including scientific, clini -
+cal and lived experience) in infection-associated chronic conditions. 
+Furthermore, meaningful efforts must be made to expand the pool of 
+researchers working on infection-associated chronic conditions, by 
+encouraging early career scientists and clinician–researchers to focus 
+on these conditions and providing resources to current experts to lead 
+training and research.
+Given the complexity of long COVID and its similarities to other 
+infection-associated chronic conditions, a coordinated approach that 
+integrates research, policy and regulatory efforts across these condi-
+tions would reduce duplication of efforts and allow a more compre-
+hensive understanding of the common underlying mechanisms, trial 
+designs and potential treatment strategies.
+Policies from funders are needed to mandate meaningful data 
+sharing, which will maximize the utility and pooled insights that can 
+be generated from existing health information. Current open data 
+protocols are insufficient, laden with bureaucratic hurdles and do 
+not allow access to primary data, and consequently do not enable 
+meaningful analyses. Funders must establish data banks (a pioneering 
+exemplar of this is the UK Biobank) for the collection, storage, analysis, 
+retrieval and dissemination of data to make long COVID research more 
+accessible in near real time, all while upholding data privacy and data 
+security standards276,277.
+Building consensus on definitions and clinical endpoints for long 
+COVID. Various interim definitions of long COVID exist 39,278–283, but 
+there is not yet a universal consensus on the most optimal definition—
+which must be sufficiently nuanced to capture the complexity of the 
+condition and its various manifestations. It is unlikely that a single 
+definition will fit all needs. Consensus definitions that are optimized
+condition and its various manifestations. It is unlikely that a single 
+definition will fit all needs. Consensus definitions that are optimized 
+and empirically tested for various applications, including clinical care, 
+epidemiological surveillance, and research, should be developed. 
+Definitions must necessarily evolve to incorporate new understanding 
+as the evidence base for long COVID grows.
+Similarly, developing consensus on clinical endpoints for trials of 
+long COVID is needed. Drug regulatory agencies in consultation with 
+stakeholders, including patients and scientists, should lead in this arena 
+and provide regulatory guidance on clinical endpoints for trials. These 
+endpoints will also have to necessarily evolve as our understanding of 
+long COVID expands.
+Building consensus on definitions and clinical endpoints would 
+catalyze progress in this field, remove barriers to entry for the phar -
+maceutical industry into long COVID trials and facilitate comparative 
+analyses across studies.
+Global coordination. The global nature of long COVID necessitates 
+international cooperation in both research and policy. International 
+bodies (for example, the WHO) should facilitate partnership and  
+collaboration among countries across the globe. This collaboration 
+is pivotal to coordinate and synergize efforts across the globe and 
+accelerate progress on the different challenges posed by long COVID.
+Professional societies for long COVID. Professional societies (national 
+and global) should be established for long COVID. Because of the mul-
+tisystemic nature of long COVID (and the other infection-associated 
+chronic conditions), it does not fit neatly under any of the traditional 
+organ-based organizational structures of medical care and research284, 
+hence the need for professional home(s) for long COVID and associated 
+conditions. Dedicated professional societies could provide strategic 
+leadership and guidance in the clinical management of long COVID 
+and associated conditions284. They could serve as hubs to coordinate 
+education, research and advocacy efforts284. These professional soci-
+eties could play a major role in organizing and hosting national and 
+international conferences, spearheading efforts to provide periodic 
+synthesis of evidence that distills existing research into actionable 
+insights guiding care of people with long COVID. The newly established 
+Clinical Post COVID Society in the United Kingdom may be a promising 
+example of this284.
+Preparedness for the next pandemic . We must reflect on our col -
+lective experience with COVID-19 to enhance resilience and prepar-
+edness for future pandemics 285–287. A major lesson learned from long 
+COVID is that pandemics leave in their wake a long tail of disease 
+and disability 198. This is not unique to the COVID-19 pandemic 198; 
+historical accounts show similar phenomena following previous 
+pandemics198,199,255. Due to climate change, deforestation, human 
+encroachment on animal habitat, increased frequency of travel, a 
+growing livestock industry and other anthropogenic factors, the 
+risk of zoonotic spillover and novel viral sharing among species is 
+likely higher in the twenty-first century than it was in the twentieth 
+century 286,288–292. Many of the geographic areas that are most prone 
+to these changes are also projected to have high population density—
+creating ripe conditions for pandemics 289,291. Future pandemics are 
+likely to also produce long-term disability and disease198. Investment 
+in systems to measure the population-level incidence and prevalence 
+of post-acute and chronic disease caused by infectious agents, includ-
+ing SARS-CoV-2, will aid in the characterization of the epidemiology 
+of long COVID and will position us to be better prepared to deal with 
+post-acute and chronic illnesses that will emerge in future pandemics. 
+Incorporating the potential emergence of long-term health effects 
+into initiatives for pandemic preparedness and resilience (for exam -
+ple, the WHO Preparedness and Resilience for Emerging Threats Initia-
+tive) is essential to optimize response to the long-term consequences 
+of future pandemics.
+Conclusions
+Considerable progress has been made in the past several years in 
+characterizing the epidemiology, clinical course and biology of long 
+COVID. But much remains to be done. The scale of long COVID and its 
+far-reaching impacts necessitate a robust and coordinated research 
+and policy response strategy. Addressing the research and care needs 
+of people impacted by long COVID will have broad benefits, potentially
+and policy response strategy. Addressing the research and care needs 
+of people impacted by long COVID will have broad benefits, potentially 
+unlocking a better understanding of infection-associated chronic ill-
+nesses (an ignored area for decades) and optimizing our preparedness 
+for the next pandemic.
