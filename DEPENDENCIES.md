@@ -14,13 +14,27 @@ pip install -r requirements.txt
 
 1. **`app.py`** - Flask 后端 API
    - 依赖 `naive_rag.py`（已在同一目录）
+   - 依赖 `load.py`（已在同一目录）
    
 2. **`naive_rag.py`** - RAG 核心逻辑
    - 依赖 LangChain 相关库（已在 requirements.txt 中）
    - 可选依赖：
-     - `load.py` - 如果不存在，相关功能会被禁用
+     - `load.py` - 如果不存在，相关功能会被禁用（已在同一目录）
      - `pubmed_service.py` - 如果不存在，PubMed 相关功能会被禁用
      - `config.py` - 如果不存在，会使用默认值
+   
+3. **`load.py`** - 文档加载模块
+   - 依赖 `corpus` 目录结构（见下方说明）
+   - 需要以下目录结构：
+     ```
+     corpus/
+       csv/
+         LongCovid.csv
+       txt/
+         LongCovid/
+           *.txt 文件
+     ```
+   - **注意**：`corpus` 目录不在仓库中，需要单独提供或在部署时配置
 
 ### 可选依赖（可选功能）
 
