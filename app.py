@@ -45,29 +45,52 @@ except Exception as e:
 current_dir = os.path.dirname(os.path.abspath(__file__))
 if current_dir not in sys.path:
     sys.path.insert(0, current_dir)
+logger.info(f"Current directory: {current_dir}")
+logger.info(f"Python path: {sys.path[:3]}")
 
 # 导入 RAG 相关模块
-from naive_rag import (
-    get_rag_response, 
-    create_system_prompt, 
-    create_prompt_messages,
-    answer_question_with_citations,
-    init_vector_store,
-    split_documents
-)
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_openai import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
-from langchain_core.documents import Document
+logger.info("Importing RAG modules...")
+try:
+    logger.info("  - Importing naive_rag...")
+    from naive_rag import (
+        get_rag_response, 
+        create_system_prompt, 
+        create_prompt_messages,
+        answer_question_with_citations,
+        init_vector_store,
+        split_documents
+    )
+    logger.info("  - ✓ naive_rag imported")
+    
+    logger.info("  - Importing langchain modules...")
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+    from langchain_openai import OpenAIEmbeddings
+    from langchain_community.vectorstores import FAISS
+    from langchain_core.documents import Document
+    logger.info("  - ✓ langchain modules imported")
+except Exception as e:
+    logger.error(f"Failed to import RAG modules: {e}")
+    import traceback
+    logger.error(traceback.format_exc())
+    print(f"CRITICAL ERROR: Failed to import RAG modules: {e}", file=sys.stderr)
+    print(traceback.format_exc(), file=sys.stderr)
+    raise
 
 # 导入 load_documents 函数
 # load.py 现在在同一目录中，直接导入
 # 当前目录已在路径中（之前已添加）
+logger.info("Importing load_documents...")
 try:
     from load import load_documents
+    logger.info("  - ✓ load_documents imported")
 except ImportError as e:
     logger.warning(f"load_documents not available: {e}")
     logger.warning("Some features that require load_documents may not work, but core RAG functionality should still work.")
+    load_documents = None
+except Exception as e:
+    logger.error(f"Unexpected error importing load_documents: {e}")
+    import traceback
+    logger.error(traceback.format_exc())
     load_documents = None
 
 # Flask 初始化：配置静态文件服务
