@@ -57,7 +57,9 @@ except ImportError as e:
 # Flask 初始化：配置静态文件服务
 # static_folder='.' 表示当前目录作为静态文件目录
 # static_url_path='' 表示静态文件直接通过根路径访问
+logger.info("Initializing Flask app...")
 app = Flask(__name__, static_folder='.', static_url_path='')
+logger.info("Flask app initialized successfully")
 
 # CORS 配置：允许跨域请求
 # 生产环境应该限制为特定域名以提高安全性
