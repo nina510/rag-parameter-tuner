@@ -57,17 +57,25 @@ git push origin main
 </script>
 ```
 
-#### 选项B: 与后端一起部署
+#### 选项B: 与后端一起部署（推荐，最简单）
 
-修改 `app.py` 添加静态文件服务：
-```python
-@app.route('/')
-def index():
-    return app.send_static_file('index.html')
+**已实现！** 现在 Flask 应用已经配置为同时提供静态文件服务和 API 服务。
 
-# 然后在启动时指定 static_folder
-app = Flask(__name__, static_folder='.', static_url_path='')
-```
+**优点**：
+- ✅ 只需部署一个服务（前端 + 后端一起）
+- ✅ 不需要配置 CORS（前后端同域）
+- ✅ 部署更简单
+
+**使用方法**：
+1. 在 Render 或其他平台部署时，直接部署 `app.py`
+2. 访问部署的 URL，就会自动显示前端页面
+3. API 通过 `/api/*` 路径访问
+
+**代码已配置**：
+- Flask 已配置 `static_folder='.'` 和 `static_url_path=''`
+- 添加了 `@app.route('/')` 返回 `index.html`
+- 添加了 `@app.route('/<path:path>')` 处理其他静态文件
+- 前端 API 地址会自动使用当前域名（前后端同域）
 
 ### 步骤5: 测试
 
