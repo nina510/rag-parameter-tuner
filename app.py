@@ -53,10 +53,9 @@ if project_root not in sys.path:
 try:
     from load import load_documents
 except ImportError as e:
-    logger.error(f"Failed to import load_documents: {e}")
-    logger.error(f"Project root: {project_root}")
-    logger.error(f"sys.path: {sys.path[:5]}")
-    raise ImportError(f"无法导入load_documents模块。请确保load.py文件在项目根目录: {e}")
+    logger.warning(f"load_documents not available: {e}")
+    logger.warning("Some features that require load_documents may not work, but core RAG functionality should still work.")
+    load_documents = None
 
 app = Flask(__name__)
 
