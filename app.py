@@ -54,7 +54,10 @@ except ImportError as e:
     logger.warning("Some features that require load_documents may not work, but core RAG functionality should still work.")
     load_documents = None
 
-app = Flask(__name__)
+# Flask 初始化：配置静态文件服务
+# static_folder='.' 表示当前目录作为静态文件目录
+# static_url_path='' 表示静态文件直接通过根路径访问
+app = Flask(__name__, static_folder='.', static_url_path='')
 
 # CORS 配置：允许跨域请求
 # 生产环境应该限制为特定域名以提高安全性
@@ -970,6 +973,28 @@ def get_defaults():
 def health():
     """健康检查"""
     return jsonify({"status": "ok"})
+
+@app.route('/')
+def index():
+    """服务前端页面"""
+    return send_from_directory('.', 'index.html')
+
+@app.route('/<path:path>')
+def serve_static(path):
+    """服务静态文件（CSS、JS、图片等）"""
+    # 排除 API 路由，这些应该由上面的路由处理
+    if path.startswith('api/'):
+        return jsonify({"error": "Not found"}), 404
+    
+    # 尝试发送静态文件
+    try:
+        return send_from_directory('.', path)
+    except Exception as e:
+        # 如果文件不存在，返回 index.html（用于前端路由）
+        # 这样前端可以使用 HTML5 History API 进行路由
+        if path not in ['favicon.ico']:
+            return send_from_directory('.', 'index.html')
+        raise
 
 if __name__ == '__main__':
     # 检查 API key
