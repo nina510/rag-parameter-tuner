@@ -240,6 +240,8 @@ def build_custom_chunks(chunk_size, chunk_overlap):
         # 加载原始文档
         logger.info("Loading original documents from corpus (longcovid_clinical subset)...")
         try:
+            if load_documents is None:
+                raise ImportError("load_documents is not available. Please ensure load.py is accessible.")
             all_documents = load_documents(only_included=False)
             # 只保留longcovid_clinical corpus中的8篇核心文献
             longcovid_clinical_doc_ids = {
