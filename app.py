@@ -24,10 +24,11 @@ try:
 except Exception as e:
     logger.warning(f"无法加载 .env 文件: {e}")
 
-# 添加 naivetest 目录到路径
-naivetest_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "naivetest"))
-if naivetest_dir not in sys.path:
-    sys.path.insert(0, naivetest_dir)
+# naive_rag.py 现在在同一目录中，直接导入
+# 添加当前目录到路径（确保可以导入）
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir not in sys.path:
+    sys.path.insert(0, current_dir)
 
 # 导入 RAG 相关模块
 from naive_rag import (
