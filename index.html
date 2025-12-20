@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Parameter Tuning Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 20px;
+        }
+
+        .control-panel {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+
+        .control-panel h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        #system_prompt {
+            min-height: 300px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .form-group small {
+            display: block;
+            margin-top: 4px;
+            color: #888;
+            font-size: 12px;
+        }
+
+        .btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+        }
+
+        .btn:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: #95a5a6;
+        }
+
+        .btn-secondary:hover {
+            background: #7f8c8d;
+        }
+
+        .results-area {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .results-header h2 {
+            color: #2c3e50;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        #resultsContainer {
+            display: grid;
+            gap: 20px;
+            align-items: start;
+            /* Grid columns will be set dynamically by JavaScript based on number of cards */
+        }
+
+        .result-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: box-shadow 0.2s;
+            width: 100%;
+            min-width: 0; /* Prevent grid overflow */
+        }
+
+        .result-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .result-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            padding-right: 30px;
+        }
+
+        .result-card-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .result-card-params {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .result-card-close {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            font-size: 16px;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            transition: background 0.2s, transform 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .result-card-close:hover {
+            background: #c0392b;
+            transform: scale(1.1);
+        }
+
+        .result-card-close:active {
+            transform: scale(0.95);
+        }
+
+        .result-content {
+            background: white;
+            padding: 20px 25px;
+            border-radius: 6px;
+            max-height: 700px;
+            overflow-y: auto;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .result-content h1, .result-content h2, .result-content h3, .result-content h4 {
+            margin-top: 0;
+            margin-bottom: 0.75em;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .result-content h1 {
+            font-size: 1.75em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            margin-top: 0;
+        }
+
+        .result-content h2 {
+            font-size: 1.5em;
+            margin-top: 1.5em;
+            margin-bottom: 0.75em;
+            color: #2c3e50;
+            padding-bottom: 0.4em;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .result-content h3 {
+            font-size: 1.2em;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+            color: #34495e;
+        }
+
+        .result-content h4 {
+            font-size: 1.1em;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            color: #555;
+        }
+
+        .result-content p {
+            margin-bottom: 1.2em;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        .result-content ul, .result-content ol {
+            margin: 1em 0 1.2em 0;
+            padding-left: 30px;
+            line-height: 1.8;
+        }
+
+        .result-content li {
+            margin-bottom: 0.8em;
+            padding-left: 8px;
+        }
+
+        .result-content ul li {
+            list-style-type: disc;
+        }
+
+        .result-content ol li {
+            list-style-type: decimal;
+        }
+
+        .result-content ul ul, .result-content ol ol {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .result-content code {
+            background: #f5f5f5;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.9em;
+            color: #e83e8c;
+            border: 1px solid #e9ecef;
+        }
+
+        .result-content pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1.2em 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .result-content pre code {
+            background: none;
+            padding: 0;
+            border: none;
+            color: #333;
+        }
+
+        /* Citation styling */
+        .result-content .citation {
+            background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #1565c0;
+            display: inline-block;
+            margin: 0 2px;
+            vertical-align: baseline;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* Section dividers */
+        .result-content > h2:not(:first-child) {
+            margin-top: 2em;
+            padding-top: 0.5em;
+        }
+
+        /* Better spacing for lists within paragraphs */
+        .result-content p + ul,
+        .result-content p + ol {
+            margin-top: -0.5em;
+        }
+
+        /* References section styling */
+        .result-content h2:contains("References"),
+        .result-content h1:contains("References") {
+            color: #2c3e50;
+            border-bottom-color: #7f8c8d;
+        }
+
+        /* Style for References section - vertical list format */
+        .result-content .references-item {
+            display: block !important;
+            padding: 10px 0 !important;
+            border-bottom: 1px solid #e0e0e0 !important;
+            font-size: 0.95em !important;
+            line-height: 1.8 !important;
+            margin: 0 !important;
+            margin-bottom: 0 !important;
+            width: 100% !important;
+            clear: both !important;
+            box-sizing: border-box !important;
+        }
+
+        .result-content .references-item:last-child {
+            border-bottom: none !important;
+            padding-bottom: 10px !important;
+        }
+
+        .result-content .references-item .citation-num {
+            font-weight: 600 !important;
+            color: #1565c0 !important;
+            margin-right: 10px !important;
+            display: inline-block !important;
+            min-width: 40px !important;
+        }
+        
+        /* Ensure references-section has proper spacing and formatting */
+        .result-content .references-section {
+            background: #f8f9fa !important;
+            padding: 15px 20px !important;
+            border-radius: 4px !important;
+            border-left: 4px solid #7f8c8d !important;
+            margin-top: 1em !important;
+            margin-bottom: 1em !important;
+        }
+
+        /* Custom scrollbar for result content */
+        .result-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .result-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .result-content::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        .result-content::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Strong text styling */
+        .result-content strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        /* Emphasis text styling */
+        .result-content em {
+            font-style: italic;
+            color: #555;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+            grid-column: 1 / -1; /* Span all columns when loading */
+        }
+
+        .loading::after {
+            content: '...';
+            animation: dots 1.5s steps(4, end) infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+
+        .error {
+            background: #fee;
+            color: #c33;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            grid-column: 1 / -1; /* Span all columns when showing error */
+        }
+
+        .question-input {
+            margin-bottom: 20px;
+        }
+
+        .question-input textarea {
+            min-height: 100px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-group .btn {
+            flex: 1;
+        }
+
+        .metadata {
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .metadata-item {
+            margin: 4px 0;
+        }
+
+        @media (max-width: 1024px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .control-panel {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>RAG Parameter Tuning Tool</h1>
+            <p>Adjust system prompt, chunk size, overlap, and model in real-time. Compare answers generated with different parameters.</p>
+        </div>
+
+        <div class="main-layout">
+            <div class="control-panel">
+                <h2>Parameter Settings</h2>
+                
+                <form id="configForm">
+                    <div class="form-group question-input">
+                        <label for="questionSelect">Select Question *</label>
+                        <select id="questionSelect" name="questionSelect" style="width: 100%;">
+                            <option value="">-- Select a question --</option>
+                        </select>
+                        <small>Choose from the 15 standard test questions</small>
+                    </div>
+
+                    <div class="form-group question-input">
+                        <label for="question">Or Enter Custom Question</label>
+                        <textarea id="question" name="question" placeholder="Enter your custom question..."></textarea>
+                        <small>If a question is selected above, it will override this field</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="system_prompt">System Prompt (leave empty for default)</label>
+                        <textarea id="system_prompt" name="system_prompt" placeholder="Leave empty to use default Long COVID system prompt..."></textarea>
+                        <small>If left empty, will use the default Long COVID-specific system prompt</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="chunk_size">Chunk Size</label>
+                        <input type="number" id="chunk_size" name="chunk_size" value="1200" min="100" max="5000" step="100">
+                        <small>Default: 1200</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="chunk_overlap">Chunk Overlap</label>
+                        <input type="number" id="chunk_overlap" name="chunk_overlap" value="600" min="0" max="2000" step="50">
+                        <small>Default: 600</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="model">Model</label>
+                        <select id="model" name="model">
+                            <option value="gpt-5">GPT-5</option>
+                            <option value="gpt-5.2">GPT-5.2</option>
+                            <option value="gpt-4o" selected>GPT-4o</option>
+                            <option value="gpt-4">GPT-4</option>
+                            <option value="gpt-4-turbo">GPT-4 Turbo</option>
+                            <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="temperature">Temperature</label>
+                        <input type="number" id="temperature" name="temperature" value="0.2" min="0" max="2" step="0.1">
+                        <small>Default: 0.2 (Note: GPT-5 uses default temperature of 1.0 and ignores this setting)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="retriever_name">Retriever</label>
+                        <select id="retriever_name" name="retriever_name">
+                            <option value="OpenAIEmbedding" selected>OpenAI Embedding</option>
+                            <option value="BM25">BM25</option>
+                            <option value="Contriever">Contriever</option>
+                            <option value="SPECTER">SPECTER</option>
+                            <option value="MedCPT">MedCPT</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="top_k">Top K (Retrieval Count)</label>
+                        <input type="number" id="top_k" name="top_k" value="25" min="5" max="100" step="5">
+                        <small>Default: 25</small>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="submit" class="btn" id="generateBtn">Generate Answer</button>
+                        <button type="button" class="btn btn-secondary" id="clearBtn">Clear Results</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="results-area">
+                <div class="results-header">
+                    <h2>Answer Comparison</h2>
+                    <span id="resultCount">0 results</span>
+                </div>
+
+                <div id="resultsContainer">
+                    <div class="loading">Waiting for answer generation</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // API 地址配置：自动检测环境
+        // 如果是本地开发，使用 localhost:5000
+        // 如果是生产环境，使用当前域名（前后端同域）或配置的后端地址
+        const API_BASE = (function() {
+            const hostname = window.location.hostname;
+            const protocol = window.location.protocol;
+            
+            // 本地开发环境
+            if (hostname === 'localhost' || hostname === '127.0.0.1') {
+                return 'http://localhost:5000/api';
+            }
+            
+            // 生产环境：如果前后端在同一域名，使用相对路径
+            // 如果前后端在不同域名，需要配置后端地址
+            // 可以通过 window.API_BASE_URL 在 HTML 中设置，例如：
+            // <script>window.API_BASE_URL = 'https://your-api-domain.com/api';</script>
+            if (typeof window.API_BASE_URL !== 'undefined') {
+                return window.API_BASE_URL;
+            }
+            
+            // 默认使用当前域名的 /api 路径（前后端同域部署）
+            return '/api';
+        })();
+        let resultCounter = 0;
+
+        // 15 standard test questions from test_retrievers.py
+        const standardQuestions = [
+            "Which Long COVID symptoms are more likely to resolve over time, and which tend to persist?",
+            "What mechanisms have been proposed to explain persistent inflammation in Long COVID?",
+            "How can clinicians differentiate between anxiety and autonomic dysfunction in Long COVID patients?",
+            "Which pharmacological agents have been tested for fatigue in Long COVID?",
+            "Are patients with Long COVID eligible for disability benefits?",
+            "A 45-year-old patient presents with persistent shortness of breath 8 months after mild COVID-19. What tests would you recommend and why?",
+            "What exercise regimens are safe for Long COVID patients with POTS?",
+            "A 72-year-old Black woman with pre-existing hypothyroidism and fibromyalgia presents with severe fatigue, muscle aches, chest pain, and abdominal pain following COVID-19 infection in July 2022. What tests should be ordered, and what treatment should she receive?",
+            "Are there biomarkers that can identify which patients might benefit from immunomodulatory therapy?",
+            "Does receiving a COVID-19 vaccination booster improve or exacerbate Long COVID symptoms?",
+            "What patient characteristics are associated with recovery from Long COVID?",
+            "Is low-dose naltrexone an effective therapy for Long COVID?",
+            "What disparities exist in access to Long COVID clinics across different regions?",
+            "Patients are using nicotine patches to treat Long COVID—is that an effective treatment? Why would nicotine improve Long COVID symptoms?",
+            "What are the leading hypotheses and most effective management strategies for patients with multi-system Long COVID symptoms?"
+        ];
+
+        // Populate question selector
+        function populateQuestionSelector() {
+            const select = document.getElementById('questionSelect');
+            if (!select) {
+                console.error('questionSelect element not found');
+                return;
+            }
+            
+            // Clear existing options except the first placeholder option
+            while (select.children.length > 1) {
+                select.removeChild(select.lastChild);
+            }
+            
+            // Add questions
+            if (typeof standardQuestions !== 'undefined' && standardQuestions.length > 0) {
+                standardQuestions.forEach((question, index) => {
+                    const option = document.createElement('option');
+                    option.value = question;
+                    option.textContent = `Q${index + 1}: ${question.substring(0, 80)}${question.length > 80 ? '...' : ''}`;
+                    select.appendChild(option);
+                });
+                console.log(`✓ Populated ${standardQuestions.length} questions in selector`);
+                console.log(`Select element now has ${select.children.length} total options`);
+                
+                // Verify options were added
+                if (select.children.length === 1) {
+                    console.error('⚠️ WARNING: No options were added! Only placeholder remains.');
+                }
+            } else {
+                console.error('standardQuestions array is not defined or empty');
+                console.log('standardQuestions type:', typeof standardQuestions);
+                if (typeof standardQuestions !== 'undefined') {
+                    console.log('standardQuestions length:', standardQuestions.length);
+                }
+            }
+        }
+
+        // Handle question selection change
+        function setupQuestionSelector() {
+            const questionSelect = document.getElementById('questionSelect');
+            const questionInput = document.getElementById('question');
+            if (questionSelect && questionInput) {
+                questionSelect.addEventListener('change', function() {
+                    if (this.value) {
+                        questionInput.value = this.value;
+                    } else {
+                        questionInput.value = '';
+                    }
+                });
+            }
+        }
+
+        // Initialize everything
+        function initialize() {
+            console.log('Initializing...');
+            populateQuestionSelector();
+            setupQuestionSelector();
+            loadDefaults();
+            console.log('Initialization complete');
+        }
+
+        // Load defaults
+        async function loadDefaults() {
+            try {
+                const response = await fetch(`${API_BASE}/defaults`);
+                const defaults = await response.json();
+                
+                document.getElementById('chunk_size').value = defaults.chunk_size;
+                document.getElementById('chunk_overlap').value = defaults.chunk_overlap;
+                document.getElementById('model').value = defaults.model;
+                document.getElementById('retriever_name').value = defaults.retriever_name;
+                document.getElementById('top_k').value = defaults.top_k;
+                if (defaults.temperature !== undefined) {
+                    document.getElementById('temperature').value = defaults.temperature;
+                }
+                
+                // Load default system prompt if available
+                if (defaults.system_prompt) {
+                    document.getElementById('system_prompt').value = defaults.system_prompt;
+                }
+            } catch (error) {
+                console.error('Failed to load defaults:', error);
+            }
+        }
+
+        // Generate answer
+        async function generateAnswer() {
+            const questionSelect = document.getElementById('questionSelect').value;
+            const questionCustom = document.getElementById('question').value.trim();
+            
+            const question = questionSelect || questionCustom;
+            if (!question) {
+                alert('Please select a question or enter a custom question');
+                return;
+            }
+
+            const formData = {
+                question: question,
+                system_prompt: document.getElementById('system_prompt').value.trim() || null,
+                chunk_size: parseInt(document.getElementById('chunk_size').value),
+                chunk_overlap: parseInt(document.getElementById('chunk_overlap').value),
+                model: document.getElementById('model').value,
+                retriever_name: document.getElementById('retriever_name').value,
+                top_k: parseInt(document.getElementById('top_k').value),
+                temperature: parseFloat(document.getElementById('temperature').value)
+            };
+
+            const generateBtn = document.getElementById('generateBtn');
+            generateBtn.disabled = true;
+            generateBtn.textContent = 'Generating...';
+
+            const resultsContainer = document.getElementById('resultsContainer');
+            
+            // Remove any existing loading indicator or "waiting" message (only if it's the only content)
+            const existingCards = resultsContainer.querySelectorAll('.result-card');
+            if (existingCards.length === 0) {
+                // No existing cards, safe to clear "waiting" message if present
+                resultsContainer.innerHTML = '';
+            } else {
+                // Have existing cards, just remove loading indicators
+                const existingLoading = resultsContainer.querySelector('.loading');
+                if (existingLoading) {
+                    existingLoading.remove();
+                }
+            }
+            
+            // Add new loading indicator (don't clear existing results)
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'loading';
+            loadingDiv.id = 'current-loading';
+            loadingDiv.textContent = 'Generating answer...';
+            resultsContainer.appendChild(loadingDiv);
+
+            try {
+                const response = await fetch(`${API_BASE}/generate`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                // Remove loading indicator
+                const loadingIndicator = document.getElementById('current-loading');
+                if (loadingIndicator) {
+                    loadingIndicator.remove();
+                }
+                
+                if (result.error) {
+                    // Add error message without clearing existing results
+                    const errorDiv = document.createElement('div');
+                    errorDiv.className = 'error';
+                    errorDiv.textContent = `Error: ${result.error}`;
+                    resultsContainer.appendChild(errorDiv);
+                    
+                    // Remove error after 5 seconds
+                    setTimeout(() => {
+                        if (errorDiv.parentNode) {
+                            errorDiv.remove();
+                        }
+                    }, 5000);
+                } else {
+                    resultCounter++;
+                    // Include the question in formData for display
+                    formData.question = question;
+                    addResultCard(result, formData, resultCounter);
+                }
+            } catch (error) {
+                // Remove loading indicator
+                const loadingIndicator = document.getElementById('current-loading');
+                if (loadingIndicator) {
+                    loadingIndicator.remove();
+                }
+                
+                // Add error message without clearing existing results
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error';
+                errorDiv.textContent = `Request failed: ${error.message}`;
+                resultsContainer.appendChild(errorDiv);
+                
+                // Remove error after 5 seconds
+                setTimeout(() => {
+                    if (errorDiv.parentNode) {
+                        errorDiv.remove();
+                    }
+                }, 5000);
+            } finally {
+                generateBtn.disabled = false;
+                generateBtn.textContent = 'Generate Answer';
+            }
+        }
+
+        // Add result card
+        function addResultCard(result, config, index) {
+            const resultsContainer = document.getElementById('resultsContainer');
+            
+            // Remove loading indicator (if still present)
+            const loadingIndicator = document.getElementById('current-loading');
+            if (loadingIndicator) {
+                loadingIndicator.remove();
+            }
+            
+            // Also remove any other loading indicators (fallback)
+            const loadingDivs = resultsContainer.querySelectorAll('.loading');
+            loadingDivs.forEach(div => div.remove());
+
+            // Don't clear container - allow multiple answers for comparison
+
+            const card = document.createElement('div');
+            card.className = 'result-card';
+            card.setAttribute('data-answer-id', index);
+            
+            const tempValue = result.metadata?.temperature !== undefined ? result.metadata.temperature : (config.temperature !== undefined ? config.temperature : 'N/A');
+            const paramsText = `Model: ${config.model} | Chunk: ${config.chunk_size}/${config.chunk_overlap} | Top-K: ${config.top_k} | Temp: ${tempValue}`;
+            
+            // Get the question text and escape HTML to prevent XSS
+            const question = config.question || 'Question';
+            const escapeHtml = (text) => {
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            };
+            const questionEscaped = escapeHtml(question);
+            const questionDisplay = question.length > 100 ? question.substring(0, 100) + '...' : question;
+            const questionDisplayEscaped = escapeHtml(questionDisplay);
+            
+            // 创建chunk ID到full_citation的映射
+            // 首先从返回的chunks中构建映射
+            const chunkCitationMap = {};
+            if (result.chunks && Array.isArray(result.chunks)) {
+                result.chunks.forEach(chunk => {
+                    if (chunk.id && chunk.full_citation) {
+                        chunkCitationMap[chunk.id] = chunk.full_citation;
+                        // 也支持文档ID映射（去掉chunk索引）
+                        const docId = chunk.id.split('_').slice(0, -1).join('_');
+                        if (docId && !chunkCitationMap[docId]) {
+                            chunkCitationMap[docId] = chunk.full_citation;
+                        }
+                    }
+                });
+            }
+            
+            // 从答案文本中提取所有可能的chunk ID，并补充到映射中
+            // 这样可以处理LLM引用了不在返回chunks中的chunk ID的情况
+            const fullCitationMap = {
+                'AAPMRCompendium_NP002': 'Cheng AL, Herman E, Abramoff B, et al. Multidisciplinary collaborative guidance on the assessment and treatment of patients with Long COVID: A compendium statement. PM&R. 2025;17(6):684-708. doi:10.1002/pmrj.13397',
+                'Al-Aly_39122965': 'Al-Aly Z, Davis H, McCorkell L, et al. Long COVID science, research and policy. Nat Med. 2024;30(8):2148-2164. doi:10.1038/s41591-024-03173-6',
+                'Bateman_34454716': 'Bateman L, Bested AC, Bonilla HF, et al. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Essentials of Diagnosis and Management. Mayo Clinic Proceedings. 2021;96(11):2861-2878. doi:10.1016/j.mayocp.2021.07.004',
+                'Fineberg_39110819': 'Committee on Examining the Working Definition for Long COVID, Board on Health Sciences Policy, Board on Global Health, Health and Medicine Division, National Academies of Sciences, Engineering, and Medicine. A Long COVID Definition: A Chronic, Systemic Disease State with Profound Consequences. (Fineberg HV, Brown L, Worku T, Goldowitz I, eds.). National Academies Press; 2024:27768. doi:10.17226/27768',
+                'Mueller_40105889': 'Mueller MR, Ganesh R, Beckman TJ, Hurt RT. Long COVID: emerging pathophysiological mechanisms. Minerva Med. 2025;116(2). doi:10.23736/S0026-4806.25.09539-4',
+                'Peluso_39326415': 'Peluso MJ, Deeks SG. Mechanisms of long COVID and the path toward therapeutics. Cell. 2024;187(20):5500-5529. doi:10.1016/j.cell.2024.07.054',
+                'Vogel_39142505': 'Vogel JM, Pollack B, Spier E, et al. Designing and optimizing clinical trials for long COVID. Life Sciences. 2024;355:122970. doi:10.1016/j.lfs.2024.122970',
+                'Zeraatkar_39603702': 'Zeraatkar D, Ling M, Kirsh S, et al. Interventions for the management of long covid (post-covid condition): living systematic review. BMJ. 2024;387:e081318. doi:10.1136/bmj-2024-081318'
+            };
+            
+            // 从答案文本中提取所有chunk ID（格式：DocumentID_chunkIndex）
+            if (result.answer) {
+                // 匹配chunk ID模式：字母数字下划线连字符，可能包含chunk索引
+                const chunkIdPattern = /(AAPMRCompendium_NP002|Al-Aly_39122965|Bateman_34454716|Fineberg_39110819|Mueller_40105889|Peluso_39326415|Vogel_39142505|Zeraatkar_39603702)(?:_\d+)?/g;
+                const foundChunkIds = new Set();
+                let match;
+                while ((match = chunkIdPattern.exec(result.answer)) !== null) {
+                    foundChunkIds.add(match[0]);
+                    // 也添加文档ID（去掉chunk索引）
+                    const docId = match[1];
+                    if (docId && fullCitationMap[docId]) {
+                        // 为所有该文档的chunk ID添加映射
+                        if (!chunkCitationMap[docId]) {
+                            chunkCitationMap[docId] = fullCitationMap[docId];
+                        }
+                        // 为具体的chunk ID添加映射
+                        if (!chunkCitationMap[match[0]]) {
+                            chunkCitationMap[match[0]] = fullCitationMap[docId];
+                        }
+                    }
+                }
+            }
+            
+            card.innerHTML = `
+                <div class="result-card-header">
+                    <div>
+                        <div class="result-card-title" title="${questionEscaped}">${questionDisplayEscaped}</div>
+                        <div class="result-card-params">${paramsText}</div>
+                    </div>
+                    <button class="result-card-close" data-answer-id="${index}" title="Remove this answer">×</button>
+                </div>
+                <div class="result-content">${formatAnswer(result.answer, chunkCitationMap)}</div>
+                <div class="metadata">
+                    <div class="metadata-item">Retriever: ${result.metadata.retriever_name}</div>
+                    <div class="metadata-item">Chunks Used: ${result.metadata.num_chunks}</div>
+                    <div class="metadata-item">Category: ${result.metadata.category || 'None'}</div>
+                </div>
+            `;
+
+            // Add click event listener to close button
+            const closeBtn = card.querySelector('.result-card-close');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    removeAnswerCard(index);
+                });
+            }
+
+            resultsContainer.appendChild(card);
+            updateResultCount();
+        }
+
+        // Format answer (Markdown to HTML)
+        function formatAnswer(text, chunkCitationMap = {}) {
+            if (!text) return '';
+            
+            // 定义8篇核心文献的标准引用格式映射（在函数内部，确保可用）
+            const fullCitationMap = {
+                'AAPMRCompendium_NP002': 'Cheng AL, Herman E, Abramoff B, et al. Multidisciplinary collaborative guidance on the assessment and treatment of patients with Long COVID: A compendium statement. PM&R. 2025;17(6):684-708. doi:10.1002/pmrj.13397',
+                'Al-Aly_39122965': 'Al-Aly Z, Davis H, McCorkell L, et al. Long COVID science, research and policy. Nat Med. 2024;30(8):2148-2164. doi:10.1038/s41591-024-03173-6',
+                'Bateman_34454716': 'Bateman L, Bested AC, Bonilla HF, et al. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Essentials of Diagnosis and Management. Mayo Clinic Proceedings. 2021;96(11):2861-2878. doi:10.1016/j.mayocp.2021.07.004',
+                'Fineberg_39110819': 'Committee on Examining the Working Definition for Long COVID, Board on Health Sciences Policy, Board on Global Health, Health and Medicine Division, National Academies of Sciences, Engineering, and Medicine. A Long COVID Definition: A Chronic, Systemic Disease State with Profound Consequences. (Fineberg HV, Brown L, Worku T, Goldowitz I, eds.). National Academies Press; 2024:27768. doi:10.17226/27768',
+                'Mueller_40105889': 'Mueller MR, Ganesh R, Beckman TJ, Hurt RT. Long COVID: emerging pathophysiological mechanisms. Minerva Med. 2025;116(2). doi:10.23736/S0026-4806.25.09539-4',
+                'Peluso_39326415': 'Peluso MJ, Deeks SG. Mechanisms of long COVID and the path toward therapeutics. Cell. 2024;187(20):5500-5529. doi:10.1016/j.cell.2024.07.054',
+                'Vogel_39142505': 'Vogel JM, Pollack B, Spier E, et al. Designing and optimizing clinical trials for long COVID. Life Sciences. 2024;355:122970. doi:10.1016/j.lfs.2024.122970',
+                'Zeraatkar_39603702': 'Zeraatkar D, Ling M, Kirsh S, et al. Interventions for the management of long covid (post-covid condition): living systematic review. BMJ. 2024;387:e081318. doi:10.1136/bmj-2024-081318'
+            };
+            
+            // 从答案文本中提取所有可能的chunk ID，并补充到chunkCitationMap中
+            // 这样可以处理LLM引用了不在返回chunks中的chunk ID的情况
+            if (text) {
+                // 匹配chunk ID模式：8个核心文档的ID格式
+                const chunkIdPattern = /(AAPMRCompendium_NP002|Al-Aly_39122965|Bateman_34454716|Fineberg_39110819|Mueller_40105889|Peluso_39326415|Vogel_39142505|Zeraatkar_39603702)(?:_\d+)?/g;
+                const foundChunkIds = new Set();
+                let match;
+                while ((match = chunkIdPattern.exec(text)) !== null) {
+                    foundChunkIds.add(match[0]);
+                    // 也添加文档ID（去掉chunk索引）
+                    const docId = match[1];
+                    if (docId && fullCitationMap[docId]) {
+                        // 为所有该文档的chunk ID添加映射
+                        if (!chunkCitationMap[docId]) {
+                            chunkCitationMap[docId] = fullCitationMap[docId];
+                        }
+                        // 为具体的chunk ID添加映射
+                        if (!chunkCitationMap[match[0]]) {
+                            chunkCitationMap[match[0]] = fullCitationMap[docId];
+                        }
+                    }
+                }
+            }
+            
+            // First, escape HTML special characters (but preserve citation markers)
+            let html = text
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+            
+            // Handle code blocks first (before other processing)
+            html = html.replace(/```([\s\S]*?)```/g, function(match, code) {
+                return '<pre><code>' + code.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&') + '</code></pre>';
+            });
+            
+            // Handle inline code
+            html = html.replace(/`([^`\n]+)`/g, '<code>$1</code>');
+            
+            // Handle headers (process from most specific to least)
+            html = html.replace(/^#### (.*)$/gm, '<h4>$1</h4>');
+            html = html.replace(/^### (.*)$/gm, '<h3>$1</h3>');
+            html = html.replace(/^## (.*)$/gm, '<h2>$1</h2>');
+            html = html.replace(/^# (.*)$/gm, '<h1>$1</h1>');
+            
+            // Split into lines for better list processing
+            let lines = html.split('\n');
+            let processedLines = [];
+            let inList = false;
+            let listItems = [];
+            let listType = 'ul'; // 'ul' or 'ol'
+            
+            for (let i = 0; i < lines.length; i++) {
+                let line = lines[i].trim();
+                
+                // Skip empty lines (will be handled later)
+                if (!line) {
+                    if (inList) {
+                        // Close current list
+                        processedLines.push(`<${listType}>${listItems.join('')}</${listType}>`);
+                        listItems = [];
+                        inList = false;
+                    }
+                    processedLines.push('');
+                    continue;
+                }
+                
+                // Check for list items
+                let ulMatch = line.match(/^[\-\*]\s+(.+)$/);
+                let olMatch = line.match(/^(\d+)\.\s+(.+)$/);
+                
+                if (ulMatch || olMatch) {
+                    let content = ulMatch ? ulMatch[1] : olMatch[2];
+                    let currentListType = ulMatch ? 'ul' : 'ol';
+                    
+                    // If switching list types, close previous list
+                    if (inList && listType !== currentListType) {
+                        processedLines.push(`<${listType}>${listItems.join('')}</${listType}>`);
+                        listItems = [];
+                    }
+                    
+                    inList = true;
+                    listType = currentListType;
+                    
+                    // Process citation markers in list items
+                    content = content.replace(/\[(\d+)\]/g, '<span class="citation">[$1]</span>');
+                    
+                    // Process bold and italic
+                    content = content.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                    content = content.replace(/\*(.*?)\*/g, '<em>$1</em>');
+                    
+                    listItems.push('<li>' + content + '</li>');
+                } else {
+                    // Not a list item - close list if we were in one
+                    if (inList) {
+                        processedLines.push(`<${listType}>${listItems.join('')}</${listType}>`);
+                        listItems = [];
+                        inList = false;
+                    }
+                    
+                    // Process regular line content
+                    // Handle citation markers
+                    // First, handle comma-separated citations like [2,3] or [2, 3]
+                    line = line.replace(/\[(\d+(?:\s*,\s*\d+)+)\]/g, function(match, numbers) {
+                        // Convert [2,3] to multiple citation spans: <span class="citation">[2]</span>,<span class="citation">[3]</span>
+                        let numArray = numbers.split(',').map(n => n.trim());
+                        return numArray.map(n => `<span class="citation">[${n}]</span>`).join(',');
+                    });
+                    // Then handle single citations like [1]
+                    line = line.replace(/\[(\d+)\]/g, '<span class="citation">[$1]</span>');
+                    
+                    // Handle bold and italic
+                    line = line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                    line = line.replace(/\*(.*?)\*/g, '<em>$1</em>');
+                    
+                    processedLines.push(line);
+                }
+            }
+            
+            // Close any remaining list
+            if (inList) {
+                processedLines.push(`<${listType}>${listItems.join('')}</${listType}>`);
+            }
+            
+            // Join lines and handle paragraphs
+            html = processedLines.join('\n');
+            
+            // Process References section - convert to vertical list format
+            // This must be done AFTER lists are converted to HTML but BEFORE final wrapping
+            // Find References section - try multiple regex patterns to catch all variations
+            let refSectionRegex;
+            let refMatch;
+            
+            // Try to find References section with different patterns
+            // Pattern 1: Standard heading format
+            refSectionRegex = /(<h[12][^>]*>References[^<]*<\/h[12]>)([\s\S]*?)(?=<h[1-6]|<\/body>|$)/gi;
+            refMatch = refSectionRegex.exec(html);
+            
+            // Pattern 2: If not found, try with ## References markdown
+            if (!refMatch) {
+                refSectionRegex = /(##?\s*References[^\n]*\n)([\s\S]*?)(?=\n##?|\n#|$)/gi;
+                refMatch = refSectionRegex.exec(html);
+                if (refMatch) {
+                    // Convert markdown heading to HTML
+                    refMatch[1] = '<h2>References</h2>';
+                }
+            }
+            
+            // Pattern 3: Look for "References" as plain text followed by references
+            if (!refMatch) {
+                refSectionRegex = /(References[^\n]*\n\n?)([\s\S]*?)(?=\n\n##?|\n\n#|$)/gi;
+                refMatch = refSectionRegex.exec(html);
+                if (refMatch) {
+                    refMatch[1] = '<h2>References</h2>';
+                }
+            }
+            
+            if (refMatch) {
+                let heading = refMatch[1];
+                let content = refMatch[2];
+                
+                // Style the heading
+                let styledHeading = heading.replace(/<h([12])/, '<h$1 style="color: #2c3e50; border-bottom-color: #7f8c8d;"');
+                if (!styledHeading.match(/^<h/)) {
+                    styledHeading = '<h2 style="color: #2c3e50; border-bottom-color: #7f8c8d;">References</h2>';
+                }
+                
+                // CRITICAL: First, extract all citation numbers used in the main text (BEFORE References section)
+                // This ensures we ONLY display references that are actually cited in the text
+                let allCitationsInText = new Set();
+                let refSectionStartIndex = html.indexOf(refMatch[0]);
+                if (refSectionStartIndex > 0) {
+                    let mainTextContent = html.substring(0, refSectionStartIndex); // Text before References section
+                    
+                    // First, try to match citation numbers in HTML format (e.g., <span class="citation">[2]</span>)
+                    let htmlCitationPattern = /<span\s+class="citation">\[(\d+)\]<\/span>/g;
+                    let htmlCitationMatch;
+                    while ((htmlCitationMatch = htmlCitationPattern.exec(mainTextContent)) !== null) {
+                        allCitationsInText.add(parseInt(htmlCitationMatch[1]));
+                    }
+                    
+                    // Also match plain citation format [number] in case HTML conversion didn't happen
+                    // Remove HTML tags temporarily for better matching
+                    let textContent = mainTextContent.replace(/<[^>]+>/g, ' ');
+                    let citationPattern = /\[(\d+)\]/g;
+                    let citationMatch;
+                    while ((citationMatch = citationPattern.exec(textContent)) !== null) {
+                        allCitationsInText.add(parseInt(citationMatch[1]));
+                    }
+                    
+                    // Also handle comma-separated citations like [2,3] or [2, 3]
+                    // This pattern matches [number, number, number...]
+                    let commaCitationPattern = /\[(\d+(?:\s*,\s*\d+)+)\]/g;
+                    let commaMatch;
+                    while ((commaMatch = commaCitationPattern.exec(textContent)) !== null) {
+                        // Extract all numbers from the comma-separated list
+                        let numbers = commaMatch[1].split(',').map(n => parseInt(n.trim()));
+                        numbers.forEach(num => {
+                            if (!isNaN(num)) {
+                                allCitationsInText.add(num);
+                            }
+                        });
+                    }
+                    
+                    // Also handle in HTML format: <span class="citation">[2,3]</span>
+                    let htmlCommaPattern = /<span\s+class="citation">\[(\d+(?:\s*,\s*\d+)+)\]<\/span>/g;
+                    let htmlCommaMatch;
+                    while ((htmlCommaMatch = htmlCommaPattern.exec(mainTextContent)) !== null) {
+                        let numbers = htmlCommaMatch[1].split(',').map(n => parseInt(n.trim()));
+                        numbers.forEach(num => {
+                            if (!isNaN(num)) {
+                                allCitationsInText.add(num);
+                            }
+                        });
+                    }
+                }
+                
+                // Start building the references list
+                let referencesList = '<div class="references-section">';
+                let foundAny = false;
+                // Map to store reference number -> display text
+                let refMap = new Map(); // Maps citation number to display text
+                // Track which references we've already added to avoid duplicates (by text content)
+                let addedRefsByText = new Set();
+                
+                // Method 1: Extract from <li> elements (if References are in a list)
+                let refMatches = content.match(/<li>\[(\d+)\]\s*(.+?)<\/li>/g);
+                if (refMatches && refMatches.length > 0) {
+                    refMatches.forEach(function(refItem) {
+                        let refMatch = refItem.match(/<li>\[(\d+)\]\s*(.+?)<\/li>/);
+                        if (refMatch) {
+                            let num = refMatch[1];
+                            let text = refMatch[2].trim();
+                            // Remove any HTML tags from text (like <strong>, <em>, <span>)
+                            text = text.replace(/<[^>]+>/g, '').trim();
+                            // 尝试将chunk ID替换为标准引用格式
+                            const isStandardFormat = /[A-Z][a-z]+\s+[A-Z]/.test(text) && 
+                                                    (/\d{4}/.test(text) || /doi:/.test(text));
+                            if (!isStandardFormat && chunkCitationMap && Object.keys(chunkCitationMap).length > 0) {
+                                // 精确匹配
+                                if (chunkCitationMap[text]) {
+                                    text = chunkCitationMap[text];
+                                } else {
+                                    // 尝试匹配文档ID
+                                    const docId = text.split('_').slice(0, -1).join('_');
+                                    if (docId && chunkCitationMap[docId]) {
+                                        text = chunkCitationMap[docId];
+                                    } else if (fullCitationMap[docId]) {
+                                        text = fullCitationMap[docId];
+                                    }
+                                }
+                            }
+                            // Store in map by citation number
+                            let numInt = parseInt(num);
+                            if (text && !refMap.has(numInt)) {
+                                refMap.set(numInt, text);
+                                foundAny = true;
+                            }
+                        }
+                    });
+                }
+                
+                // Method 2: Extract from <p> tags (if References are in paragraphs)
+                let pMatches = content.match(/<p>\[(\d+)\]\s*(.+?)<\/p>/g);
+                if (pMatches && pMatches.length > 0) {
+                    pMatches.forEach(function(refItem) {
+                        let refMatch = refItem.match(/<p>\[(\d+)\]\s*(.+?)<\/p>/);
+                        if (refMatch) {
+                            let num = refMatch[1];
+                            let text = refMatch[2].trim();
+                            text = text.replace(/<[^>]+>/g, '').trim();
+                            // 尝试将chunk ID替换为标准引用格式
+                            const isStandardFormat = /[A-Z][a-z]+\s+[A-Z]/.test(text) && 
+                                                    (/\d{4}/.test(text) || /doi:/.test(text));
+                            if (!isStandardFormat && chunkCitationMap && Object.keys(chunkCitationMap).length > 0) {
+                                // 精确匹配
+                                if (chunkCitationMap[text]) {
+                                    text = chunkCitationMap[text];
+                                } else {
+                                    // 尝试匹配文档ID
+                                    const docId = text.split('_').slice(0, -1).join('_');
+                                    if (docId && chunkCitationMap[docId]) {
+                                        text = chunkCitationMap[docId];
+                                    } else if (fullCitationMap[docId]) {
+                                        text = fullCitationMap[docId];
+                                    }
+                                }
+                            }
+                            // Store in map by citation number
+                            let numInt = parseInt(num);
+                            if (text && !refMap.has(numInt)) {
+                                refMap.set(numInt, text);
+                                foundAny = true;
+                            }
+                        }
+                    });
+                }
+                
+                // Method 3: Extract from plain text (most robust - handles all references in one line)
+                // Remove all HTML tags to get clean text
+                let cleanContent = content.replace(/<[^>]+>/g, ' ');
+                // Normalize whitespace but keep structure
+                cleanContent = cleanContent.replace(/\s+/g, ' ').trim();
+                
+                // CRITICAL: Match ALL references in the text, even if they're all on one line
+                // Try multiple patterns to catch all reference formats
+                
+                // Pattern 1: Match chunk ID format [数字] chunkID
+                const docIdPattern = '(AAPMRCompendium_NP002|Al-Aly_39122965|Bateman_34454716|Fineberg_39110819|Mueller_40105889|Peluso_39326415|Vogel_39142505|Zeraatkar_39603702)';
+                let globalRefPattern = new RegExp('\\[(\\d+)\\]\\s*(' + docIdPattern + '(?:_\\d+)?)', 'g');
+                let allRefMatches = [];
+                let refMatchResult;
+                
+                // Reset regex lastIndex
+                globalRefPattern.lastIndex = 0;
+                while ((refMatchResult = globalRefPattern.exec(cleanContent)) !== null) {
+                    let num = parseInt(refMatchResult[1]);
+                    let text = refMatchResult[2].trim();
+                    text = text.replace(/[^\w_\-\.]+$/, '').trim();
+                    if (text && text.length > 0) {
+                        allRefMatches.push({num: num, text: text});
+                    }
+                }
+                
+                // Pattern 2: Match standard citation format [数字] Author name...
+                // This pattern is more lenient and catches full citations
+                let standardRefPattern = /\[(\d+)\]\s*([^\[]+?)(?=\s*\[\d+\]|\n|$)/g;
+                standardRefPattern.lastIndex = 0;
+                while ((refMatchResult = standardRefPattern.exec(cleanContent)) !== null) {
+                    let num = parseInt(refMatchResult[1]);
+                    let text = refMatchResult[2].trim();
+                    // Only add if we haven't already captured this number with Pattern 1
+                    let alreadyCaptured = allRefMatches.some(r => r.num === num);
+                    if (!alreadyCaptured && text.length > 5) {
+                        // Check if it looks like a standard citation (has author name pattern or is long enough)
+                        if (text.length > 20 || /[A-Z][a-z]+\s+[A-Z]/.test(text)) {
+                            allRefMatches.push({num: num, text: text});
+                        }
+                    }
+                }
+                
+                // Process all found references and add to refMap
+                allRefMatches.forEach(function(ref) {
+                    let displayText = ref.text;
+                    
+                    // Check if already standard format
+                    const isStandardFormat = /[A-Z][a-z]+\s+[A-Z]/.test(displayText) && 
+                                            (/\d{4}/.test(displayText) || /doi:/.test(displayText) || /\.\s*[A-Z]/.test(displayText));
+                    
+                    if (!isStandardFormat && chunkCitationMap && Object.keys(chunkCitationMap).length > 0) {
+                        // Try exact match first
+                        if (chunkCitationMap[displayText]) {
+                            displayText = chunkCitationMap[displayText];
+                        } else {
+                            // Try matching document ID (remove chunk index)
+                            const docId = displayText.split('_').slice(0, -1).join('_');
+                            if (docId && chunkCitationMap[docId]) {
+                                displayText = chunkCitationMap[docId];
+                            } else if (fullCitationMap[docId]) {
+                                displayText = fullCitationMap[docId];
+                            }
+                        }
+                    }
+                    
+                    // Store in map by citation number
+                    if (displayText && !refMap.has(ref.num)) {
+                        refMap.set(ref.num, displayText);
+                        foundAny = true;
+                    }
+                });
+                
+                // Fallback: Also try line-by-line approach for any remaining references
+                let lines = cleanContent.split(/[\n\r]+/).map(l => l.trim()).filter(l => l.length > 0);
+                lines.forEach(function(line) {
+                    // Look for [number] pattern - be flexible with spacing
+                    let refMatch = line.match(/\[(\d+)\]\s*(.+?)(?=\[\d+\]|$)/);
+                    if (refMatch) {
+                        let num = refMatch[1];
+                        let text = refMatch[2].trim();
+                        text = text.replace(/[^\w_\-\.]+$/, '').trim();
+                        // 尝试将chunk ID替换为标准引用格式
+                        const isStandardFormat = /[A-Z][a-z]+\s+[A-Z]/.test(text) && 
+                                                (/\d{4}/.test(text) || /doi:/.test(text));
+                        if (!isStandardFormat && chunkCitationMap && Object.keys(chunkCitationMap).length > 0) {
+                            // 精确匹配
+                            if (chunkCitationMap[text]) {
+                                text = chunkCitationMap[text];
+                            } else {
+                                // 尝试匹配文档ID
+                                const docId = text.split('_').slice(0, -1).join('_');
+                                if (docId && chunkCitationMap[docId]) {
+                                    text = chunkCitationMap[docId];
+                                } else if (fullCitationMap[docId]) {
+                                    text = fullCitationMap[docId];
+                                }
+                            }
+                        }
+                        // Store in map by citation number
+                        let numInt = parseInt(num);
+                        if (text && text.length > 0 && !refMap.has(numInt)) {
+                            refMap.set(numInt, text);
+                            foundAny = true;
+                        }
+                    }
+                });
+                
+                // CRITICAL: Display ONLY citations that are actually used in the main text
+                // Sort citation numbers from the text (not from References section)
+                let allCitationNumbers = Array.from(allCitationsInText).sort((a, b) => a - b);
+                
+                // Build final references list, displaying only citations that appear in the text
+                allCitationNumbers.forEach(function(citationNum) {
+                    let displayText = null;
+                    
+                    if (refMap.has(citationNum)) {
+                        // We have the reference text from References section, use it
+                        displayText = refMap.get(citationNum);
+                    } else {
+                        // This citation is used in text but not found in References section
+                        // Try to find it from the answer text by looking for chunk IDs associated with this citation number
+                        // Search in the original answer text (before HTML conversion) for chunk IDs near this citation number
+                        let originalText = text; // Use the original text parameter passed to formatAnswer
+                        if (originalText) {
+                            // Try to find chunk IDs that appear near this citation number in the text
+                            // Look for patterns like [citationNum] followed by chunk ID
+                            let citationContextPattern = new RegExp('\\[' + citationNum + '\\]\\s*([A-Za-z0-9_\\-\\.]+)', 'g');
+                            let contextMatch;
+                            let foundChunkId = null;
+                            
+                            while ((contextMatch = citationContextPattern.exec(originalText)) !== null) {
+                                let potentialChunkId = contextMatch[1].trim();
+                                // Check if this looks like a chunk ID (contains underscore and matches our document patterns)
+                                if (potentialChunkId.includes('_') && potentialChunkId.length > 5) {
+                                    foundChunkId = potentialChunkId;
+                                    break;
+                                }
+                            }
+                            
+                            // If we found a chunk ID, try to get its citation from chunkCitationMap
+                            if (foundChunkId && chunkCitationMap && chunkCitationMap[foundChunkId]) {
+                                displayText = chunkCitationMap[foundChunkId];
+                            } else if (foundChunkId) {
+                                // Try matching document ID (remove chunk index)
+                                let docId = foundChunkId.split('_').slice(0, -1).join('_');
+                                if (docId && chunkCitationMap && chunkCitationMap[docId]) {
+                                    displayText = chunkCitationMap[docId];
+                                } else if (docId && fullCitationMap && fullCitationMap[docId]) {
+                                    displayText = fullCitationMap[docId];
+                                }
+                            }
+                        }
+                        
+                        // If still no display text found, try to find any chunk ID in the answer that might correspond
+                        // This is a last resort - we'll use the first available chunk citation if we can't find a specific one
+                        if (!displayText && chunkCitationMap && Object.keys(chunkCitationMap).length > 0) {
+                            // Use the first available citation as a fallback (not ideal, but better than nothing)
+                            let firstChunkId = Object.keys(chunkCitationMap)[0];
+                            displayText = chunkCitationMap[firstChunkId];
+                        }
+                    }
+                    
+                    // Display the reference if we have text, or show a placeholder if not found
+                    if (displayText) {
+                        let textKey = displayText.substring(0, 200); // Use for duplicate detection
+                        if (!addedRefsByText.has(textKey)) {
+                            referencesList += '<div class="references-item"><span class="citation-num">[' + citationNum + ']</span>' + displayText + '</div>';
+                            addedRefsByText.add(textKey);
+                        }
+                    } else {
+                        // Even if we don't have the text, show the citation number to maintain continuity
+                        // This helps identify missing references
+                        referencesList += '<div class="references-item"><span class="citation-num">[' + citationNum + ']</span><em style="color: #999;">Reference not found in References section</em></div>';
+                    }
+                });
+                
+                referencesList += '</div>';
+                
+                // Replace the matched section with formatted references
+                if (!foundAny && allCitationNumbers.length === 0) {
+                    html = html.replace(refMatch[0], styledHeading + content);
+                } else {
+                    html = html.replace(refMatch[0], styledHeading + referencesList);
+                }
+            }
+            
+            // Additional fallback: If References section wasn't found by the above patterns,
+            // try to find and process any text that looks like references
+            if (!html.includes('references-section')) {
+                // Look for patterns like [1] ChunkID [2] ChunkID in the HTML
+                let inlineRefPattern = /(References[^<]*<\/h[12]>[\s\S]*?)((?:\[(\d+)\]\s*[\w_\-]+\s*)+)/gi;
+                html = html.replace(inlineRefPattern, function(match, headingPart, refsPart) {
+                    // Extract all references from the inline text
+                    let refPattern = /\[(\d+)\]\s*([\w_\-]+)/g;
+                    let refMatch;
+                    let referencesList = '<div class="references-section">';
+                    let addedRefs = new Set();
+                    
+                    while ((refMatch = refPattern.exec(refsPart)) !== null) {
+                        let num = refMatch[1];
+                        let text = refMatch[2];
+                        // 尝试将chunk ID替换为标准引用格式
+                        if (chunkCitationMap && Object.keys(chunkCitationMap).length > 0) {
+                            for (let chunkId in chunkCitationMap) {
+                                if (text === chunkId || text.includes(chunkId)) {
+                                    text = chunkCitationMap[chunkId];
+                                    break;
+                                }
+                            }
+                        }
+                        let refKey = num + ':' + text;
+                        
+                        if (!addedRefs.has(refKey)) {
+                            referencesList += '<div class="references-item"><span class="citation-num">[' + num + ']</span>' + text + '</div>';
+                            addedRefs.add(refKey);
+                        }
+                    }
+                    
+                    referencesList += '</div>';
+                    return headingPart + referencesList;
+                });
+            }
+            
+            return html;
+        }
+
+        // Remove answer card
+        function removeAnswerCard(answerId) {
+            const card = document.querySelector(`.result-card[data-answer-id="${answerId}"]`);
+            if (card) {
+                card.remove();
+                updateResultCount();
+            }
+        }
+
+        // Update result count and adjust grid layout
+        function updateResultCount() {
+            const resultsContainer = document.getElementById('resultsContainer');
+            const count = document.querySelectorAll('.result-card').length;
+            document.getElementById('resultCount').textContent = `${count} result${count !== 1 ? 's' : ''}`;
+            
+            // Adjust grid columns based on number of cards
+            if (count > 0) {
+                // Limit to maximum 4 columns, but adjust based on actual count
+                const columns = Math.min(count, 4);
+                resultsContainer.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+            } else {
+                // Reset to single column when no cards
+                resultsContainer.style.gridTemplateColumns = '1fr';
+                resultsContainer.innerHTML = '<div class="loading">Waiting for answer generation</div>';
+            }
+        }
+
+        // Clear results
+        function clearResults() {
+            document.getElementById('resultsContainer').innerHTML = '<div class="loading">Waiting for answer generation</div>';
+            resultCounter = 0;
+            updateResultCount();
+        }
+
+        // Event listeners
+        document.getElementById('configForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            generateAnswer();
+        });
+
+        document.getElementById('clearBtn').addEventListener('click', clearResults);
+
+        // Initialize on page load - use multiple methods to ensure it runs
+        function runInitialize() {
+            try {
+                initialize();
+            } catch (error) {
+                console.error('Error during initialization:', error);
+                // Retry after a short delay
+                setTimeout(function() {
+                    try {
+                        initialize();
+                    } catch (e) {
+                        console.error('Retry initialization also failed:', e);
+                    }
+                }, 100);
+            }
+        }
+        
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', runInitialize);
+        } else {
+            // DOM already loaded - run immediately
+            runInitialize();
+        }
+        
+        // Also try after a short delay as a fallback
+        setTimeout(function() {
+            const select = document.getElementById('questionSelect');
+            if (select && select.children.length === 1) {
+                console.log('Fallback: Re-populating question selector...');
+                populateQuestionSelector();
+            }
+        }, 500);
+    </script>
+</body>
+</html>
+

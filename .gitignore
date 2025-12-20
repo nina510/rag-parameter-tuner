@@ -1,0 +1,51 @@
+# 环境变量和敏感信息
+.env
+.env.local
+.env.*.local
+# .env.example 应该提交，但实际 .env 文件不应该提交
+
+# Python 缓存和编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 日志文件
+*.log
+app.log
+*.log.*
+
+# 临时文件
+*.tmp
+*.temp
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE 配置
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv
+
+# FAISS 索引文件（如果太大可以不提交，或根据需求决定）
+# faiss_index/
+# *.faiss
+# *.pkl
+
+# 测试覆盖率
+.coverage
+htmlcov/
+.pytest_cache/
+
+# 其他
+*.bak
+*.backup
