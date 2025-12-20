@@ -50,8 +50,14 @@ logger.info(f"Python path: {sys.path[:3]}")
 
 # 导入 RAG 相关模块
 logger.info("Importing RAG modules...")
+print("STEP: Starting RAG module import", flush=True)
+sys.stdout.flush()
+
 try:
     logger.info("  - Importing naive_rag...")
+    print("STEP: Importing naive_rag module...", flush=True)
+    sys.stdout.flush()
+    
     from naive_rag import (
         get_rag_response, 
         create_system_prompt, 
@@ -61,19 +67,29 @@ try:
         split_documents
     )
     logger.info("  - ✓ naive_rag imported")
+    print("STEP: naive_rag imported successfully", flush=True)
+    sys.stdout.flush()
     
     logger.info("  - Importing langchain modules...")
+    print("STEP: Importing langchain modules...", flush=True)
+    sys.stdout.flush()
+    
     from langchain_text_splitters import RecursiveCharacterTextSplitter
     from langchain_openai import OpenAIEmbeddings
     from langchain_community.vectorstores import FAISS
     from langchain_core.documents import Document
     logger.info("  - ✓ langchain modules imported")
+    print("STEP: langchain modules imported successfully", flush=True)
+    sys.stdout.flush()
 except Exception as e:
     logger.error(f"Failed to import RAG modules: {e}")
     import traceback
-    logger.error(traceback.format_exc())
-    print(f"CRITICAL ERROR: Failed to import RAG modules: {e}", file=sys.stderr)
-    print(traceback.format_exc(), file=sys.stderr)
+    error_trace = traceback.format_exc()
+    logger.error(error_trace)
+    print(f"ERROR: Failed to import RAG modules: {e}", flush=True)
+    print(error_trace, flush=True)
+    sys.stdout.flush()
+    sys.stderr.flush()
     raise
 
 # 导入 load_documents 函数
@@ -99,6 +115,8 @@ except Exception as e:
 logger.info("Initializing Flask app...")
 app = Flask(__name__, static_folder='.', static_url_path='')
 logger.info("Flask app initialized successfully")
+print("STEP: Flask app initialized", flush=True)
+sys.stdout.flush()
 
 # CORS 配置：允许跨域请求
 # 生产环境应该限制为特定域名以提高安全性
