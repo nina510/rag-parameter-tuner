@@ -81,6 +81,9 @@ _embeddings = None
 _custom_vector_stores = {}  # 缓存不同chunk参数构建的向量库（OpenAIEmbedding）
 _custom_retrieval_systems = {}  # 缓存不同chunk参数构建的检索系统（BM25, SPECTER, MedCPT, Contriever）
 
+# 定义 naivetest_dir：指向当前目录（部署环境中索引可能不存在，会使用自定义构建）
+naivetest_dir = os.path.dirname(os.path.abspath(__file__))
+
 # 8篇核心文献的标准引用格式映射
 FULL_CITATION_MAP = {
     'AAPMRCompendium_NP002': 'Cheng AL, Herman E, Abramoff B, et al. Multidisciplinary collaborative guidance on the assessment and treatment of patients with Long COVID: A compendium statement. PM&R. 2025;17(6):684-708. doi:10.1002/pmrj.13397',
@@ -101,15 +104,18 @@ def get_vector_store(chunk_size=1200, chunk_overlap=600):
     chunk_size = int(chunk_size)
     chunk_overlap = int(chunk_overlap)
     
-    # 如果是默认参数，使用预构建的索引
+    # 如果是默认参数，尝试使用预构建的索引
     if chunk_size == 1200 and chunk_overlap == 600:
         if _vector_store is None:
             _embeddings = OpenAIEmbeddings()
             faiss_index_path = os.path.join(naivetest_dir, "faiss_index")
             if os.path.exists(faiss_index_path):
+                logger.info(f"Loading pre-built FAISS index from {faiss_index_path}")
                 _vector_store = FAISS.load_local(faiss_index_path, _embeddings, allow_dangerous_deserialization=True)
             else:
-                raise FileNotFoundError(f"FAISS index not found at {faiss_index_path}")
+                # 如果预构建索引不存在，使用自定义构建方式（部署环境常见情况）
+                logger.info(f"Pre-built FAISS index not found at {faiss_index_path}, building custom vector store...")
+                _vector_store = build_custom_vector_store(chunk_size, chunk_overlap)
         return _vector_store
     else:
         # 对于自定义参数，需要重新加载和分割文档

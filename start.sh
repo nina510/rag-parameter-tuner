@@ -1,52 +1,20 @@
 #!/bin/bash
+# Render 启动脚本 - 添加日志输出以便诊断问题
 
-# RAG 参数调节工具启动脚本
+echo "=== 启动脚本开始 ==="
+echo "当前目录: $(pwd)"
+echo "Python 版本: $(python3 --version)"
+echo "PORT 环境变量: $PORT"
 
-echo "=========================================="
-echo "RAG 参数调节工具"
-echo "=========================================="
+echo "=== 检查依赖 ==="
+python3 -c "import flask; print('Flask:', flask.__version__)" || echo "Flask 导入失败"
+python3 -c "import gunicorn; print('Gunicorn 已安装')" || echo "Gunicorn 导入失败"
 
-# 检查 Python 环境
-if ! command -v python3 &> /dev/null; then
-    echo "错误: 未找到 python3，请先安装 Python 3"
+echo "=== 测试应用导入 ==="
+python3 -c "import app; print('应用导入成功')" || {
+    echo "应用导入失败！"
     exit 1
-fi
+}
 
-# 检查并加载环境变量
-if [ -f .env ]; then
-    echo "从 .env 文件加载环境变量..."
-    export $(grep -v '^#' .env | xargs)
-fi
-
-# 检查环境变量
-if [ -z "$OPENAI_API_KEY" ]; then
-    echo "警告: OPENAI_API_KEY 环境变量未设置"
-    echo "请设置: export OPENAI_API_KEY='your-api-key'"
-    echo "或者创建 .env 文件并添加: OPENAI_API_KEY=your-api-key"
-    read -p "是否继续？(y/n) " -n 1 -r
-    echo
-    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-        exit 1
-    fi
-else
-    echo "✓ OPENAI_API_KEY 已设置"
-fi
-
-# 检查依赖
-echo "检查依赖..."
-if ! python3 -c "import flask" 2>/dev/null; then
-    echo "安装依赖..."
-    pip3 install -r requirements.txt
-fi
-
-# 启动服务器
-echo ""
-echo "启动 Flask 服务器..."
-echo "服务器地址: http://localhost:5000"
-echo "前端界面: 在浏览器中打开 index.html"
-echo ""
-echo "按 Ctrl+C 停止服务器"
-echo "=========================================="
-
-python3 app.py
-
+echo "=== 启动 Gunicorn ==="
+exec gunicorn app:app --bind 0.0.0.0:$PORT --timeout 120 --workers 1 --log-level info --access-logfile - --error-logfile -
