@@ -45,11 +45,8 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 
 # 导入 load_documents 函数
-# load.py 位于项目根目录，需要将根目录添加到路径
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-if project_root not in sys.path:
-    sys.path.insert(0, project_root)
-
+# load.py 现在在同一目录中，直接导入
+# 当前目录已在路径中（之前已添加）
 try:
     from load import load_documents
 except ImportError as e:
