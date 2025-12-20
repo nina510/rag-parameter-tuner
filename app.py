@@ -4,12 +4,28 @@ RAG Parameter Tuner - Flask Backend API
 """
 import os
 import sys
-from flask import Flask, request, jsonify, send_from_directory
-from flask_cors import CORS
 import traceback
 import logging
 
+# 首先配置日志（必须在其他导入之前）
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[logging.StreamHandler(sys.stdout)],
+    force=True  # 强制重新配置
+)
 logger = logging.getLogger(__name__)
+
+# 输出启动信息
+print("=" * 60, file=sys.stdout)
+print("Starting RAG Parameter Tuner Application", file=sys.stdout)
+print("=" * 60, file=sys.stdout)
+logger.info("=" * 60)
+logger.info("Starting app.py initialization...")
+logger.info("=" * 60)
+
+from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
 
 # 尝试从 .env 文件加载环境变量
 try:
