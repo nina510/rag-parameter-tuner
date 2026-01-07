@@ -617,7 +617,7 @@
             // 生产环境：如果前后端在同一域名，使用相对路径
             // 如果前后端在不同域名，需要配置后端地址
             // 可以通过 window.API_BASE_URL 在 HTML 中设置，例如：
-            // <script>window.API_BASE_URL = 'https://your-api-domain.com/api';</script>
+            // window.API_BASE_URL = 'https://your-api-domain.com/api';
             if (typeof window.API_BASE_URL !== 'undefined') {
                 return window.API_BASE_URL;
             }
