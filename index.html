@@ -955,7 +955,7 @@
         }
 
         // Format answer (Markdown to HTML)
-        function formatAnswer(text, chunkCitationMap = {}) {
+        function formatAnswer(text, chunkCitationMap = {}, result = null) {
             if (!text) return '';
             
             // 定义8篇核心文献的标准引用格式映射（在函数内部，确保可用）
@@ -1392,8 +1392,7 @@
                         // Search in the original answer text (before HTML conversion) for chunk IDs near this citation number
                         let originalText = text; // Use the original text parameter passed to formatAnswer
                         if (originalText) {
-                            // Try to find chunk IDs that appear near this citation number in the text
-                            // Look for patterns like [citationNum] followed by chunk ID
+                            // Method 1: Look for patterns like [citationNum] followed by chunk ID
                             let citationContextPattern = new RegExp('\\[' + citationNum + '\\]\\s*([A-Za-z0-9_\\-\\.]+)', 'g');
                             let contextMatch;
                             let foundChunkId = null;
@@ -1404,6 +1403,46 @@
                                 if (potentialChunkId.includes('_') && potentialChunkId.length > 5) {
                                     foundChunkId = potentialChunkId;
                                     break;
+                                }
+                            }
+                            
+                            // Method 2: If not found, search for the citation number in the References section
+                            // and try to extract chunk IDs from nearby text
+                            if (!foundChunkId) {
+                                // Look in the References section content for this citation number
+                                let refSectionPattern = new RegExp('\\[' + citationNum + '\\]\\s*([A-Za-z0-9_\\-\\.]+)', 'g');
+                                let refMatch;
+                                while ((refMatch = refSectionPattern.exec(content)) !== null) {
+                                    let potentialChunkId = refMatch[1].trim();
+                                    if (potentialChunkId.includes('_') && potentialChunkId.length > 5) {
+                                        foundChunkId = potentialChunkId;
+                                        break;
+                                    }
+                                }
+                            }
+                            
+                            // Method 3: Search all chunk IDs in the answer text and match by position/order
+                            // If we have multiple citations but only some are in References, try to match by order
+                            if (!foundChunkId && chunkCitationMap && Object.keys(chunkCitationMap).length > 0) {
+                                // Extract all chunk IDs from the answer text
+                                let allChunkIds = [];
+                                let chunkIdPattern = /(AAPMRCompendium_NP002|Al-Aly_39122965|Bateman_34454716|Fineberg_39110819|Mueller_40105889|Peluso_39326415|Vogel_39142505|Zeraatkar_39603702)(?:_\d+)?/g;
+                                let chunkMatch;
+                                while ((chunkMatch = chunkIdPattern.exec(originalText)) !== null) {
+                                    allChunkIds.push(chunkMatch[0]);
+                                }
+                                
+                                // If we have chunk IDs, try to match citation number to chunk ID by order
+                                // This assumes citations are in the same order as chunk IDs appear
+                                if (allChunkIds.length > 0) {
+                                    // Find the position of this citation in allCitationsInText
+                                    let citationIndex = Array.from(allCitationsInText).sort((a, b) => a - b).indexOf(citationNum);
+                                    if (citationIndex >= 0 && citationIndex < allChunkIds.length) {
+                                        foundChunkId = allChunkIds[citationIndex];
+                                    } else if (allChunkIds.length === 1 && allCitationNumbers.length === 1) {
+                                        // If there's only one chunk ID and one citation, match them
+                                        foundChunkId = allChunkIds[0];
+                                    }
                                 }
                             }
                             
@@ -1421,12 +1460,41 @@
                             }
                         }
                         
-                        // If still no display text found, try to find any chunk ID in the answer that might correspond
-                        // This is a last resort - we'll use the first available chunk citation if we can't find a specific one
+                        // Method 4: If still no display text found, try to match from all available chunks
+                        // by checking which chunks were actually used in the answer
+                        if (!displayText && result && result.chunks && Array.isArray(result.chunks)) {
+                            // Get unique chunk citations from the chunks that were retrieved
+                            let uniqueCitations = new Map();
+                            result.chunks.forEach(chunk => {
+                                if (chunk.full_citation && !uniqueCitations.has(chunk.full_citation)) {
+                                    uniqueCitations.set(chunk.full_citation, chunk.full_citation);
+                                }
+                            });
+                            
+                            // If we have multiple citations in text but only one in References,
+                            // distribute the available citations to the missing ones
+                            let availableCitations = Array.from(uniqueCitations.keys());
+                            if (availableCitations.length > 0) {
+                                // Use modulo to cycle through available citations
+                                let citationIndex = allCitationNumbers.indexOf(citationNum);
+                                if (citationIndex >= 0) {
+                                    let citationToUse = availableCitations[citationIndex % availableCitations.length];
+                                    displayText = citationToUse;
+                                }
+                            }
+                        }
+                        
+                        // Method 5: Last resort - use chunkCitationMap if available
                         if (!displayText && chunkCitationMap && Object.keys(chunkCitationMap).length > 0) {
-                            // Use the first available citation as a fallback (not ideal, but better than nothing)
-                            let firstChunkId = Object.keys(chunkCitationMap)[0];
-                            displayText = chunkCitationMap[firstChunkId];
+                            // Try to match by citation number order
+                            let citationIndex = allCitationNumbers.indexOf(citationNum);
+                            let chunkIds = Object.keys(chunkCitationMap);
+                            if (citationIndex >= 0 && citationIndex < chunkIds.length) {
+                                displayText = chunkCitationMap[chunkIds[citationIndex]];
+                            } else {
+                                // Use the first available citation as a fallback
+                                displayText = chunkCitationMap[chunkIds[0]];
+                            }
                         }
                     }
                     
