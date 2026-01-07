@@ -1268,13 +1268,19 @@
                 }
                 
                 // Method 3: Extract from plain text (most robust - handles all references in one line)
+                // First, decode HTML entities (like &amp; -> &, &lt; -> <, etc.)
+                let tempDiv = document.createElement('div');
+                tempDiv.innerHTML = content;
+                let decodedContent = tempDiv.textContent || tempDiv.innerText || '';
+                
                 // Remove all HTML tags to get clean text, but preserve line breaks for better parsing
-                let cleanContent = content.replace(/<[^>]+>/g, ' ');
+                let cleanContent = decodedContent.replace(/<[^>]+>/g, ' ');
                 // Normalize whitespace but preserve line structure
                 cleanContent = cleanContent.replace(/[ \t]+/g, ' ').trim();
                 
                 // DEBUG: Log the clean content to see what we're parsing
-                console.log('Parsing References section content:', cleanContent.substring(0, 500));
+                console.log('Parsing References section content (first 500 chars):', cleanContent.substring(0, 500));
+                console.log('Full cleanContent length:', cleanContent.length);
                 
                 // CRITICAL: Match ALL references in the text, even if they're all on one line
                 // Try multiple patterns to catch all reference formats
@@ -1284,6 +1290,7 @@
                 let globalRefPattern = new RegExp('\\[(\\d+)\\]\\s*(' + docIdPattern + '(?:_\\d+)?)', 'g');
                 let allRefMatches = [];
                 let refMatchResult;
+                let pattern1Matches = 0;
                 
                 // Reset regex lastIndex
                 globalRefPattern.lastIndex = 0;
@@ -1293,9 +1300,11 @@
                     text = text.replace(/[^\w_\-\.]+$/, '').trim();
                     if (text && text.length > 0) {
                         allRefMatches.push({num: num, text: text});
+                        pattern1Matches++;
                         console.log(`Pattern 1 found: [${num}] ${text}`);
                     }
                 }
+                console.log(`Pattern 1 total matches: ${pattern1Matches}`);
                 
                 // Pattern 2: Match standard citation format [数字] Author name...
                 // This pattern is more lenient and catches full citations
