@@ -1367,40 +1367,7 @@
                     }
                 });
                 
-                // Fallback: Also try line-by-line approach for any remaining references
-                let lines = cleanContent.split(/[\n\r]+/).map(l => l.trim()).filter(l => l.length > 0);
-                lines.forEach(function(line) {
-                    // Look for [number] pattern - be flexible with spacing
-                    let refMatch = line.match(/\[(\d+)\]\s*(.+?)(?=\[\d+\]|$)/);
-                    if (refMatch) {
-                        let num = refMatch[1];
-                        let text = refMatch[2].trim();
-                        text = text.replace(/[^\w_\-\.]+$/, '').trim();
-                        // 尝试将chunk ID替换为标准引用格式
-                        const isStandardFormat = /[A-Z][a-z]+\s+[A-Z]/.test(text) && 
-                                                (/\d{4}/.test(text) || /doi:/.test(text));
-                        if (!isStandardFormat && chunkCitationMap && Object.keys(chunkCitationMap).length > 0) {
-                            // 精确匹配
-                            if (chunkCitationMap[text]) {
-                                text = chunkCitationMap[text];
-                            } else {
-                                // 尝试匹配文档ID
-                                const docId = text.split('_').slice(0, -1).join('_');
-                                if (docId && chunkCitationMap[docId]) {
-                                    text = chunkCitationMap[docId];
-                                } else if (fullCitationMap[docId]) {
-                                    text = fullCitationMap[docId];
-                                }
-                            }
-                        }
-                        // Store in map by citation number
-                        let numInt = parseInt(num);
-                        if (text && text.length > 0 && !refMap.has(numInt)) {
-                            refMap.set(numInt, text);
-                            foundAny = true;
-                        }
-                    }
-                });
+                // Note: Pattern 3 above already handles line-by-line parsing, so we don't need a separate fallback
                 
                 // CRITICAL: Display ONLY citations that are actually used in the main text
                 // Sort citation numbers from the text (not from References section)
