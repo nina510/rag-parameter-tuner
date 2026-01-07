@@ -113,7 +113,8 @@ except Exception as e:
 # static_folder='.' 表示当前目录作为静态文件目录
 # static_url_path='' 表示静态文件直接通过根路径访问
 logger.info("Initializing Flask app...")
-app = Flask(__name__, static_folder='.', static_url_path='')
+# 注意：不要设置 static_folder 和 static_url_path，使用自定义路由处理
+app = Flask(__name__)
 logger.info("Flask app initialized successfully")
 print("STEP: Flask app initialized", flush=True)
 sys.stdout.flush()
