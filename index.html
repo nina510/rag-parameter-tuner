@@ -934,7 +934,7 @@
                     </div>
                     <button class="result-card-close" data-answer-id="${index}" title="Remove this answer">×</button>
                 </div>
-                <div class="result-content">${formatAnswer(result.answer, chunkCitationMap)}</div>
+                <div class="result-content">${formatAnswer(result.answer, chunkCitationMap, result)}</div>
                 <div class="metadata">
                     <div class="metadata-item">Retriever: ${result.metadata.retriever_name}</div>
                     <div class="metadata-item">Chunks Used: ${result.metadata.num_chunks}</div>
