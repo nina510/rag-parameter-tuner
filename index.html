@@ -1268,10 +1268,13 @@
                 }
                 
                 // Method 3: Extract from plain text (most robust - handles all references in one line)
-                // Remove all HTML tags to get clean text
+                // Remove all HTML tags to get clean text, but preserve line breaks for better parsing
                 let cleanContent = content.replace(/<[^>]+>/g, ' ');
-                // Normalize whitespace but keep structure
-                cleanContent = cleanContent.replace(/\s+/g, ' ').trim();
+                // Normalize whitespace but preserve line structure
+                cleanContent = cleanContent.replace(/[ \t]+/g, ' ').trim();
+                
+                // DEBUG: Log the clean content to see what we're parsing
+                console.log('Parsing References section content:', cleanContent.substring(0, 500));
                 
                 // CRITICAL: Match ALL references in the text, even if they're all on one line
                 // Try multiple patterns to catch all reference formats
@@ -1290,25 +1293,49 @@
                     text = text.replace(/[^\w_\-\.]+$/, '').trim();
                     if (text && text.length > 0) {
                         allRefMatches.push({num: num, text: text});
+                        console.log(`Pattern 1 found: [${num}] ${text}`);
                     }
                 }
                 
                 // Pattern 2: Match standard citation format [数字] Author name...
                 // This pattern is more lenient and catches full citations
-                let standardRefPattern = /\[(\d+)\]\s*([^\[]+?)(?=\s*\[\d+\]|\n|$)/g;
+                // Improved pattern to handle multi-line citations and stop at next citation or end
+                let standardRefPattern = /\[(\d+)\]\s*([^\[]+?)(?=\s*\[\d+\]|$)/gs;
                 standardRefPattern.lastIndex = 0;
                 while ((refMatchResult = standardRefPattern.exec(cleanContent)) !== null) {
                     let num = parseInt(refMatchResult[1]);
                     let text = refMatchResult[2].trim();
+                    // Remove trailing punctuation that might be from next citation
+                    text = text.replace(/[,\s]+$/, '').trim();
                     // Only add if we haven't already captured this number with Pattern 1
                     let alreadyCaptured = allRefMatches.some(r => r.num === num);
-                    if (!alreadyCaptured && text.length > 5) {
+                    if (!alreadyCaptured && text.length > 10) {
                         // Check if it looks like a standard citation (has author name pattern or is long enough)
-                        if (text.length > 20 || /[A-Z][a-z]+\s+[A-Z]/.test(text)) {
+                        // More lenient check: if it's long enough or has citation-like patterns
+                        if (text.length > 30 || /[A-Z][a-z]+\s+[A-Z]/.test(text) || /doi:|\.\s*\d{4}/.test(text)) {
                             allRefMatches.push({num: num, text: text});
+                            console.log(`Pattern 2 found: [${num}] ${text.substring(0, 80)}...`);
                         }
                     }
                 }
+                
+                // Pattern 3: Try line-by-line parsing (split by newlines and process each line)
+                let lines = cleanContent.split(/\n+/).map(l => l.trim()).filter(l => l.length > 0);
+                lines.forEach(function(line, lineIndex) {
+                    // Look for [number] at the start of line followed by citation text
+                    let lineRefPattern = /^\[(\d+)\]\s*(.+)$/;
+                    let lineMatch = line.match(lineRefPattern);
+                    if (lineMatch) {
+                        let num = parseInt(lineMatch[1]);
+                        let text = lineMatch[2].trim();
+                        // Check if already captured
+                        let alreadyCaptured = allRefMatches.some(r => r.num === num);
+                        if (!alreadyCaptured && text.length > 10) {
+                            allRefMatches.push({num: num, text: text});
+                            console.log(`Pattern 3 (line ${lineIndex}) found: [${num}] ${text.substring(0, 80)}...`);
+                        }
+                    }
+                });
                 
                 // Process all found references and add to refMap
                 allRefMatches.forEach(function(ref) {
