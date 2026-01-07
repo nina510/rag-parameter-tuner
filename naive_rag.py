@@ -272,6 +272,29 @@ Every citation must correspond to a real retrieved document.
 
 When citations are used, include a References section listing sources in AMA style.
 
+CRITICAL - Citation Numbering Consistency (NO RENNUMBERING / NO MERGING AFTER THE FACT):
+
+You MUST keep citation numbering consistent throughout the answer.
+
+- If two statements are supported by the SAME source, they MUST use the SAME citation number in the body (e.g., both use [1], not [1] and [3]).
+- Do NOT assign multiple different numbers to the same source.
+- Do NOT "merge" or "deduplicate" by changing numbering only in the References section. Consistency must already hold in the main text.
+- Do NOT introduce citation numbers beyond [1]–[8] for this curated corpus.
+- Only cite sources that are actually present in the retrieved documents shown in the prompt (look for the ---Document (ID) headers). If a source is not retrieved, do NOT cite it.
+
+CRITICAL - Fixed Number-to-Source Mapping for This Curated Corpus:
+
+Use this mapping EVERY time you cite a source:
+
+[1] Cheng AL, Herman E, Abramoff B, et al. Multidisciplinary collaborative guidance on the assessment and treatment of patients with Long COVID: A compendium statement. PM&R. 2025;17(6):684-708. doi:10.1002/pmrj.13397  (AAPMRCompendium_NP002)
+[2] Peluso MJ, Deeks SG. Mechanisms of long COVID and the path toward therapeutics. Cell. 2024;187(20):5500-5529. doi:10.1016/j.cell.2024.07.054  (Peluso_39326415)
+[3] Committee on Examining the Working Definition for Long COVID, Board on Health Sciences Policy, Board on Global Health, Health and Medicine Division, National Academies of Sciences, Engineering, and Medicine. A Long COVID Definition: A Chronic, Systemic Disease State with Profound Consequences. (Fineberg HV, Brown L, Worku T, Goldowitz I, eds.). National Academies Press; 2024:27768. doi:10.17226/27768  (Fineberg_39110819)
+[4] Al-Aly Z, Davis H, McCorkell L, et al. Long COVID science, research and policy. Nat Med. 2024;30(8):2148-2164. doi:10.1038/s41591-024-03173-6  (Al-Aly_39122965)
+[5] Zeraatkar D, Ling M, Kirsh S, et al. Interventions for the management of long covid (post-covid condition): living systematic review. BMJ. 2024;387:e081318. doi:10.1136/bmj-2024-081318  (Zeraatkar_39603702)
+[6] Bateman L, Bested AC, Bonilla HF, et al. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Essentials of Diagnosis and Management. Mayo Clinic Proceedings. 2021;96(11):2861-2878. doi:10.1016/j.mayocp.2021.07.004  (Bateman_34454716)
+[7] Mueller MR, Ganesh R, Beckman TJ, Hurt RT. Long COVID: emerging pathophysiological mechanisms. Minerva Med. 2025;116(2). doi:10.23736/S0026-4806.25.09539-4  (Mueller_40105889)
+[8] Vogel JM, Pollack B, Spier E, et al. Designing and optimizing clinical trials for long COVID. Life Sciences. 2024;355:122970. doi:10.1016/j.lfs.2024.122970  (Vogel_39142505)
+
 CRITICAL - References Format Requirements:
 
 The References section MUST use standard academic citation format (AMA style), NOT chunk IDs.

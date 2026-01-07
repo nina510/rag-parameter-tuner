@@ -1392,20 +1392,8 @@
                     resultChunks: result && result.chunks ? result.chunks.length : 0
                 });
                 
-                // Prepare available citations from result.chunks for dedup replacement
-                let availableCitationsForReplace = [];
-                if (result && result.chunks && Array.isArray(result.chunks)) {
-                    const uniq = new Set();
-                    result.chunks.forEach(ch => {
-                        if (ch.full_citation && !uniq.has(ch.full_citation)) {
-                            uniq.add(ch.full_citation);
-                            availableCitationsForReplace.push(ch.full_citation);
-                        }
-                    });
-                }
-                
                 // Build final references list, displaying only citations that appear in the text
-                allCitationNumbers.forEach(function(citationNum, idx) {
+                allCitationNumbers.forEach(function(citationNum) {
                     let displayText = null;
                     
                     if (refMap.has(citationNum)) {
@@ -1528,28 +1516,11 @@
                     // Display the reference if we have text, or show a placeholder if not found
                     if (displayText) {
                         let textKey = displayText.substring(0, 200); // Use for duplicate detection
-                        if (!addedRefsByText.has(textKey)) {
-                            referencesList += '<div class="references-item"><span class="citation-num">[' + citationNum + ']</span>' + displayText + '</div>';
-                            addedRefsByText.add(textKey);
-                        } else {
-                            // The same reference text is already added for a previous number.
-                            // Try to replace with another available citation from retrieved chunks.
-                            let replacement = null;
-                            for (let c of availableCitationsForReplace) {
-                                let repKey = c.substring(0, 200);
-                                if (!addedRefsByText.has(repKey)) {
-                                    replacement = c;
-                                    break;
-                                }
-                            }
-                            if (replacement) {
-                                referencesList += '<div class="references-item"><span class="citation-num">[' + citationNum + ']</span>' + replacement + '</div>';
-                                addedRefsByText.add(replacement.substring(0, 200));
-                            } else {
-                                // No alternative available, still show the duplicate to avoid missing numbers
-                                referencesList += '<div class="references-item"><span class="citation-num">[' + citationNum + ']</span>' + displayText + '</div>';
-                            }
-                        }
+                        // IMPORTANT: do NOT "invent" or replace references.
+                        // If the model assigned multiple numbers to the same source, we still display them
+                        // so the mismatch is visible, and numbering can be fixed at the prompt/back-end level.
+                        referencesList += '<div class="references-item"><span class="citation-num">[' + citationNum + ']</span>' + displayText + '</div>';
+                        addedRefsByText.add(textKey);
                     } else {
                         // Even if we don't have the text, show the citation number to maintain continuity
                         // This helps identify missing references
