@@ -1042,7 +1042,9 @@ def health():
 @app.route('/')
 def index():
     """服务前端页面"""
-    return send_from_directory('.', 'index.html')
+    response = send_from_directory('.', 'index.html')
+    response.headers['Content-Type'] = 'text/html; charset=utf-8'
+    return response
 
 @app.route('/<path:path>')
 def serve_static(path):
