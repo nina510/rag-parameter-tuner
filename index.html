@@ -1379,6 +1379,16 @@
                 // Sort citation numbers from the text (not from References section)
                 let allCitationNumbers = Array.from(allCitationsInText).sort((a, b) => a - b);
                 
+                // DEBUG: Log citation extraction results
+                console.log('Citation extraction:', {
+                    allCitationsInText: Array.from(allCitationsInText),
+                    allCitationNumbers: allCitationNumbers,
+                    refMapSize: refMap.size,
+                    refMapKeys: Array.from(refMap.keys()),
+                    chunkCitationMapSize: chunkCitationMap ? Object.keys(chunkCitationMap).length : 0,
+                    resultChunks: result && result.chunks ? result.chunks.length : 0
+                });
+                
                 // Build final references list, displaying only citations that appear in the text
                 allCitationNumbers.forEach(function(citationNum) {
                     let displayText = null;
@@ -1386,7 +1396,9 @@
                     if (refMap.has(citationNum)) {
                         // We have the reference text from References section, use it
                         displayText = refMap.get(citationNum);
+                        console.log(`Found citation [${citationNum}] in refMap:`, displayText.substring(0, 50));
                     } else {
+                        console.log(`Citation [${citationNum}] not in refMap, trying fallback methods...`);
                         // This citation is used in text but not found in References section
                         // Try to find it from the answer text by looking for chunk IDs associated with this citation number
                         // Search in the original answer text (before HTML conversion) for chunk IDs near this citation number
