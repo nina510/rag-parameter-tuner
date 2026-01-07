@@ -49,12 +49,46 @@ rag-parameter-tuner/
 
 ### 重要：需要创建 .env 文件
 
-在文件夹中创建一个名为 `.env` 的文件，内容为：
+**⚠️ 注意：`.env` 文件名以点开头，macOS Finder 不允许直接创建，需要使用以下方法：**
+
+#### Windows 用户：
+直接创建文件即可：
+1. 在文件夹中右键 → 新建 → 文本文档
+2. 重命名为 `.env`（如果提示扩展名，选择"是"）
+3. 用记事本打开，输入：
 ```
 OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxxxx
 ```
 
-将 `sk-proj-xxxx...` 替换为实际的 OpenAI API 密钥。
+#### Mac 用户：
+需要使用终端创建：
+
+1. **打开 Terminal**（按 `Cmd + Space`，搜索 "Terminal"）
+
+2. **进入项目文件夹**
+   ```bash
+   cd /path/to/rag-parameter-tuner
+   ```
+   （可以直接把文件夹拖到 Terminal 窗口，会自动输入路径）
+
+3. **创建 .env 文件**
+   ```bash
+   echo "OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxxxx" > .env
+   ```
+   （将 `sk-proj-xxxx...` 替换为实际的 OpenAI API 密钥）
+
+4. **验证文件已创建**
+   ```bash
+   ls -la .env
+   ```
+   如果看到 `.env` 文件，说明创建成功。
+
+**或者使用文本编辑器：**
+1. 打开 TextEdit（文本编辑）
+2. 输入：`OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxxxx`
+3. 保存时，文件格式选择 "纯文本"
+4. 保存为 `env`（不带点）
+5. 在终端运行：`mv env .env`（将文件重命名为 .env）
 
 ---
 
